@@ -1,25 +1,20 @@
 import { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { X } from "lucide-react";
-
-const p = (id: number) =>
-  `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=900&h=700&dpr=1`;
-
-const images = [
-  { src: p(4777692), alt: "Scuba diving in the Red Sea coral reef" },
-  { src: p(1430677), alt: "Orange Bay Island white sand beach" },
-  { src: p(29869206), alt: "Quad bike desert safari Hurghada" },
-  { src: p(15188082), alt: "Luxor Temple ancient Egypt" },
-  { src: p(11765965), alt: "Dolphins at Dolphin House reef" },
-  { src: p(3100361), alt: "Coral reef snorkeling Red Sea" },
-  { src: p(5579732), alt: "Speedboat trip on the Red Sea" },
-  { src: p(20801931), alt: "Camel ride desert sunset Egypt" },
-  { src: p(3873681), alt: "Pyramids of Giza Cairo Egypt" },
-];
+import { tours } from "@/data/tours";
 
 const GallerySection = () => {
   const { ref, isVisible } = useScrollAnimation();
-  const [lightbox, setLightbox] = useState<number | null>(null);
+  const [lightbox, setLightbox] = useState<{ tourIndex: number; imageIndex: number } | null>(null);
+
+  const allGalleryImages = tours.flatMap((tour, tourIndex) =>
+    tour.galleryImages.slice(0, 3).map((src, imageIndex) => ({
+      src,
+      alt: `${tour.title} - Image ${imageIndex + 1}`,
+      tourIndex,
+      imageIndex,
+    }))
+  );
 
   return (
     <>
@@ -30,8 +25,13 @@ const GallerySection = () => {
             <h2 className="section-title">Moments from <span className="gold-text">Our Adventures</span></h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {images.map((img, i) => (
-              <GalleryItem key={i} {...img} index={i} onClick={() => setLightbox(i)} />
+            {allGalleryImages.map((img, i) => (
+              <GalleryItem
+                key={`${img.tourIndex}-${img.imageIndex}`}
+                {...img}
+                index={i}
+                onClick={() => setLightbox({ tourIndex: img.tourIndex, imageIndex: img.imageIndex })}
+              />
             ))}
           </div>
         </div>
@@ -46,8 +46,8 @@ const GallerySection = () => {
             <X size={32} />
           </button>
           <img
-            src={images[lightbox].src}
-            alt={images[lightbox].alt}
+            src={tours[lightbox.tourIndex].galleryImages[lightbox.imageIndex]}
+            alt={`${tours[lightbox.tourIndex].title} - Image ${lightbox.imageIndex + 1}`}
             className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl animate-scale-in"
             onClick={(e) => e.stopPropagation()}
           />
