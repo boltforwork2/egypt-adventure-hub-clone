@@ -107,7 +107,7 @@ const TourDetail = () => {
               <div className="bg-muted/50 border border-border/60 rounded-2xl p-5 sm:p-6 space-y-4 lg:sticky lg:top-28">
                 <h3 className="text-base font-heading font-bold text-center">Interested in this tour?</h3>
                 <a
-                  href={`https://wa.me/201234567890?text=${whatsappMsg}`}
+                  href={`https://wa.me/201122424531?text=${whatsappMsg}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-gold w-full flex items-center justify-center gap-2 py-3.5"
