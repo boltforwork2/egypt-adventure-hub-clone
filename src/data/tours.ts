@@ -78,7 +78,7 @@ export const tours: Tour[] = [
     imageFolderName: "Scuba Diving Intro Images",
     imagePrefix: "ScubaDiving",
     image: "/src/assets/Scuba Diving Intro Images/ScubaDivingImage1.jpg",
-    galleryImages: getTourImages("Scuba Diving Intro Images", "ScubaDiving"),
+    galleryImages: getTourImages("scuba-diving", "scubadiving"),
   },
   {
     id: "private-speedboat",
