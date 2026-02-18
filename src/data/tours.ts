@@ -50,7 +50,7 @@ export const tours: Tour[] = [
     imageFolderName: "Paradise Island Images",
     imagePrefix: "Paradise",
     image: "/src/assets/Paradise Island Images/ParadiseImage1.jpg",
-    galleryImages: getTourImages("Paradise Island Images", "Paradise"),
+    galleryImages: getTourImages("paradise-island", "paradise"),
   },
   {
     id: "dolphin-house",
