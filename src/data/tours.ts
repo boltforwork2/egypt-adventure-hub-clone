@@ -120,7 +120,7 @@ export const tours: Tour[] = [
     imageFolderName: "Submarine Trip Images",
     imagePrefix: "Submarine",
     image: "/src/assets/Submarine Trip Images/SubmarineImage1.jpg",
-    galleryImages: getTourImages("Submarine Trip Images", "Submarine"),
+    galleryImages: getTourImages("submarine-trip", "submarine"),
   },
   {
     id: "quad-bike-safari",
