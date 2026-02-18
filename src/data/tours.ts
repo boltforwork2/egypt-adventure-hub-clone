@@ -15,11 +15,11 @@ export interface Tour {
 
 const getTourImages = (folderName: string, imagePrefix: string): string[] => {
   return [
-    `/public/Images/${folderName}/${imagePrefix}Image1.jpg`,
-    `/public/Images/${folderName}/${imagePrefix}Image2.jpg`,
-    `/public/Images/${folderName}/${imagePrefix}Image3.jpg`,
-    `/public/Images/${folderName}/${imagePrefix}Image4.jpg`,
-    `/public/Images/${folderName}/${imagePrefix}Image5.jpg`,
+    `/public/Images/${folderName}/${imagePrefix}1.jpg`,
+    `/public/Images/${folderName}/${imagePrefix}2.jpg`,
+    `/public/Images/${folderName}/${imagePrefix}3.jpg`,
+    `/public/Images/${folderName}/${imagePrefix}4.jpg`,
+    `/public/Images/${folderName}/${imagePrefix}5.jpg`,
   ];
 };
 
