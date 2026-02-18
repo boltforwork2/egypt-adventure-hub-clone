@@ -64,7 +64,7 @@ export const tours: Tour[] = [
     imageFolderName: "Dolphin House Images",
     imagePrefix: "DolphinHouse",
     image: "/src/assets/Dolphin House Images/DolphinHouseImage1.jpg",
-    galleryImages: getTourImages("Dolphin House Images", "DolphinHouse"),
+    galleryImages: getTourImages("dolphin-house", "dolphinhouse"),
   },
   {
     id: "scuba-diving-intro",
