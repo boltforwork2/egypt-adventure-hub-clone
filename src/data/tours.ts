@@ -35,7 +35,7 @@ export const tours: Tour[] = [
     includes: ["Boat trip", "Snorkeling", "Lunch", "Soft drinks"],
     imageFolderName: "Orange Bay Island Images",
     imagePrefix: "OrangeBay",
-    image: "/src/assets/Orange Bay Island Images/OrangeBayImage1.jpg",
+    image: "/src/assets/Orange-Bay-Island-Images/OrangeBayImage1.jpg",
     galleryImages: getTourImages("Orange Bay Island Images", "OrangeBay"),
   },
   {
