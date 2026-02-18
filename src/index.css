@@ -65,16 +65,25 @@
 
   body {
     @apply bg-background text-foreground font-body antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    line-height: 1.7;
   }
 }
 
 @layer components {
   .section-padding {
-    @apply px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+    @apply px-4 sm:px-6 lg:px-8 py-20 md:py-28;
   }
 
   .container-tourism {
@@ -95,68 +104,86 @@
   }
 
   .card-tourism {
-    @apply bg-card rounded-xl overflow-hidden shadow-md transition-all duration-500 hover:shadow-2xl hover:-translate-y-2;
+    @apply bg-card rounded-2xl overflow-hidden border border-border/50 transition-all duration-400;
+    box-shadow: 0 1px 3px 0 hsl(220 20% 10% / 0.06), 0 1px 2px -1px hsl(220 20% 10% / 0.06);
   }
 
   .card-tourism:hover {
-    box-shadow: 0 20px 40px -12px hsl(var(--gold) / 0.25);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px -8px hsl(220 20% 10% / 0.12), 0 0 0 1px hsl(var(--gold) / 0.15);
   }
 
   .btn-gold {
-    @apply inline-flex items-center justify-center px-8 py-3 rounded-lg font-semibold text-sm tracking-wide transition-all duration-300;
+    @apply inline-flex items-center justify-center px-8 py-3 rounded-xl font-semibold text-sm tracking-wide transition-all duration-250;
     background: linear-gradient(135deg, hsl(var(--gold)) 0%, hsl(var(--gold-dark)) 100%);
     color: hsl(var(--dark));
+    box-shadow: 0 2px 8px -2px hsl(var(--gold) / 0.35);
   }
 
   .btn-gold:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px -5px hsl(var(--gold) / 0.5);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px -4px hsl(var(--gold) / 0.5);
+  }
+
+  .btn-gold:active {
+    transform: translateY(0);
   }
 
   .btn-outline-light {
-    @apply inline-flex items-center justify-center px-8 py-3 rounded-lg font-semibold text-sm tracking-wide transition-all duration-300 border-2;
-    border-color: hsl(0 0% 100% / 0.7);
+    @apply inline-flex items-center justify-center px-8 py-3 rounded-xl font-semibold text-sm tracking-wide transition-all duration-250 border;
+    border-color: hsl(0 0% 100% / 0.6);
     color: hsl(0 0% 100%);
   }
 
   .btn-outline-light:hover {
-    background: hsl(0 0% 100% / 0.15);
-    border-color: hsl(0 0% 100%);
+    background: hsl(0 0% 100% / 0.12);
+    border-color: hsl(0 0% 100% / 0.9);
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl lg:text-5xl font-heading font-bold tracking-tight;
+    @apply text-3xl md:text-4xl lg:text-5xl font-heading font-bold;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
   }
 
   .section-subtitle {
-    @apply text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto;
+    @apply text-base md:text-lg text-muted-foreground max-w-2xl mx-auto;
+    line-height: 1.7;
   }
 }
 
 @layer utilities {
   .animate-fade-up {
-    animation: fadeUp 0.7s ease-out forwards;
+    animation: fadeUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     opacity: 0;
   }
 
   .animate-fade-in-delay {
-    animation: fadeUp 0.7s ease-out 0.2s forwards;
+    animation: fadeUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) 0.18s forwards;
     opacity: 0;
   }
 
   .animate-fade-in {
-    animation: fadeIn 0.3s ease-out forwards;
+    animation: fadeIn 0.25s ease-out forwards;
   }
 
   .animate-scale-in {
-    animation: scaleIn 0.3s ease-out forwards;
+    animation: scaleIn 0.25s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .duration-250 {
+    transition-duration: 250ms;
+  }
+
+  .duration-400 {
+    transition-duration: 400ms;
   }
 }
 
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -170,10 +197,17 @@
 }
 
 @keyframes scaleIn {
-  from { opacity: 0; transform: scale(0.95); }
+  from { opacity: 0; transform: scale(0.96); }
   to { opacity: 1; transform: scale(1); }
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

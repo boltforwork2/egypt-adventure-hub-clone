@@ -34,20 +34,23 @@ const TestimonialCard = ({ name, country, rating, text, index }: { name: string;
   return (
     <div
       ref={ref}
-      className={`bg-card rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-700 hover:-translate-y-1 ${
+      className={`bg-card rounded-2xl p-6 border border-border/50 transition-all duration-700 hover:-translate-y-1 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
-      style={{ transitionDelay: `${index * 120}ms` }}
+      style={{
+        transitionDelay: `${index * 100}ms`,
+        boxShadow: "0 1px 3px 0 hsl(220 20% 10% / 0.06)",
+      }}
     >
-      <div className="flex gap-1 mb-4">
+      <div className="flex gap-0.5 mb-4">
         {Array.from({ length: rating }).map((_, i) => (
-          <Star key={i} size={16} className="fill-gold text-gold" />
+          <Star key={i} size={14} className="fill-gold text-gold" />
         ))}
       </div>
-      <p className="text-muted-foreground text-sm leading-relaxed mb-6 italic">"{text}"</p>
-      <div>
-        <p className="font-heading font-bold text-foreground">{name}</p>
-        <p className="text-muted-foreground text-xs">{country}</p>
+      <p className="text-muted-foreground text-sm leading-relaxed mb-5 italic font-light">"{text}"</p>
+      <div className="pt-4 border-t border-border/50">
+        <p className="font-heading font-semibold text-foreground text-sm">{name}</p>
+        <p className="text-muted-foreground text-xs mt-0.5 tracking-wide">{country}</p>
       </div>
     </div>
   );
