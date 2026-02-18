@@ -148,7 +148,7 @@ export const tours: Tour[] = [
     imageFolderName: "Super Safari Images",
     imagePrefix: "SuperSafari",
     image: "/src/assets/Super Safari Images/SuperSafariImage1.jpg",
-    galleryImages: getTourImages("Super Safari Images", "SuperSafari"),
+    galleryImages: getTourImages("super-safari", "supersafari"),
   },
   {
     id: "luxor-trip",
