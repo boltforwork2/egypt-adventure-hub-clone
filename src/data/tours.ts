@@ -35,7 +35,7 @@ export const tours: Tour[] = [
     includes: ["Boat trip", "Snorkeling", "Lunch", "Soft drinks"],
     imageFolderName: "Orange Bay Island Images",
     imagePrefix: "OrangeBay",
-    image: "/src/assets/Orange Bay Island Images/OrangeBayImage1.jpg",
+    image: "Images/orange-bay/orangebay1.jpg",
     galleryImages: getTourImages("orange-bay", "orangebay"),
   },
   {
@@ -49,7 +49,7 @@ export const tours: Tour[] = [
     includes: ["Boat trip", "Snorkeling equipment", "Lunch"],
     imageFolderName: "Paradise Island Images",
     imagePrefix: "Paradise",
-    image: "/src/assets/Paradise Island Images/ParadiseImage1.jpg",
+    image: "Images/paradise-island/paradise1.jpg",
     galleryImages: getTourImages("paradise-island", "paradise"),
   },
   {
@@ -63,7 +63,7 @@ export const tours: Tour[] = [
     includes: ["Dolphin area", "Snorkeling", "Lunch", "Professional guide"],
     imageFolderName: "Dolphin House Images",
     imagePrefix: "DolphinHouse",
-    image: "/src/assets/Dolphin House Images/DolphinHouseImage1.jpg",
+    image: "Images/dolphin-house/dolphinhouse1.jpg",
     galleryImages: getTourImages("dolphin-house", "dolphinhouse"),
   },
   {
@@ -77,7 +77,7 @@ export const tours: Tour[] = [
     includes: ["2 dives", "Instructor", "Equipment", "Lunch"],
     imageFolderName: "Scuba Diving Intro Images",
     imagePrefix: "ScubaDiving",
-    image: "/src/assets/Scuba Diving Intro Images/ScubaDivingImage1.jpg",
+    image: "Images/scuba-diving/scubadiving1.jpg",
     galleryImages: getTourImages("scuba-diving", "scubadiving"),
   },
   {
@@ -91,7 +91,7 @@ export const tours: Tour[] = [
     includes: ["Snorkeling", "Drinks", "Private captain"],
     imageFolderName: "Private Speedboat Images",
     imagePrefix: "PrivateSpeedboat",
-    image: "/src/assets/Private Speedboat Images/PrivateSpeedboatImage1.jpg",
+    image: "Images/private-speedboat/privatespeedboat1.jpg",
     galleryImages: getTourImages("private-speedboat", "privatespeedboat"),
   },
   {
@@ -105,7 +105,7 @@ export const tours: Tour[] = [
     includes: ["Underwater viewing experience"],
     imageFolderName: "Glass Boat Images",
     imagePrefix: "GlassBoat",
-    image: "/src/assets/Glass Boat Images/GlassBoatImage1.jpg",
+    image: "Images/glass-boat/glassboat1.jpg",
     galleryImages: getTourImages("glass-boat", "glassboat"),
   },
   {
@@ -119,7 +119,7 @@ export const tours: Tour[] = [
     includes: ["20-meter underwater experience"],
     imageFolderName: "Submarine Trip Images",
     imagePrefix: "Submarine",
-    image: "/src/assets/Submarine Trip Images/SubmarineImage1.jpg",
+    image: "Images/submarine-trip/submarine1.jpg",
     galleryImages: getTourImages("submarine-trip", "submarine"),
   },
   {
@@ -133,7 +133,7 @@ export const tours: Tour[] = [
     includes: ["Quad bike", "Guide", "Bedouin tea"],
     imageFolderName: "Quad Bike Safari Images",
     imagePrefix: "QuadBike",
-    image: "/src/assets/Quad Bike Safari Images/QuadBikeImage1.jpg",
+    image: "Images/quad-bike/quanbike1.jpg",
     galleryImages: getTourImages("quad-bike", "quanbike"),
   },
   {
@@ -147,7 +147,7 @@ export const tours: Tour[] = [
     includes: ["Dinner", "Show", "Desert activities", "Transfers"],
     imageFolderName: "Super Safari Images",
     imagePrefix: "SuperSafari",
-    image: "/src/assets/Super Safari Images/SuperSafariImage1.jpg",
+    image: "Images/super-safari/supersafari1.jpg",
     galleryImages: getTourImages("super-safari", "supersafari"),
   },
   {
@@ -161,7 +161,7 @@ export const tours: Tour[] = [
     includes: ["Professional guide", "Lunch", "Transfers"],
     imageFolderName: "Luxor Trip Images",
     imagePrefix: "Luxor",
-    image: "/src/assets/Luxor Trip Images/LuxorImage1.jpg",
+    image: "Images/luxor-trip/luxor1.jpg",
     galleryImages: getTourImages("luxor-trip", "luxor"),
   },
   {
@@ -175,7 +175,7 @@ export const tours: Tour[] = [
     includes: ["Flight", "Guide", "Sightseeing program"],
     imageFolderName: "Cairo Trip Images",
     imagePrefix: "Cairo",
-    image: "/src/assets/Cairo Trip Images/CairoImage1.jpg",
+    image: "Images/cairo-trip/cairoimage1.jpg",
     galleryImages: getTourImages("cairo-trip", "cairoimage"),
   },
 ];
