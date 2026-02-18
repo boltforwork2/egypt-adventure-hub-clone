@@ -92,7 +92,7 @@ export const tours: Tour[] = [
     imageFolderName: "Private Speedboat Images",
     imagePrefix: "PrivateSpeedboat",
     image: "/src/assets/Private Speedboat Images/PrivateSpeedboatImage1.jpg",
-    galleryImages: getTourImages("Private Speedboat Images", "PrivateSpeedboat"),
+    galleryImages: getTourImages("private-speedboat", "privatespeedboat"),
   },
   {
     id: "glass-boat",
