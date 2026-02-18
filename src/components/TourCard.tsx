@@ -1,7 +1,8 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Clock, MapPin } from "lucide-react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
+import TourImageSlider from "@/components/TourImageSlider";
 import type { Tour } from "@/data/tours";
 
 interface TourCardProps {
@@ -19,6 +20,8 @@ const TourCard = ({ tour, index }: TourCardProps) => {
     navigate(`/tour/${tour.id}`);
   };
 
+  const sliderImages = tour.galleryImages.length > 0 ? tour.galleryImages : [tour.image];
+
   return (
     <div
       ref={ref}
@@ -27,15 +30,10 @@ const TourCard = ({ tour, index }: TourCardProps) => {
       }`}
       style={{ transitionDelay: `${index * 80}ms` }}
     >
-      <div className="relative overflow-hidden h-52">
-        <img
-          src={tour.image}
-          alt={tour.title}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-          loading="lazy"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-        <Badge className="absolute top-3 left-3 bg-gold/90 text-dark border-none text-xs font-semibold tracking-wide backdrop-blur-sm">
+      <div className="relative h-52">
+        <TourImageSlider images={sliderImages} alt={tour.title} className="h-52" />
+        <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+        <Badge className="absolute top-3 left-3 z-10 bg-gold/90 text-dark border-none text-xs font-semibold tracking-wide backdrop-blur-sm">
           {tour.locationBadge}
         </Badge>
       </div>

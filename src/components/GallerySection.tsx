@@ -1,26 +1,20 @@
 import { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { X } from "lucide-react";
-import divingImg from "@/assets/diving.jpg";
-import snorkelingImg from "@/assets/snorkeling.jpg";
-import islandImg from "@/assets/island.jpg";
-import quadBikeImg from "@/assets/quad-bike.jpg";
-import camelRideImg from "@/assets/camel-ride.jpg";
-import luxorImg from "@/assets/luxor-temple.jpg";
-import coralReefImg from "@/assets/coral-reef.jpg";
-import boatTripImg from "@/assets/boat-trip.jpg";
-import jeepSafariImg from "@/assets/jeep-safari.jpg";
+
+const p = (id: number) =>
+  `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=900&h=700&dpr=1`;
 
 const images = [
-  { src: divingImg, alt: "Scuba diving in Red Sea" },
-  { src: islandImg, alt: "Paradise island trip" },
-  { src: quadBikeImg, alt: "Quad bike desert safari" },
-  { src: luxorImg, alt: "Luxor Temple" },
-  { src: snorkelingImg, alt: "Snorkeling adventure" },
-  { src: coralReefImg, alt: "Coral reef exploration" },
-  { src: boatTripImg, alt: "Boat trip on Red Sea" },
-  { src: camelRideImg, alt: "Camel ride at sunset" },
-  { src: jeepSafariImg, alt: "Jeep desert safari" },
+  { src: p(4777692), alt: "Scuba diving in the Red Sea coral reef" },
+  { src: p(1430677), alt: "Orange Bay Island white sand beach" },
+  { src: p(29869206), alt: "Quad bike desert safari Hurghada" },
+  { src: p(15188082), alt: "Luxor Temple ancient Egypt" },
+  { src: p(11765965), alt: "Dolphins at Dolphin House reef" },
+  { src: p(3100361), alt: "Coral reef snorkeling Red Sea" },
+  { src: p(5579732), alt: "Speedboat trip on the Red Sea" },
+  { src: p(20801931), alt: "Camel ride desert sunset Egypt" },
+  { src: p(3873681), alt: "Pyramids of Giza Cairo Egypt" },
 ];
 
 const GallerySection = () => {
