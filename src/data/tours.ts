@@ -162,7 +162,7 @@ export const tours: Tour[] = [
     imageFolderName: "Luxor Trip Images",
     imagePrefix: "Luxor",
     image: "/src/assets/Luxor Trip Images/LuxorImage1.jpg",
-    galleryImages: getTourImages("Luxor Trip Images", "Luxor"),
+    galleryImages: getTourImages("luxor-trip", "luxor"),
   },
   {
     id: "cairo-trip",
