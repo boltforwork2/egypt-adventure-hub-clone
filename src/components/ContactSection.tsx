@@ -58,7 +58,7 @@ const ContactSection = () => {
 
           <div className="flex flex-col justify-center space-y-7">
             {[
-              { icon: Phone, label: "Phone", value: "+20 123 456 7890", href: "tel:+201234567890" },
+              { icon: Phone, label: "Phone", value: "+20 112 242 4531", href: "tel:+201122424531" },
               { icon: Mail, label: "Email", value: "info@fayedtravel.com", href: "mailto:info@fayedtravel.com" },
               { icon: MapPin, label: "Location", value: "Hurghada, Red Sea, Egypt", href: "#" },
             ].map(({ icon: Icon, label, value, href }) => (
