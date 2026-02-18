@@ -36,7 +36,7 @@ export const tours: Tour[] = [
     imageFolderName: "Orange Bay Island Images",
     imagePrefix: "OrangeBay",
     image: "/src/assets/Orange Bay Island Images/OrangeBayImage1.jpg",
-    galleryImages: getTourImages("Orange-Bay-Island-Images", "OrangeBay"),
+    galleryImages: getTourImages("Orange Bay Island Images", "OrangeBay"),
   },
   {
     id: "paradise-island",
