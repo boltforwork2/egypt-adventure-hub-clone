@@ -6,6 +6,7 @@ const navLinks = [
   { label: "Home", href: "/#home" },
   { label: "Sea Trips", href: "/#sea" },
   { label: "Safari", href: "/#safari" },
+  { label: "City & Leisure", href: "/#leisure" },
   { label: "Luxor & Cairo", href: "/#cultural" },
   { label: "About Us", href: "/#why-us" },
   { label: "Gallery", href: "/#gallery" },

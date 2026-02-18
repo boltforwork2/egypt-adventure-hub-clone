@@ -1,6 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import TourCard from "@/components/TourCard";
-import { seaTours, safariTours, culturalTours } from "@/data/tours";
+import { seaTours, safariTours, leisureTours, culturalTours } from "@/data/tours";
 
 const WaveIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -17,6 +17,13 @@ const DesertIcon = () => (
     <path d="M10 10c.5-2.5 1.5-4.5 2-5.5.5 1 1.5 3 2 5.5" />
     <path d="M14 10c2.5 1 4.5 5 5 10" />
     <circle cx="17" cy="5" r="1.5" />
+  </svg>
+);
+
+const LeisureIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 2v20" />
+    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
   </svg>
 );
 
@@ -47,6 +54,7 @@ const ExcursionsSection = () => {
   const { ref: ref2, isVisible: vis2 } = useScrollAnimation();
   const { ref: ref3, isVisible: vis3 } = useScrollAnimation();
   const { ref: ref4, isVisible: vis4 } = useScrollAnimation();
+  const { ref: ref5, isVisible: vis5 } = useScrollAnimation();
 
   return (
     <section id="excursions" className="section-padding bg-background">
@@ -75,8 +83,17 @@ const ExcursionsSection = () => {
           </div>
         </div>
 
-        <div id="cultural" ref={ref4} className={`transition-all duration-700 ${vis4 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <SectionHeading icon={TempleIcon} title="Luxor & Cairo Trips" />
+        <div id="leisure" ref={ref4} className={`mb-16 transition-all duration-700 ${vis4 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+          <SectionHeading icon={LeisureIcon} title="City & Leisure Tours – Hurghada" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {leisureTours.map((tour, i) => (
+              <TourCard key={tour.id} tour={tour} index={i} />
+            ))}
+          </div>
+        </div>
+
+        <div id="cultural" ref={ref5} className={`transition-all duration-700 ${vis5 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+          <SectionHeading icon={TempleIcon} title="Luxor & Cairo Trips (From Hurghada)" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {culturalTours.map((tour, i) => (
               <TourCard key={tour.id} tour={tour} index={i} />

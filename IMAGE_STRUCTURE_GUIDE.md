@@ -158,6 +158,45 @@ Each tour has its own dedicated folder within the assets directory.
 
 ---
 
+### 12. City Tour – Hurghada
+**Folder Name:** `City Tour Images`
+**Location:** `/src/assets/City Tour Images/`
+
+**Required Files (exactly 5):**
+- `CityTourImage1.jpg`
+- `CityTourImage2.jpg`
+- `CityTourImage3.jpg`
+- `CityTourImage4.jpg`
+- `CityTourImage5.jpg`
+
+---
+
+### 13. Grand Aquarium – Hurghada
+**Folder Name:** `Aquarium Images`
+**Location:** `/src/assets/Aquarium Images/`
+
+**Required Files (exactly 5):**
+- `AquariumImage1.jpg`
+- `AquariumImage2.jpg`
+- `AquariumImage3.jpg`
+- `AquariumImage4.jpg`
+- `AquariumImage5.jpg`
+
+---
+
+### 14. Horse Riding Tour – Hurghada
+**Folder Name:** `Horse Riding Images`
+**Location:** `/src/assets/Horse Riding Images/`
+
+**Required Files (exactly 5):**
+- `HorseRidingImage1.jpg`
+- `HorseRidingImage2.jpg`
+- `HorseRidingImage3.jpg`
+- `HorseRidingImage4.jpg`
+- `HorseRidingImage5.jpg`
+
+---
+
 ## ⚠️ CRITICAL RULES
 
 1. **Folder names MUST match exactly** (including spaces and capitalization)

@@ -1,7 +1,7 @@
 export interface Tour {
   id: string;
   title: string;
-  category: "sea" | "safari" | "cultural";
+  category: "sea" | "safari" | "leisure" | "cultural";
   duration: string;
   location: string;
   locationBadge: string;
@@ -151,6 +151,48 @@ export const tours: Tour[] = [
     galleryImages: getTourImages("super-safari", "supersafari"),
   },
   {
+    id: "city-tour-hurghada",
+    title: "City Tour – Hurghada",
+    category: "leisure",
+    duration: "Flexible Duration",
+    location: "Hurghada, Egypt",
+    locationBadge: "Hurghada Trip",
+    description: "A city sightseeing tour around Hurghada that allows visitors to explore the local lifestyle and main attractions.",
+    includes: ["El Mina Mosque", "Hurghada Marina", "Local bazaars", "Walking through Hurghada streets", "Discovering local life and culture"],
+    imageFolderName: "City Tour Images",
+    imagePrefix: "CityTour",
+    image: "/Images/city-tour/citytour1.jpg",
+    galleryImages: getTourImages("city-tour", "citytour"),
+  },
+  {
+    id: "grand-aquarium-hurghada",
+    title: "Grand Aquarium – Hurghada",
+    category: "leisure",
+    duration: "Flexible Duration",
+    location: "Hurghada, Egypt",
+    locationBadge: "Hurghada Trip",
+    description: "The Aquarium Tour is one of the best family-friendly entertainment experiences in Hurghada, combining marine life observation with educational and interactive attractions.",
+    includes: ["More than 1,200 marine animals representing around 100 species", "Nearly 1 million gallons of water", "24 different marine life exhibitions", "Underwater tunnel walking experience", "Aquarium entry", "Rainforest area", "Small zoo"],
+    imageFolderName: "Aquarium Images",
+    imagePrefix: "Aquarium",
+    image: "/Images/aquarium/aquarium1.jpg",
+    galleryImages: getTourImages("aquarium", "aquarium"),
+  },
+  {
+    id: "horse-riding-hurghada",
+    title: "Horse Riding Tour – Hurghada",
+    category: "leisure",
+    duration: "1–2 Hours",
+    location: "Hurghada, Egypt",
+    locationBadge: "Hurghada Trip",
+    description: "Horse riding tours in Hurghada are suitable for all ages and offer a unique mix of natural scenery and enjoyable physical activity.",
+    includes: ["Tours along sandy beaches or nearby desert areas", "Suitable for beginners and experienced riders", "Professional trainers provided", "Basic horse riding training and guidance", "Riding pace adjusted to participant skill level"],
+    imageFolderName: "Horse Riding Images",
+    imagePrefix: "HorseRiding",
+    image: "/Images/horse-riding/horseriding1.jpg",
+    galleryImages: getTourImages("horse-riding", "horseriding"),
+  },
+  {
     id: "luxor-trip",
     title: "Luxor Trip (By Bus)",
     category: "cultural",
@@ -182,4 +224,5 @@ export const tours: Tour[] = [
 
 export const seaTours = tours.filter((t) => t.category === "sea");
 export const safariTours = tours.filter((t) => t.category === "safari");
+export const leisureTours = tours.filter((t) => t.category === "leisure");
 export const culturalTours = tours.filter((t) => t.category === "cultural");

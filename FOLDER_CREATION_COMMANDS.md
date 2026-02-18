@@ -16,6 +16,9 @@ mkdir "Quad Bike Safari Images"
 mkdir "Super Safari Images"
 mkdir "Luxor Trip Images"
 mkdir "Cairo Trip Images"
+mkdir "City Tour Images"
+mkdir "Aquarium Images"
+mkdir "Horse Riding Images"
 ```
 
 ## For Windows (PowerShell)
@@ -34,6 +37,9 @@ New-Item -ItemType Directory -Name "Quad Bike Safari Images"
 New-Item -ItemType Directory -Name "Super Safari Images"
 New-Item -ItemType Directory -Name "Luxor Trip Images"
 New-Item -ItemType Directory -Name "Cairo Trip Images"
+New-Item -ItemType Directory -Name "City Tour Images"
+New-Item -ItemType Directory -Name "Aquarium Images"
+New-Item -ItemType Directory -Name "Horse Riding Images"
 ```
 
 ## For Mac/Linux (Terminal)
@@ -52,12 +58,15 @@ mkdir "Quad Bike Safari Images"
 mkdir "Super Safari Images"
 mkdir "Luxor Trip Images"
 mkdir "Cairo Trip Images"
+mkdir "City Tour Images"
+mkdir "Aquarium Images"
+mkdir "Horse Riding Images"
 ```
 
 ## One-Line Command (Mac/Linux)
 
 ```bash
-cd src/assets && mkdir "Orange Bay Island Images" "Paradise Island Images" "Dolphin House Images" "Scuba Diving Intro Images" "Private Speedboat Images" "Glass Boat Images" "Submarine Trip Images" "Quad Bike Safari Images" "Super Safari Images" "Luxor Trip Images" "Cairo Trip Images"
+cd src/assets && mkdir "Orange Bay Island Images" "Paradise Island Images" "Dolphin House Images" "Scuba Diving Intro Images" "Private Speedboat Images" "Glass Boat Images" "Submarine Trip Images" "Quad Bike Safari Images" "Super Safari Images" "Luxor Trip Images" "Cairo Trip Images" "City Tour Images" "Aquarium Images" "Horse Riding Images"
 ```
 
 ---
