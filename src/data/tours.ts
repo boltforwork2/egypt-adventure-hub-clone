@@ -176,7 +176,7 @@ export const tours: Tour[] = [
     imageFolderName: "Cairo Trip Images",
     imagePrefix: "Cairo",
     image: "/src/assets/Cairo Trip Images/CairoImage1.jpg",
-    galleryImages: getTourImages("Cairo Trip Images", "Cairo"),
+    galleryImages: getTourImages("cairo-trip", "cairoimage"),
   },
 ];
 
