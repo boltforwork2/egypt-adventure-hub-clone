@@ -10,7 +10,7 @@ const ContactSection = () => {
     e.preventDefault();
     const { name, email, phone, message } = formData;
     const whatsappText = encodeURIComponent(`Hi, I'm ${name}. Email: ${email}, Phone: ${phone}. Message: ${message}`);
-    window.open(`https://wa.me/201234567890?text=${whatsappText}`, "_blank");
+    window.open(`https://wa.me/201122424531?text=${whatsappText}`, "_blank");
   };
 
   return (
