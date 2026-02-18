@@ -19,7 +19,7 @@ const getTourImages = (folderName: string, imagePrefix: string): string[] => {
     `/public/Images/${folderName}/${imagePrefix}Image2.jpg`,
     `/public/Images/${folderName}/${imagePrefix}Image3.jpg`,
     `/public/Images/${folderName}/${imagePrefix}Image4.jpg`,
-    `/public/images/${folderName}/${imagePrefix}Image5.jpg`,
+    `/public/Images/${folderName}/${imagePrefix}Image5.jpg`,
   ];
 };
 
