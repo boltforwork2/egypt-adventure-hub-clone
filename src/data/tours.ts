@@ -134,7 +134,7 @@ export const tours: Tour[] = [
     imageFolderName: "Quad Bike Safari Images",
     imagePrefix: "QuadBike",
     image: "/src/assets/Quad Bike Safari Images/QuadBikeImage1.jpg",
-    galleryImages: getTourImages("Quad Bike Safari Images", "QuadBike"),
+    galleryImages: getTourImages("quad-bike", "quanbike"),
   },
   {
     id: "super-safari",
