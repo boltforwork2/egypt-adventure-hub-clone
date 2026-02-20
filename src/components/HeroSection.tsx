@@ -2,7 +2,7 @@ const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src="https://images.pexels.com/photos/3155726/pexels-photo-3155726.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Hurghada Red Sea coast aerial view" className="w-full h-full object-cover" />
+        <img src="/hero-bg.jpg" alt="Hurghada Red Sea coast aerial view" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-dark/60 via-dark/40 to-dark/70" />
       </div>
 
