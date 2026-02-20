@@ -22,6 +22,48 @@ const TourCard = ({ tour, index }: TourCardProps) => {
 
   const sliderImages = tour.galleryImages.length > 0 ? tour.galleryImages : [tour.image];
 
+  const renderPrice = () => {
+    if (tour.priceAdults !== undefined) {
+      return (
+        <div className="absolute top-3 right-3 z-10 bg-background/95 backdrop-blur-sm rounded-lg px-3 py-2 border border-gold/20 shadow-lg">
+          <div className="text-xs font-semibold text-gold">Adults: €{tour.priceAdults}</div>
+          <div className="text-xs font-semibold text-muted-foreground">Children: Free</div>
+        </div>
+      );
+    }
+
+    if (tour.priceHurghada !== undefined && tour.priceElGouna !== undefined) {
+      return (
+        <div className="absolute top-3 right-3 z-10 bg-background/95 backdrop-blur-sm rounded-lg px-3 py-2 border border-gold/20 shadow-lg">
+          <div className="text-xs font-semibold text-gold">Hurghada: €{tour.priceHurghada}</div>
+          <div className="text-xs font-semibold text-gold">El Gouna: €{tour.priceElGouna}</div>
+        </div>
+      );
+    }
+
+    if (tour.transportPrices && Object.keys(tour.transportPrices).length > 0) {
+      return (
+        <div className="absolute top-3 right-3 z-10 bg-background/95 backdrop-blur-sm rounded-lg px-3 py-2 border border-gold/20 shadow-lg">
+          {Object.entries(tour.transportPrices).map(([option, price]) => (
+            <div key={option} className="text-xs font-semibold text-gold">
+              {option}: €{price}
+            </div>
+          ))}
+        </div>
+      );
+    }
+
+    if (tour.price !== undefined) {
+      return (
+        <div className="absolute top-3 right-3 z-10 bg-background/95 backdrop-blur-sm rounded-lg px-3 py-2.5 border border-gold/20 shadow-lg">
+          <div className="text-lg font-bold text-gold">€{tour.price}</div>
+        </div>
+      );
+    }
+
+    return null;
+  };
+
   return (
     <div
       ref={ref}
@@ -46,6 +88,7 @@ const TourCard = ({ tour, index }: TourCardProps) => {
             {tour.locationBadge}
           </Badge>
         )}
+        {renderPrice()}
       </div>
       <div className="p-5 sm:p-6 flex flex-col flex-1">
         <h3 className="text-base sm:text-lg font-heading font-bold mb-2 group-hover:text-gold transition-colors duration-300 line-clamp-1 leading-snug">

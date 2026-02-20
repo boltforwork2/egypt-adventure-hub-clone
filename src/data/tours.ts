@@ -13,6 +13,12 @@ export interface Tour {
   imageFolderName: string;
   imagePrefix: string;
   transportOptions?: string[];
+  price?: number;
+  priceHurghada?: number;
+  priceElGouna?: number;
+  transportPrices?: { [key: string]: number };
+  priceAdults?: number;
+  priceChildren?: number;
 }
 
 const getTourImages = (folderName: string, imagePrefix: string): string[] => {
@@ -39,6 +45,7 @@ export const tours: Tour[] = [
     imagePrefix: "OrangeBay",
     image: "/Images/orange-bay/orangebay1.jpg",
     galleryImages: getTourImages("orange-bay", "orangebay"),
+    price: 15,
   },
   {
     id: "paradise-island",
@@ -53,6 +60,7 @@ export const tours: Tour[] = [
     imagePrefix: "Paradise",
     image: "/Images/paradise-island/paradise1.jpg",
     galleryImages: getTourImages("paradise-island", "paradise"),
+    price: 15,
   },
   {
     id: "dolphin-house",
@@ -67,6 +75,7 @@ export const tours: Tour[] = [
     imagePrefix: "DolphinHouse",
     image: "/Images/dolphin-house/dolphinhouse1.jpg",
     galleryImages: getTourImages("dolphin-house", "dolphinhouse"),
+    price: 15,
   },
   {
     id: "scuba-diving-intro",
@@ -81,6 +90,7 @@ export const tours: Tour[] = [
     imagePrefix: "ScubaDiving",
     image: "/Images/scuba-diving/scubadiving1.jpg",
     galleryImages: getTourImages("scuba-diving", "scubadiving"),
+    price: 15,
   },
   {
     id: "private-speedboat",
@@ -96,6 +106,8 @@ export const tours: Tour[] = [
     imagePrefix: "PrivateSpeedboat",
     image: "/Images/private-speedboat/privatespeedboat1.jpg",
     galleryImages: getTourImages("private-speedboat", "privatespeedboat"),
+    priceHurghada: 15,
+    priceElGouna: 15,
   },
   {
     id: "glass-boat",
@@ -111,6 +123,8 @@ export const tours: Tour[] = [
     imagePrefix: "GlassBoat",
     image: "/Images/glass-boat/glassboat1.jpg",
     galleryImages: getTourImages("glass-boat", "glassboat"),
+    priceHurghada: 15,
+    priceElGouna: 15,
   },
   {
     id: "submarine-trip",
@@ -126,6 +140,8 @@ export const tours: Tour[] = [
     imagePrefix: "Submarine",
     image: "/Images/submarine-trip/submarine1.jpg",
     galleryImages: getTourImages("submarine-trip", "submarine"),
+    priceHurghada: 15,
+    priceElGouna: 15,
   },
   {
     id: "catamaran-trip",
@@ -140,6 +156,7 @@ export const tours: Tour[] = [
     imagePrefix: "Catamaran",
     image: "/Images/catamaran/catamaran1.jpg",
     galleryImages: getTourImages("catamaran", "catamaran"),
+    price: 15,
   },
   {
     id: "quad-bike-safari",
@@ -154,6 +171,7 @@ export const tours: Tour[] = [
     imagePrefix: "QuadBike",
     image: "/Images/quad-bike/quanbike1.jpg",
     galleryImages: getTourImages("quad-bike", "quanbike"),
+    price: 15,
   },
   {
     id: "super-safari",
@@ -169,6 +187,8 @@ export const tours: Tour[] = [
     imagePrefix: "SuperSafari",
     image: "/Images/super-safari/supersafari1.jpg",
     galleryImages: getTourImages("super-safari", "supersafari"),
+    priceHurghada: 15,
+    priceElGouna: 15,
   },
   {
     id: "city-tour-hurghada",
@@ -183,6 +203,7 @@ export const tours: Tour[] = [
     imagePrefix: "CityTour",
     image: "/Images/city-tour/citytour1.jpg",
     galleryImages: getTourImages("city-tour", "citytour"),
+    price: 15,
   },
   {
     id: "grand-aquarium-hurghada",
@@ -197,6 +218,7 @@ export const tours: Tour[] = [
     imagePrefix: "Aquarium",
     image: "/Images/aquarium/aquarium1.jpg",
     galleryImages: getTourImages("aquarium", "aquarium"),
+    price: 15,
   },
   {
     id: "horse-riding-hurghada",
@@ -211,6 +233,7 @@ export const tours: Tour[] = [
     imagePrefix: "HorseRiding",
     image: "/Images/horse-riding/horseriding1.jpg",
     galleryImages: getTourImages("horse-riding", "horseriding"),
+    price: 15,
   },
   {
     id: "luxor-trip",
@@ -222,6 +245,10 @@ export const tours: Tour[] = [
     description: "Journey to the ancient city of Luxor and explore the world's greatest open-air museum. Visit temples, tombs, and legendary monuments.",
     includes: ["Professional guide", "Lunch", "Transfers"],
     transportOptions: ["By Bus", "Private"],
+    transportPrices: {
+      "By Bus": 15,
+      "Private": 15,
+    },
     imageFolderName: "Luxor Trip Images",
     imagePrefix: "Luxor",
     image: "/Images/luxor-trip/luxor1.jpg",
@@ -237,6 +264,11 @@ export const tours: Tour[] = [
     description: "Explore the iconic Pyramids of Giza, the Sphinx, and the Egyptian Museum on an unforgettable day trip to Cairo from Hurghada.",
     includes: ["Professional guide", "Sightseeing program", "Transfers"],
     transportOptions: ["By Bus", "By Plane", "Private"],
+    transportPrices: {
+      "By Bus": 15,
+      "By Plane": 15,
+      "Private": 15,
+    },
     imageFolderName: "Cairo Trip Images",
     imagePrefix: "Cairo",
     image: "/Images/cairo-trip/cairoimage1.jpg",
@@ -255,6 +287,8 @@ export const tours: Tour[] = [
     imagePrefix: "Transfer",
     image: "/Images/airport-transfer/transfer1.jpg",
     galleryImages: getTourImages("airport-transfer", "transfer"),
+    priceAdults: 15,
+    priceChildren: 0,
   },
 ];
 

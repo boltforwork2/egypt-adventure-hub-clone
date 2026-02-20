@@ -81,6 +81,51 @@ const TourDetail = () => {
                 <p className="text-muted-foreground leading-relaxed">{tour.description}</p>
               </div>
 
+              {(tour.price !== undefined || tour.priceHurghada !== undefined || tour.priceAdults !== undefined || tour.transportPrices) && (
+                <div>
+                  <h2 className="text-xl font-heading font-bold mb-4 tracking-tight">Pricing</h2>
+                  <div className="bg-muted/30 rounded-xl p-5 border border-border/50">
+                    {tour.priceAdults !== undefined ? (
+                      <div className="space-y-2">
+                        <div className="flex items-center justify-between">
+                          <span className="text-foreground font-medium">Adults:</span>
+                          <span className="text-xl font-bold text-gold">€{tour.priceAdults}</span>
+                        </div>
+                        <div className="flex items-center justify-between">
+                          <span className="text-foreground font-medium">Children:</span>
+                          <span className="text-lg font-bold text-gold">Free</span>
+                        </div>
+                      </div>
+                    ) : tour.priceHurghada !== undefined && tour.priceElGouna !== undefined ? (
+                      <div className="space-y-2">
+                        <div className="flex items-center justify-between">
+                          <span className="text-foreground font-medium">Hurghada:</span>
+                          <span className="text-xl font-bold text-gold">€{tour.priceHurghada}</span>
+                        </div>
+                        <div className="flex items-center justify-between">
+                          <span className="text-foreground font-medium">El Gouna:</span>
+                          <span className="text-xl font-bold text-gold">€{tour.priceElGouna}</span>
+                        </div>
+                      </div>
+                    ) : tour.transportPrices && Object.keys(tour.transportPrices).length > 0 ? (
+                      <div className="space-y-2">
+                        {Object.entries(tour.transportPrices).map(([option, price]) => (
+                          <div key={option} className="flex items-center justify-between">
+                            <span className="text-foreground font-medium">{option}:</span>
+                            <span className="text-xl font-bold text-gold">€{price}</span>
+                          </div>
+                        ))}
+                      </div>
+                    ) : tour.price !== undefined ? (
+                      <div className="flex items-center justify-between">
+                        <span className="text-foreground font-medium">Price per person:</span>
+                        <span className="text-2xl font-bold text-gold">€{tour.price}</span>
+                      </div>
+                    ) : null}
+                  </div>
+                </div>
+              )}
+
               <div>
                 <h2 className="text-xl font-heading font-bold mb-4 tracking-tight">What's Included</h2>
                 <ul className="space-y-2.5">
