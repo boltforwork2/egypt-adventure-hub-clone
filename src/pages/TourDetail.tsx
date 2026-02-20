@@ -65,7 +65,7 @@ const TourDetail = () => {
           )}
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold mb-3 leading-tight">{tour.title}</h1>
           <div className="flex flex-wrap items-center gap-4 text-background/75 text-sm">
-            <span className="flex items-center gap-1.5"><Clock size={15} /> {tour.duration}</span>
+            <span className="flex items-center gap-1.5 whitespace-nowrap"><Clock size={15} /> {tour.duration}</span>
             <span className="flex items-center gap-1.5"><MapPin size={15} /> {tour.location}</span>
           </div>
         </div>

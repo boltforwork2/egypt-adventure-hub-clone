@@ -52,7 +52,7 @@ const TourCard = ({ tour, index }: TourCardProps) => {
           {tour.title}
         </h3>
         <div className="flex items-center gap-4 text-muted-foreground text-xs mb-3">
-          <span className="flex items-center gap-1.5"><Clock size={13} /> {tour.duration}</span>
+          <span className="flex items-center gap-1.5 whitespace-nowrap"><Clock size={13} /> {tour.duration}</span>
           <span className="flex items-center gap-1.5"><MapPin size={13} /> {tour.location}</span>
         </div>
         <p className="text-muted-foreground text-sm mb-5 leading-relaxed line-clamp-2 flex-1">{tour.description}</p>
