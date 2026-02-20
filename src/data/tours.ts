@@ -1,7 +1,7 @@
 export interface Tour {
   id: string;
   title: string;
-  category: "sea" | "safari" | "leisure" | "cultural";
+  category: "sea" | "safari" | "leisure" | "cultural" | "service";
   duration: string;
   location: string;
   locationBadge: string;
@@ -12,6 +12,7 @@ export interface Tour {
   galleryImages: string[];
   imageFolderName: string;
   imagePrefix: string;
+  transportOptions?: string[];
 }
 
 const getTourImages = (folderName: string, imagePrefix: string): string[] => {
@@ -127,6 +128,20 @@ export const tours: Tour[] = [
     galleryImages: getTourImages("submarine-trip", "submarine"),
   },
   {
+    id: "catamaran-trip",
+    title: "Catamaran Trip",
+    category: "sea",
+    duration: "3–5 Hours (Flexible)",
+    location: "El Gouna, Egypt",
+    locationBadge: "El Gouna Trip",
+    description: "Catamaran trips are relaxing sea experiences in El Gouna, suitable for individuals, couples, and groups.",
+    includes: ["Meet at El Gouna Marina", "Sailing in El Gouna sea", "Swimming & snorkeling stop", "Relaxing time on deck", "Soft drinks & water included", "Return to marina"],
+    imageFolderName: "Catamaran Images",
+    imagePrefix: "Catamaran",
+    image: "/Images/catamaran/catamaran1.jpg",
+    galleryImages: getTourImages("catamaran", "catamaran"),
+  },
+  {
     id: "quad-bike-safari",
     title: "Quad Bike Safari",
     category: "safari",
@@ -199,13 +214,14 @@ export const tours: Tour[] = [
   },
   {
     id: "luxor-trip",
-    title: "Luxor Trip (By Bus)",
+    title: "Luxor Trip",
     category: "cultural",
     duration: "Full Day",
     location: "From Hurghada",
     locationBadge: "From Hurghada",
     description: "Journey to the ancient city of Luxor and explore the world's greatest open-air museum. Visit temples, tombs, and legendary monuments.",
     includes: ["Professional guide", "Lunch", "Transfers"],
+    transportOptions: ["By Bus", "Private"],
     imageFolderName: "Luxor Trip Images",
     imagePrefix: "Luxor",
     image: "/Images/luxor-trip/luxor1.jpg",
@@ -213,17 +229,32 @@ export const tours: Tour[] = [
   },
   {
     id: "cairo-trip",
-    title: "Cairo Trip (By Plane)",
+    title: "Cairo Trip",
     category: "cultural",
     duration: "Full Day",
     location: "From Hurghada",
     locationBadge: "From Hurghada",
-    description: "Fly from Hurghada to Cairo for an unforgettable day exploring the Pyramids of Giza, the Sphinx, and the Egyptian Museum.",
-    includes: ["Flight", "Guide", "Sightseeing program"],
+    description: "Explore the iconic Pyramids of Giza, the Sphinx, and the Egyptian Museum on an unforgettable day trip to Cairo from Hurghada.",
+    includes: ["Professional guide", "Sightseeing program", "Transfers"],
+    transportOptions: ["By Bus", "By Plane", "Private"],
     imageFolderName: "Cairo Trip Images",
     imagePrefix: "Cairo",
     image: "/Images/cairo-trip/cairoimage1.jpg",
     galleryImages: getTourImages("cairo-trip", "cairoimage"),
+  },
+  {
+    id: "airport-transfer-hurghada",
+    title: "Airport Transfer – Hurghada",
+    category: "service",
+    duration: "As Needed",
+    location: "Hurghada International Airport",
+    locationBadge: "Transfer Service",
+    description: "Private and shared transfer services from Hurghada International Airport to hotels, resorts, El Gouna, Makadi Bay, Sahl Hasheesh, and other nearby destinations.",
+    includes: ["Pickup from Hurghada International Airport", "Drop-off at hotels & resorts", "El Gouna transfers", "Makadi Bay transfers", "Sahl Hasheesh transfers", "Comfortable private or shared vehicles"],
+    imageFolderName: "Airport Transfer Images",
+    imagePrefix: "Transfer",
+    image: "/Images/airport-transfer/transfer1.jpg",
+    galleryImages: getTourImages("airport-transfer", "transfer"),
   },
 ];
 
@@ -231,3 +262,4 @@ export const seaTours = tours.filter((t) => t.category === "sea");
 export const safariTours = tours.filter((t) => t.category === "safari");
 export const leisureTours = tours.filter((t) => t.category === "leisure");
 export const culturalTours = tours.filter((t) => t.category === "cultural");
+export const serviceTours = tours.filter((t) => t.category === "service");

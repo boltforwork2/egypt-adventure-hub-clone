@@ -93,6 +93,20 @@ const TourDetail = () => {
                 </ul>
               </div>
 
+              {tour.transportOptions && tour.transportOptions.length > 0 && (
+                <div>
+                  <h2 className="text-xl font-heading font-bold mb-4 tracking-tight">Available Travel Options</h2>
+                  <ul className="space-y-2.5">
+                    {tour.transportOptions.map((option) => (
+                      <li key={option} className="flex items-center gap-3">
+                        <CheckCircle size={16} className="text-gold flex-shrink-0" />
+                        <span className="text-foreground text-sm">{option}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
               {tour.galleryImages.length > 0 && (
                 <div>
                   <h2 className="text-xl font-heading font-bold mb-4 tracking-tight">Gallery</h2>
