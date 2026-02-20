@@ -33,9 +33,19 @@ const TourCard = ({ tour, index }: TourCardProps) => {
       <div className="relative h-52">
         <TourImageSlider images={sliderImages} alt={tour.title} className="h-52" />
         <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-        <Badge className="absolute top-3 left-3 z-10 bg-gold/90 text-dark border-none text-xs font-semibold tracking-wide backdrop-blur-sm">
-          {tour.locationBadge}
-        </Badge>
+        {tour.locationBadges && tour.locationBadges.length > 1 ? (
+          <div className="absolute top-3 left-3 z-10 flex flex-col gap-1.5">
+            {tour.locationBadges.map((badge, idx) => (
+              <Badge key={idx} className="bg-gold/90 text-dark border-none text-xs font-semibold tracking-wide backdrop-blur-sm">
+                {badge}
+              </Badge>
+            ))}
+          </div>
+        ) : (
+          <Badge className="absolute top-3 left-3 z-10 bg-gold/90 text-dark border-none text-xs font-semibold tracking-wide backdrop-blur-sm">
+            {tour.locationBadge}
+          </Badge>
+        )}
       </div>
       <div className="p-5 sm:p-6 flex flex-col flex-1">
         <h3 className="text-base sm:text-lg font-heading font-bold mb-2 group-hover:text-gold transition-colors duration-300 line-clamp-1 leading-snug">

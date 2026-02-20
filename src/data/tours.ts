@@ -5,6 +5,7 @@ export interface Tour {
   duration: string;
   location: string;
   locationBadge: string;
+  locationBadges?: string[];
   description: string;
   includes: string[];
   image: string;
@@ -85,9 +86,10 @@ export const tours: Tour[] = [
     title: "Private Speedboat",
     category: "sea",
     duration: "4 hours",
-    location: "Hurghada, Egypt",
+    location: "El Gouna / Hurghada, Egypt",
     locationBadge: "Hurghada Trip",
-    description: "Enjoy an exclusive private speedboat experience along the Hurghada coast. Snorkel at pristine spots with your own captain and crew.",
+    locationBadges: ["Hurghada Trip", "El Gouna Trip"],
+    description: "Enjoy an exclusive private speedboat experience along the coast. Snorkel at pristine spots with your own captain and crew. This tour is available in both Hurghada and El Gouna.",
     includes: ["Snorkeling", "Drinks", "Private captain"],
     imageFolderName: "Private Speedboat Images",
     imagePrefix: "PrivateSpeedboat",
@@ -99,9 +101,10 @@ export const tours: Tour[] = [
     title: "Glass Boat",
     category: "sea",
     duration: "2 hours",
-    location: "Hurghada, Egypt",
+    location: "El Gouna / Hurghada, Egypt",
     locationBadge: "Hurghada Trip",
-    description: "See the magical underwater world without getting wet! The yellow glass-bottom boat reveals stunning coral reefs and colorful fish beneath you.",
+    locationBadges: ["Hurghada Trip", "El Gouna Trip"],
+    description: "See the magical underwater world without getting wet! The yellow glass-bottom boat reveals stunning coral reefs and colorful fish beneath you. This tour is available in both Hurghada and El Gouna.",
     includes: ["Underwater viewing experience"],
     imageFolderName: "Glass Boat Images",
     imagePrefix: "GlassBoat",
@@ -113,9 +116,10 @@ export const tours: Tour[] = [
     title: "Submarine Trip",
     category: "sea",
     duration: "2 hours",
-    location: "Hurghada, Egypt",
+    location: "El Gouna / Hurghada, Egypt",
     locationBadge: "Hurghada Trip",
-    description: "Dive 20 meters below the Red Sea surface in a real submarine. Witness the spectacular underwater world of coral reefs and marine life.",
+    locationBadges: ["Hurghada Trip", "El Gouna Trip"],
+    description: "Dive 20 meters below the Red Sea surface in a real submarine. Witness the spectacular underwater world of coral reefs and marine life. This tour is available in both Hurghada and El Gouna.",
     includes: ["20-meter underwater experience"],
     imageFolderName: "Submarine Trip Images",
     imagePrefix: "Submarine",
@@ -141,9 +145,10 @@ export const tours: Tour[] = [
     title: "Super Safari (Quad + Jeep + Camel)",
     category: "safari",
     duration: "5 hours",
-    location: "Hurghada, Egypt",
+    location: "El Gouna / Hurghada, Egypt",
     locationBadge: "Hurghada Trip",
-    description: "The ultimate desert experience combining quad biking, jeep safari, and camel riding. Includes a traditional Bedouin dinner and show.",
+    locationBadges: ["Hurghada Trip", "El Gouna Trip"],
+    description: "The ultimate desert experience combining quad biking, jeep safari, and camel riding. Includes a traditional Bedouin dinner and show. This tour is available in both Hurghada and El Gouna.",
     includes: ["Dinner", "Show", "Desert activities", "Transfers"],
     imageFolderName: "Super Safari Images",
     imagePrefix: "SuperSafari",

@@ -52,7 +52,17 @@ const TourDetail = () => {
           >
             <ArrowLeft size={15} /> Back to All Tours
           </a>
-          <Badge className="bg-gold/90 text-dark border-none mb-3 text-xs font-semibold tracking-wide">{tour.locationBadge}</Badge>
+          {tour.locationBadges && tour.locationBadges.length > 1 ? (
+            <div className="flex gap-2 mb-3">
+              {tour.locationBadges.map((badge, idx) => (
+                <Badge key={idx} className="bg-gold/90 text-dark border-none text-xs font-semibold tracking-wide">
+                  {badge}
+                </Badge>
+              ))}
+            </div>
+          ) : (
+            <Badge className="bg-gold/90 text-dark border-none mb-3 text-xs font-semibold tracking-wide">{tour.locationBadge}</Badge>
+          )}
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold mb-3 leading-tight">{tour.title}</h1>
           <div className="flex flex-wrap items-center gap-4 text-background/75 text-sm">
             <span className="flex items-center gap-1.5"><Clock size={15} /> {tour.duration}</span>
