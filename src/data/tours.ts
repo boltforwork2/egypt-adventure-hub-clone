@@ -90,7 +90,7 @@ export const tours: Tour[] = [
     imagePrefix: "ScubaDiving",
     image: "/Images/scuba-diving/scubadiving1.jpg",
     galleryImages: getTourImages("scuba-diving", "scubadiving"),
-    price: 15,
+    price: 50,
   },
   {
     id: "private-speedboat",
