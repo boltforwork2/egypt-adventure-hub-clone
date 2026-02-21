@@ -25,38 +25,54 @@ const TourCard = ({ tour, index }: TourCardProps) => {
   const renderPrice = () => {
     if (tour.priceAdults !== undefined) {
       return (
-        <div className="absolute top-3 right-3 z-10 bg-background/95 backdrop-blur-sm rounded-lg px-3 py-2 border border-gold/20 shadow-lg">
-          <div className="text-xs font-semibold text-gold">Adults: €{tour.priceAdults}</div>
-          <div className="text-xs font-semibold text-muted-foreground">Children: Free</div>
+        <div className="absolute top-4 right-4 z-10 flex flex-col gap-2">
+          <div className="bg-white/95 backdrop-blur-md rounded-full px-4 py-2 shadow-md border border-white/40">
+            <div className="text-xs font-medium text-foreground/60 leading-tight">Adults</div>
+            <div className="text-sm font-semibold text-gold">€{tour.priceAdults}</div>
+          </div>
+          <div className="bg-white/95 backdrop-blur-md rounded-full px-4 py-2 shadow-md border border-white/40">
+            <div className="text-xs font-medium text-foreground/60 leading-tight">Children</div>
+            <div className="text-sm font-semibold text-gold">Free</div>
+          </div>
         </div>
       );
     }
 
     if (tour.priceHurghada !== undefined && tour.priceElGouna !== undefined) {
       return (
-        <div className="absolute top-3 right-3 z-10 bg-background/95 backdrop-blur-sm rounded-lg px-3 py-2 border border-gold/20 shadow-lg">
-          <div className="text-xs font-semibold text-gold">Hurghada: €{tour.priceHurghada}</div>
-          <div className="text-xs font-semibold text-gold">El Gouna: €{tour.priceElGouna}</div>
+        <div className="absolute top-4 right-4 z-10 flex flex-col gap-2">
+          <div className="bg-gold/90 text-dark border-none text-xs font-semibold tracking-wide backdrop-blur-sm rounded-full px-3.5 py-2 shadow-sm">
+            Hurghada €{tour.priceHurghada}
+          </div>
+          <div className="bg-gold/90 text-dark border-none text-xs font-semibold tracking-wide backdrop-blur-sm rounded-full px-3.5 py-2 shadow-sm">
+            El Gouna €{tour.priceElGouna}
+          </div>
         </div>
       );
     }
 
     if (tour.transportPrices && Object.keys(tour.transportPrices).length > 0) {
       return (
-        <div className="absolute top-3 right-3 z-10 bg-background/95 backdrop-blur-sm rounded-lg px-3 py-2 border border-gold/20 shadow-lg">
-          {Object.entries(tour.transportPrices).map(([option, price]) => (
-            <div key={option} className="text-xs font-semibold text-gold">
-              {option}: €{price}
-            </div>
-          ))}
+        <div className="absolute top-4 right-4 z-10 bg-white/95 backdrop-blur-md rounded-2xl px-4 py-3 shadow-md border border-white/40 max-w-xs">
+          <div className="space-y-2.5">
+            {Object.entries(tour.transportPrices).map(([option, price]) => (
+              <div key={option} className="flex items-center justify-between gap-4">
+                <span className="text-xs font-medium text-foreground/70">{option}</span>
+                <span className="text-sm font-semibold text-gold">€{price}</span>
+              </div>
+            ))}
+          </div>
         </div>
       );
     }
 
     if (tour.price !== undefined) {
       return (
-        <div className="absolute top-3 right-3 z-10 bg-background/95 backdrop-blur-sm rounded-lg px-3 py-2.5 border border-gold/20 shadow-lg">
-          <div className="text-lg font-bold text-gold">€{tour.price}</div>
+        <div className="absolute top-4 right-4 z-10 bg-white/95 backdrop-blur-md rounded-full px-5 py-2.5 shadow-md border border-white/40">
+          <div className="flex items-baseline gap-1">
+            <span className="text-xs font-medium text-foreground/50">from</span>
+            <span className="text-2xl font-semibold text-gold">€{tour.price}</span>
+          </div>
         </div>
       );
     }
