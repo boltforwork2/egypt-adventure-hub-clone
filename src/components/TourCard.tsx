@@ -21,6 +21,7 @@ const TourCard = ({ tour, index }: TourCardProps) => {
   };
 
   const sliderImages = tour.galleryImages.length > 0 ? tour.galleryImages : [tour.image];
+  const isTransferService = tour.id === "airport-transfer-hurghada";
 
   const renderPriceInContent = () => {
     if (tour.priceAdults !== undefined) {
@@ -86,7 +87,11 @@ const TourCard = ({ tour, index }: TourCardProps) => {
       style={{ transitionDelay: `${index * 80}ms` }}
     >
       <div className="relative h-52">
-        <TourImageSlider images={sliderImages} alt={tour.title} className="h-52" />
+        {isTransferService ? (
+          <img src={tour.image} alt={tour.title} className="w-full h-52 object-cover" loading="eager" />
+        ) : (
+          <TourImageSlider images={sliderImages} alt={tour.title} className="h-52" />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
         {tour.locationBadges && tour.locationBadges.length > 1 ? (
           <div className="absolute top-3 left-3 z-10 flex flex-col gap-1.5">
