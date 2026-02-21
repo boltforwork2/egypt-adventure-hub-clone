@@ -45,7 +45,7 @@ export const tours: Tour[] = [
     imagePrefix: "OrangeBay",
     image: "/Images/orange-bay/orangebay1.jpg",
     galleryImages: getTourImages("orange-bay", "orangebay"),
-    price: 15,
+    price: 30,
   },
   {
     id: "paradise-island",
@@ -60,7 +60,7 @@ export const tours: Tour[] = [
     imagePrefix: "Paradise",
     image: "/Images/paradise-island/paradise1.jpg",
     galleryImages: getTourImages("paradise-island", "paradise"),
-    price: 15,
+    price: 30,
   },
   {
     id: "dolphin-house",
@@ -75,7 +75,7 @@ export const tours: Tour[] = [
     imagePrefix: "DolphinHouse",
     image: "/Images/dolphin-house/dolphinhouse1.jpg",
     galleryImages: getTourImages("dolphin-house", "dolphinhouse"),
-    price: 15,
+    price: 35,
   },
   {
     id: "scuba-diving-intro",
@@ -106,8 +106,8 @@ export const tours: Tour[] = [
     imagePrefix: "PrivateSpeedboat",
     image: "/Images/private-speedboat/privatespeedboat1.jpg",
     galleryImages: getTourImages("private-speedboat", "privatespeedboat"),
-    priceHurghada: 15,
-    priceElGouna: 15,
+    priceHurghada: 120,
+    priceElGouna: 120,
   },
   {
     id: "glass-boat",
@@ -123,8 +123,8 @@ export const tours: Tour[] = [
     imagePrefix: "GlassBoat",
     image: "/Images/glass-boat/glassboat1.jpg",
     galleryImages: getTourImages("glass-boat", "glassboat"),
-    priceHurghada: 15,
-    priceElGouna: 15,
+    priceHurghada: 7,
+    priceElGouna: 7,
   },
   {
     id: "submarine-trip",
@@ -171,7 +171,7 @@ export const tours: Tour[] = [
     imagePrefix: "QuadBike",
     image: "/Images/quad-bike/quanbike1.jpg",
     galleryImages: getTourImages("quad-bike", "quanbike"),
-    price: 15,
+    price: 20,
   },
   {
     id: "super-safari",
@@ -187,8 +187,8 @@ export const tours: Tour[] = [
     imagePrefix: "SuperSafari",
     image: "/Images/super-safari/supersafari1.jpg",
     galleryImages: getTourImages("super-safari", "supersafari"),
-    priceHurghada: 15,
-    priceElGouna: 15,
+    priceHurghada: 30,
+    priceElGouna: 30,
   },
   {
     id: "city-tour-hurghada",
@@ -203,7 +203,7 @@ export const tours: Tour[] = [
     imagePrefix: "CityTour",
     image: "/Images/city-tour/citytour1.jpg",
     galleryImages: getTourImages("city-tour", "citytour"),
-    price: 15,
+    price: 6,
   },
   {
     id: "grand-aquarium-hurghada",
@@ -246,7 +246,7 @@ export const tours: Tour[] = [
     includes: ["Professional guide", "Lunch", "Transfers"],
     transportOptions: ["By Bus", "Private"],
     transportPrices: {
-      "By Bus": 15,
+      "By Bus": 65,
       "Private": 15,
     },
     imageFolderName: "Luxor Trip Images",
@@ -265,8 +265,8 @@ export const tours: Tour[] = [
     includes: ["Professional guide", "Sightseeing program", "Transfers"],
     transportOptions: ["By Bus", "By Plane", "Private"],
     transportPrices: {
-      "By Bus": 15,
-      "By Plane": 15,
+      "By Bus": 70,
+      "By Plane": 195,
       "Private": 15,
     },
     imageFolderName: "Cairo Trip Images",
