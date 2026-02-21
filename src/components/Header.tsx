@@ -29,6 +29,9 @@ const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  // Determine if we're on a non-home page
+  const isNonHomePage = location.pathname !== "/";
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", onScroll);
@@ -56,7 +59,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${
-        scrolled
+        scrolled || isNonHomePage
           ? "bg-background/97 backdrop-blur-lg border-b border-border/60 py-3"
           : "bg-transparent py-5"
       }`}
@@ -64,8 +67,8 @@ const Header = () => {
       <div className="container-tourism flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <span className="text-xl md:text-2xl font-heading font-bold tracking-tight">
-            <span className={scrolled ? "gold-text" : "text-gold"}>Fayed</span>{" "}
-            <span className={scrolled ? "text-foreground" : "text-background"}>
+            <span className={scrolled || isNonHomePage ? "gold-text" : "text-gold"}>Fayed</span>{" "}
+            <span className={scrolled || isNonHomePage ? "text-foreground" : "text-background"}>
               International Travel
             </span>
           </span>
@@ -84,24 +87,26 @@ const Header = () => {
                 >
                   <button
                     className={`text-sm font-medium transition-colors duration-200 hover:text-gold relative flex items-center gap-1 ${
-                      scrolled ? "text-foreground/80" : "text-background/90"
+                      scrolled || isNonHomePage ? "text-foreground/80" : "text-background/90"
                     }`}
                   >
                     {link.label}
                     <ChevronDown size={14} className={`transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`} />
                   </button>
                   {dropdownOpen && (
-                    <div className="absolute top-full left-0 mt-2 w-48 bg-background border border-border/50 rounded-xl shadow-lg py-2 animate-fade-in">
-                      {link.items?.map((item) => (
-                        <a
-                          key={item.href}
-                          href={item.href}
-                          onClick={() => handleNavClick(item.href)}
-                          className="block px-4 py-2.5 text-sm font-medium text-foreground/80 hover:bg-muted hover:text-gold transition-all duration-200"
-                        >
-                          {item.label}
-                        </a>
-                      ))}
+                    <div className="absolute top-full left-0 pt-2 w-48">
+                      <div className="bg-background border border-border/50 rounded-xl shadow-lg py-2 animate-fade-in">
+                        {link.items?.map((item) => (
+                          <a
+                            key={item.href}
+                            href={item.href}
+                            onClick={() => handleNavClick(item.href)}
+                            className="block px-4 py-2.5 text-sm font-medium text-foreground/80 hover:bg-muted hover:text-gold transition-all duration-200"
+                          >
+                            {item.label}
+                          </a>
+                        ))}
+                      </div>
                     </div>
                   )}
                 </div>
@@ -113,7 +118,7 @@ const Header = () => {
                 href={link.href}
                 onClick={() => handleNavClick(link.href)}
                 className={`text-sm font-medium transition-colors duration-200 hover:text-gold relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-gold after:transition-all after:duration-200 hover:after:w-full ${
-                  scrolled ? "text-foreground/80" : "text-background/90"
+                  scrolled || isNonHomePage ? "text-foreground/80" : "text-background/90"
                 }`}
               >
                 {link.label}
@@ -132,9 +137,9 @@ const Header = () => {
           aria-label="Toggle menu"
         >
           {menuOpen ? (
-            <X className={scrolled ? "text-foreground" : "text-background"} size={22} />
+            <X className={scrolled || isNonHomePage ? "text-foreground" : "text-background"} size={22} />
           ) : (
-            <Menu className={scrolled ? "text-foreground" : "text-background"} size={22} />
+            <Menu className={scrolled || isNonHomePage ? "text-foreground" : "text-background"} size={22} />
           )}
         </button>
       </div>
