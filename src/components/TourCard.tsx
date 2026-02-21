@@ -22,17 +22,17 @@ const TourCard = ({ tour, index }: TourCardProps) => {
 
   const sliderImages = tour.galleryImages.length > 0 ? tour.galleryImages : [tour.image];
 
-  const renderPrice = () => {
+  const renderPriceInContent = () => {
     if (tour.priceAdults !== undefined) {
       return (
-        <div className="absolute top-4 right-4 z-10 flex flex-col gap-2">
-          <div className="bg-white/95 backdrop-blur-md rounded-full px-4 py-2 shadow-md border border-white/40">
-            <div className="text-xs font-medium text-foreground/60 leading-tight">Adults</div>
-            <div className="text-sm font-semibold text-gold">€{tour.priceAdults}</div>
+        <div className="text-sm space-y-1 mb-3">
+          <div className="flex items-center justify-between">
+            <span className="text-muted-foreground">Adults:</span>
+            <span className="font-bold text-gold">€{tour.priceAdults}</span>
           </div>
-          <div className="bg-white/95 backdrop-blur-md rounded-full px-4 py-2 shadow-md border border-white/40">
-            <div className="text-xs font-medium text-foreground/60 leading-tight">Children</div>
-            <div className="text-sm font-semibold text-gold">Free</div>
+          <div className="flex items-center justify-between">
+            <span className="text-muted-foreground">Children:</span>
+            <span className="font-bold text-gold">Free</span>
           </div>
         </div>
       );
@@ -40,12 +40,14 @@ const TourCard = ({ tour, index }: TourCardProps) => {
 
     if (tour.priceHurghada !== undefined && tour.priceElGouna !== undefined) {
       return (
-        <div className="absolute top-4 right-4 z-10 flex flex-col gap-2">
-          <div className="bg-gold/90 text-dark border-none text-xs font-semibold tracking-wide backdrop-blur-sm rounded-full px-3.5 py-2 shadow-sm">
-            Hurghada €{tour.priceHurghada}
+        <div className="text-sm space-y-1 mb-3">
+          <div className="flex items-center justify-between">
+            <span className="text-muted-foreground">Hurghada:</span>
+            <span className="font-bold text-gold">€{tour.priceHurghada}</span>
           </div>
-          <div className="bg-gold/90 text-dark border-none text-xs font-semibold tracking-wide backdrop-blur-sm rounded-full px-3.5 py-2 shadow-sm">
-            El Gouna €{tour.priceElGouna}
+          <div className="flex items-center justify-between">
+            <span className="text-muted-foreground">El Gouna:</span>
+            <span className="font-bold text-gold">€{tour.priceElGouna}</span>
           </div>
         </div>
       );
@@ -53,26 +55,21 @@ const TourCard = ({ tour, index }: TourCardProps) => {
 
     if (tour.transportPrices && Object.keys(tour.transportPrices).length > 0) {
       return (
-        <div className="absolute top-4 right-4 z-10 bg-white/95 backdrop-blur-md rounded-2xl px-4 py-3 shadow-md border border-white/40 max-w-xs">
-          <div className="space-y-2.5">
-            {Object.entries(tour.transportPrices).map(([option, price]) => (
-              <div key={option} className="flex items-center justify-between gap-4">
-                <span className="text-xs font-medium text-foreground/70">{option}</span>
-                <span className="text-sm font-semibold text-gold">€{price}</span>
-              </div>
-            ))}
-          </div>
+        <div className="text-sm space-y-1 mb-3">
+          {Object.entries(tour.transportPrices).map(([option, price]) => (
+            <div key={option} className="flex items-center justify-between">
+              <span className="text-muted-foreground">{option}:</span>
+              <span className="font-bold text-gold">€{price}</span>
+            </div>
+          ))}
         </div>
       );
     }
 
     if (tour.price !== undefined) {
       return (
-        <div className="absolute top-4 right-4 z-10 bg-white/95 backdrop-blur-md rounded-full px-5 py-2.5 shadow-md border border-white/40">
-          <div className="flex items-baseline gap-1">
-            <span className="text-xs font-medium text-foreground/50">from</span>
-            <span className="text-2xl font-semibold text-gold">€{tour.price}</span>
-          </div>
+        <div className="mb-3 flex items-baseline justify-end">
+          <span className="text-lg font-bold text-gold">€{tour.price}</span>
         </div>
       );
     }
@@ -104,7 +101,6 @@ const TourCard = ({ tour, index }: TourCardProps) => {
             {tour.locationBadge}
           </Badge>
         )}
-        {renderPrice()}
       </div>
       <div className="p-5 sm:p-6 flex flex-col flex-1">
         <h3 className="text-base sm:text-lg font-heading font-bold mb-2 group-hover:text-gold transition-colors duration-300 line-clamp-1 leading-snug">
@@ -114,6 +110,7 @@ const TourCard = ({ tour, index }: TourCardProps) => {
           <span className="flex items-center gap-1.5 whitespace-nowrap"><Clock size={13} /> {tour.duration}</span>
           <span className="flex items-center gap-1.5"><MapPin size={13} /> {tour.location}</span>
         </div>
+        {renderPriceInContent()}
         <p className="text-muted-foreground text-sm mb-5 leading-relaxed line-clamp-2 flex-1">{tour.description}</p>
         <a
           href={`/tour/${tour.id}`}
