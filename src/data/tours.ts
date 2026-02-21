@@ -107,7 +107,7 @@ export const tours: Tour[] = [
     image: "/Images/private-speedboat/privatespeedboat1.jpg",
     galleryImages: getTourImages("private-speedboat", "privatespeedboat"),
     priceHurghada: 120,
-    priceElGouna: 120,
+    priceElGouna: 130,
   },
   {
     id: "glass-boat",
@@ -124,7 +124,7 @@ export const tours: Tour[] = [
     image: "/Images/glass-boat/glassboat1.jpg",
     galleryImages: getTourImages("glass-boat", "glassboat"),
     priceHurghada: 7,
-    priceElGouna: 7,
+    priceElGouna: 17,
   },
   {
     id: "catamaran-trip",
@@ -139,7 +139,7 @@ export const tours: Tour[] = [
     imagePrefix: "Catamaran",
     image: "/Images/catamaran/catamaran1.jpg",
     galleryImages: getTourImages("catamaran", "catamaran"),
-    price: 15,
+    price: 40,
   },
   {
     id: "quad-bike-safari",
@@ -171,7 +171,7 @@ export const tours: Tour[] = [
     image: "/Images/super-safari/supersafari1.jpg",
     galleryImages: getTourImages("super-safari", "supersafari"),
     priceHurghada: 30,
-    priceElGouna: 30,
+    priceElGouna: 40,
   },
   {
     id: "city-tour-hurghada",
@@ -201,7 +201,7 @@ export const tours: Tour[] = [
     imagePrefix: "Aquarium",
     image: "/Images/aquarium/aquarium1.jpg",
     galleryImages: getTourImages("aquarium", "aquarium"),
-    price: 15,
+    price: 20,
   },
   {
     id: "horse-riding-hurghada",
@@ -216,7 +216,7 @@ export const tours: Tour[] = [
     imagePrefix: "HorseRiding",
     image: "/Images/horse-riding/horseriding1.jpg",
     galleryImages: getTourImages("horse-riding", "horseriding"),
-    price: 15,
+    price: 25,
   },
   {
     id: "luxor-trip",
@@ -230,7 +230,7 @@ export const tours: Tour[] = [
     transportOptions: ["By Bus", "Private"],
     transportPrices: {
       "By Bus": 65,
-      "Private": 15,
+      "Private": 150,
     },
     imageFolderName: "Luxor Trip Images",
     imagePrefix: "Luxor",
@@ -250,7 +250,7 @@ export const tours: Tour[] = [
     transportPrices: {
       "By Bus": 70,
       "By Plane": 195,
-      "Private": 15,
+      "Private": 160,
     },
     imageFolderName: "Cairo Trip Images",
     imagePrefix: "Cairo",
