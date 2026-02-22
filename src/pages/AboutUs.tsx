@@ -30,7 +30,7 @@ const AboutUs = () => {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-muted/30 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sand/40 to-background" />
         <div className="container-tourism max-w-5xl relative z-10">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold mb-6 text-center leading-tight">
             Welcome to <span className="gold-text">Fayed International Travel Agency</span>
@@ -42,9 +42,9 @@ const AboutUs = () => {
       </section>
 
       {/* Company Introduction */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-sand/20">
         <div className="container-tourism max-w-4xl">
-          <div className="bg-card border border-border/50 rounded-2xl p-8 md:p-12 shadow-sm">
+          <div className="bg-white/60 backdrop-blur-sm border border-gold/10 rounded-2xl p-8 md:p-12 shadow-sm">
             <p className="text-lg md:text-xl text-foreground leading-relaxed text-center">
               Fayed International Travel Agency is an Egyptian travel company specialized in organizing tours and travel services across Egypt.
               We offer unforgettable experiences in the <span className="font-semibold text-gold">Red Sea</span>, <span className="font-semibold text-gold">Cairo</span>, <span className="font-semibold text-gold">Luxor</span>, <span className="font-semibold text-gold">Aswan</span>, and <span className="font-semibold text-gold">desert safari</span> destinations.
@@ -54,10 +54,11 @@ const AboutUs = () => {
       </section>
 
       {/* Our Services */}
-      <section className="py-16 md:py-24 bg-muted/20">
+      <section className="py-16 md:py-24 bg-background">
         <div className="container-tourism max-w-6xl">
           <div className="text-center mb-14">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Our Services</h2>
+            <div className="w-20 h-1 bg-gold mx-auto rounded-full mb-4" />
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Comprehensive travel solutions designed to exceed your expectations
             </p>
@@ -66,9 +67,9 @@ const AboutUs = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-card border border-border/50 rounded-xl p-6 transition-all duration-300 hover:shadow-md hover:border-gold/30"
+                className="bg-gradient-to-br from-gold/5 to-sand/10 border border-gold/15 rounded-xl p-6 transition-all duration-300 hover:shadow-md hover:border-gold/30"
               >
-                <div className="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-lg bg-gold/15 flex items-center justify-center mb-4">
                   <service.icon className="w-6 h-6 text-gold" />
                 </div>
                 <h3 className="text-lg font-heading font-bold mb-2">{service.title}</h3>
@@ -80,9 +81,9 @@ const AboutUs = () => {
       </section>
 
       {/* International & B2B Cooperation */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-sand/20">
         <div className="container-tourism max-w-5xl">
-          <div className="bg-gradient-to-br from-gold/5 to-cyan/5 border border-gold/20 rounded-2xl p-8 md:p-12">
+          <div className="bg-white/60 backdrop-blur-sm border border-gold/10 rounded-2xl p-8 md:p-12">
             <div className="text-center mb-10">
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
                 International <span className="gold-text">Partnership</span>
@@ -120,7 +121,7 @@ const AboutUs = () => {
       </section>
 
       {/* Mission & Values */}
-      <section className="py-16 md:py-24 bg-muted/20">
+      <section className="py-16 md:py-24 bg-background">
         <div className="container-tourism max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Our Mission</h2>
@@ -130,10 +131,10 @@ const AboutUs = () => {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="bg-card border border-border/50 rounded-xl p-6 md:p-8 transition-all duration-300 hover:border-gold/30 hover:shadow-sm"
+                className="bg-gradient-to-br from-gold/8 to-sand/10 border border-gold/15 rounded-xl p-6 md:p-8 transition-all duration-300 hover:shadow-md"
               >
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-gold/15 flex items-center justify-center flex-shrink-0">
                     <div className="w-3 h-3 rounded-full bg-gold" />
                   </div>
                   <p className="text-lg md:text-xl text-foreground leading-relaxed">{value}</p>
@@ -145,10 +146,10 @@ const AboutUs = () => {
       </section>
 
       {/* Closing Statement */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-sand/20">
         <div className="container-tourism max-w-4xl">
           <div className="relative overflow-hidden rounded-2xl">
-            <div className="absolute inset-0 bg-gradient-to-br from-gold/10 via-cyan/5 to-gold/10" />
+            <div className="absolute inset-0 bg-gradient-to-br from-gold/8 to-sand/15" />
             <div className="relative z-10 p-10 md:p-16 text-center">
               <p className="text-xl md:text-2xl font-heading text-foreground leading-relaxed mb-6">
                 At Fayed International Travel Agency, we believe that travel is more than just a trip — it is an experience.
