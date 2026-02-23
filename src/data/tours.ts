@@ -331,7 +331,7 @@ export const tours: Tour[] = [
           "Cabin / room access",
           "Meals"
         ],
-        price: 0
+        price: 70
       },
       {
         name: "Multi-Day Nile Cruise",
