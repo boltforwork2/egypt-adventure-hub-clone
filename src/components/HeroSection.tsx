@@ -37,7 +37,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-5 left-0 right-0 flex justify-center animate-bounce">
+      <div className="absolute bottom-4 left-0 right-0 flex justify-center animate-bounce">
         <div className="w-6 h-10 rounded-full border-2 border-background/50 flex items-start justify-center p-2">
           <div className="w-1 h-2 rounded-full bg-background/70" />
         </div>
