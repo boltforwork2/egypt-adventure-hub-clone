@@ -24,6 +24,26 @@ const TourCard = ({ tour, index }: TourCardProps) => {
   const isTransferService = tour.id === "airport-transfer-hurghada";
 
   const renderPriceInContent = () => {
+    if (tour.cruiseOptions && tour.cruiseOptions.length > 0) {
+      const firstThreeOptions = tour.cruiseOptions.slice(0, 3);
+      return (
+        <div className="text-sm space-y-1.5 mb-3">
+          <p className="text-xs text-muted-foreground font-medium mb-2">Starting from:</p>
+          {firstThreeOptions.map((option) => (
+            <div key={option.name} className="flex items-center justify-between">
+              <span className="text-muted-foreground text-xs">{option.name}:</span>
+              <span className="font-bold text-gold">
+                {option.price > 0 ? `€${option.price}` : 'Contact'}
+              </span>
+            </div>
+          ))}
+          {tour.cruiseOptions.length > 3 && (
+            <p className="text-xs text-gold font-medium pt-1">+ More options available</p>
+          )}
+        </div>
+      );
+    }
+
     if (tour.priceAdults !== undefined) {
       return (
         <div className="text-sm space-y-1 mb-3">
@@ -111,9 +131,15 @@ const TourCard = ({ tour, index }: TourCardProps) => {
         <h3 className="text-base sm:text-lg font-heading font-bold mb-2 group-hover:text-gold transition-colors duration-300 line-clamp-1 leading-snug">
           {tour.title}
         </h3>
-        <div className="flex items-center gap-4 text-muted-foreground text-xs mb-3">
-          <span className="flex items-center gap-1.5 whitespace-nowrap"><Clock size={13} /> {tour.duration}</span>
-          <span className="flex items-center gap-1.5"><MapPin size={13} /> {tour.location}</span>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-muted-foreground text-xs mb-3">
+          <span className="flex items-center gap-1.5 whitespace-nowrap">
+            <Clock size={13} className="flex-shrink-0" />
+            <span className="truncate">{tour.duration}</span>
+          </span>
+          <span className="flex items-center gap-1.5">
+            <MapPin size={13} className="flex-shrink-0" />
+            <span className={tour.id === "nile-cruise" ? "text-xs leading-tight" : ""}>{tour.location}</span>
+          </span>
         </div>
         {renderPriceInContent()}
         <p className="text-muted-foreground text-sm mb-5 leading-relaxed line-clamp-2 flex-1">{tour.description}</p>

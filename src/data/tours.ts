@@ -19,6 +19,12 @@ export interface Tour {
   transportPrices?: { [key: string]: number };
   priceAdults?: number;
   priceChildren?: number;
+  cruiseOptions?: Array<{
+    name: string;
+    duration: string;
+    includes: string[];
+    price: number;
+  }>;
 }
 
 const getTourImages = (folderName: string, imagePrefix: string): string[] => {
@@ -275,26 +281,69 @@ export const tours: Tour[] = [
   },
   {
     id: "nile-cruise",
-    title: "Nile Cruise (Luxor ⇄ Aswan)",
+    title: "Nile Cruise",
     category: "cultural",
-    duration: "3 Nights / 4 Days or 4 Nights / 5 Days",
+    duration: "Multiple Options",
     location: "Luxor ⇄ Aswan, Egypt",
     locationBadge: "Nile Cruise",
-    description: "Experience a luxury Nile River cruise combining hotel-style accommodation with ancient historical sightseeing and relaxation. Sail between Luxor and Aswan while exploring Egypt's most magnificent temples and monuments.",
+    description: "Experience unforgettable Nile River cruise adventures with multiple options to suit your schedule. Choose from dinner cruises, lunch cruises, pharaonic shows, or multi-day journeys along Egypt's legendary river.",
     includes: [
-      "Air-conditioned cabin with private bathroom",
-      "Full Board (Breakfast, Lunch, Dinner)",
-      "Professional tour guide",
-      "All temple visits and entrance fees",
-      "Swimming pool & sun deck access",
-      "Folklore entertainment",
-      "Wi-Fi (subject to availability)",
+      "Various cruise options available",
+      "Professional service",
+      "Entertainment included (selected options)",
+      "Meals included (selected options)",
     ],
     imageFolderName: "Nile Cruise Images",
     imagePrefix: "NileCruise",
     image: "/Images/nile-cruise/nilecruise1.jpg",
     galleryImages: getTourImages("nile-cruise", "nilecruise"),
-    price:20
+    cruiseOptions: [
+      {
+        name: "Dinner Cruise",
+        duration: "3 Hours",
+        includes: [
+          "Buffet dinner",
+          "Live music / entertainment show"
+        ],
+        price: 16
+      },
+      {
+        name: "Lunch Cruise",
+        duration: "2–3 Hours",
+        includes: [
+          "Buffet lunch"
+        ],
+        price: 13
+      },
+      {
+        name: "Pharaonic Dinner Cruise",
+        duration: "3 Hours",
+        includes: [
+          "Dinner",
+          "Traditional artistic shows"
+        ],
+        price: 50
+      },
+      {
+        name: "Day Use",
+        duration: "Until Evening",
+        includes: [
+          "Cabin / room access",
+          "Meals"
+        ],
+        price: 0
+      },
+      {
+        name: "Multi-Day Nile Cruise",
+        duration: "3–4 Nights",
+        includes: [
+          "Accommodation",
+          "Full board meals",
+          "Sightseeing tours"
+        ],
+        price: 85
+      }
+    ]
   },
 ];
 

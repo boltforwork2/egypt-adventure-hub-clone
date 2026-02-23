@@ -64,9 +64,15 @@ const TourDetail = () => {
             <Badge className="bg-gold/90 text-dark border-none mb-3 text-xs font-semibold tracking-wide">{tour.locationBadge}</Badge>
           )}
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold mb-3 leading-tight">{tour.title}</h1>
-          <div className="flex flex-wrap items-center gap-4 text-background/75 text-sm">
-            <span className="flex items-center gap-1.5 whitespace-nowrap"><Clock size={15} /> {tour.duration}</span>
-            <span className="flex items-center gap-1.5"><MapPin size={15} /> {tour.location}</span>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-background/75 text-sm">
+            <span className="flex items-center gap-1.5 whitespace-nowrap">
+              <Clock size={15} className="flex-shrink-0" />
+              <span>{tour.duration}</span>
+            </span>
+            <span className="flex items-center gap-1.5">
+              <MapPin size={15} className="flex-shrink-0" />
+              <span className={tour.id === "nile-cruise" ? "text-sm leading-tight" : ""}>{tour.location}</span>
+            </span>
           </div>
         </div>
       </section>
@@ -81,7 +87,46 @@ const TourDetail = () => {
                 <p className="text-muted-foreground leading-relaxed">{tour.description}</p>
               </div>
 
-              {(tour.price !== undefined || tour.priceHurghada !== undefined || tour.priceAdults !== undefined || tour.transportPrices) && (
+              {tour.cruiseOptions && tour.cruiseOptions.length > 0 && (
+                <div>
+                  <h2 className="text-xl font-heading font-bold mb-4 tracking-tight">Available Cruise Options</h2>
+                  <div className="space-y-4">
+                    {tour.cruiseOptions.map((option, index) => (
+                      <div key={index} className="bg-muted/30 rounded-xl p-5 border border-border/50">
+                        <div className="flex items-start justify-between mb-3">
+                          <div className="flex-1">
+                            <h3 className="font-heading font-bold text-foreground mb-1 flex items-center gap-2">
+                              {option.name === "Dinner Cruise" && "🍽️"}
+                              {option.name === "Lunch Cruise" && "🍽️"}
+                              {option.name === "Pharaonic Dinner Cruise" && "🎭"}
+                              {option.name === "Day Use" && "🏨"}
+                              {option.name === "Multi-Day Nile Cruise" && "🚢"}
+                              <span>{option.name}</span>
+                            </h3>
+                            <p className="text-sm text-muted-foreground">
+                              <Clock size={14} className="inline mr-1" />
+                              {option.duration}
+                            </p>
+                          </div>
+                          <span className="text-xl font-bold text-gold ml-4">
+                            {option.price > 0 ? `€${option.price}` : 'Contact'}
+                          </span>
+                        </div>
+                        <ul className="space-y-1.5 mt-3">
+                          {option.includes.map((item, idx) => (
+                            <li key={idx} className="flex items-center gap-2 text-sm text-foreground">
+                              <CheckCircle size={14} className="text-gold flex-shrink-0" />
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {!tour.cruiseOptions && (tour.price !== undefined || tour.priceHurghada !== undefined || tour.priceAdults !== undefined || tour.transportPrices) && (
                 <div>
                   <h2 className="text-xl font-heading font-bold mb-4 tracking-tight">Pricing</h2>
                   <div className="bg-muted/30 rounded-xl p-5 border border-border/50">
@@ -126,112 +171,6 @@ const TourDetail = () => {
                 </div>
               )}
 
-              {tour.id === "nile-cruise" && (
-                <div>
-                  <h2 className="text-xl font-heading font-bold mb-4 tracking-tight">Sample Itinerary</h2>
-                  <div className="space-y-5">
-                    <div className="bg-muted/30 rounded-xl p-5 border border-border/50">
-                      <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                        <span className="w-6 h-6 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs font-bold">1</span>
-                        Day 1 – Luxor
-                      </h3>
-                      <ul className="ml-8 space-y-1.5 text-sm text-muted-foreground">
-                        <li>• Arrival and check-in on board</li>
-                        <li>• Visit Karnak Temple</li>
-                        <li>• Visit Luxor Temple</li>
-                        <li>• Lunch and dinner on board</li>
-                      </ul>
-                    </div>
-                    <div className="bg-muted/30 rounded-xl p-5 border border-border/50">
-                      <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                        <span className="w-6 h-6 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs font-bold">2</span>
-                        Day 2 – West Bank
-                      </h3>
-                      <ul className="ml-8 space-y-1.5 text-sm text-muted-foreground">
-                        <li>• Valley of the Kings</li>
-                        <li>• Temple of Hatshepsut</li>
-                        <li>• Sailing towards Edfu</li>
-                      </ul>
-                    </div>
-                    <div className="bg-muted/30 rounded-xl p-5 border border-border/50">
-                      <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                        <span className="w-6 h-6 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs font-bold">3</span>
-                        Day 3 – Edfu & Kom Ombo
-                      </h3>
-                      <ul className="ml-8 space-y-1.5 text-sm text-muted-foreground">
-                        <li>• Visit Edfu Temple</li>
-                        <li>• Visit Kom Ombo Temple</li>
-                        <li>• Sailing to Aswan</li>
-                      </ul>
-                    </div>
-                    <div className="bg-muted/30 rounded-xl p-5 border border-border/50">
-                      <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                        <span className="w-6 h-6 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs font-bold">4</span>
-                        Day 4 – Aswan
-                      </h3>
-                      <ul className="ml-8 space-y-1.5 text-sm text-muted-foreground">
-                        <li>• High Dam</li>
-                        <li>• Philae Temple</li>
-                        <li>• Optional Nubian village tour</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {tour.id === "nile-cruise" && (
-                <div>
-                  <h2 className="text-xl font-heading font-bold mb-4 tracking-tight">Accommodation & Facilities</h2>
-                  <div className="bg-muted/30 rounded-xl p-5 border border-border/50">
-                    <ul className="space-y-2.5">
-                      <li className="flex items-center gap-3">
-                        <CheckCircle size={16} className="text-gold flex-shrink-0" />
-                        <span className="text-foreground text-sm">Air-conditioned cabin with private bathroom</span>
-                      </li>
-                      <li className="flex items-center gap-3">
-                        <CheckCircle size={16} className="text-gold flex-shrink-0" />
-                        <span className="text-foreground text-sm">Main restaurant</span>
-                      </li>
-                      <li className="flex items-center gap-3">
-                        <CheckCircle size={16} className="text-gold flex-shrink-0" />
-                        <span className="text-foreground text-sm">Swimming pool & sun deck</span>
-                      </li>
-                      <li className="flex items-center gap-3">
-                        <CheckCircle size={16} className="text-gold flex-shrink-0" />
-                        <span className="text-foreground text-sm">Folklore / traditional entertainment</span>
-                      </li>
-                      <li className="flex items-center gap-3">
-                        <CheckCircle size={16} className="text-gold flex-shrink-0" />
-                        <span className="text-foreground text-sm">Wi-Fi (subject to availability)</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              )}
-
-              {tour.id === "nile-cruise" && (
-                <div>
-                  <h2 className="text-xl font-heading font-bold mb-4 tracking-tight">Meals</h2>
-                  <div className="bg-muted/30 rounded-xl p-5 border border-border/50">
-                    <p className="text-foreground text-sm mb-3 font-medium">Full Board included:</p>
-                    <ul className="space-y-2.5">
-                      <li className="flex items-center gap-3">
-                        <CheckCircle size={16} className="text-gold flex-shrink-0" />
-                        <span className="text-foreground text-sm">Breakfast</span>
-                      </li>
-                      <li className="flex items-center gap-3">
-                        <CheckCircle size={16} className="text-gold flex-shrink-0" />
-                        <span className="text-foreground text-sm">Lunch</span>
-                      </li>
-                      <li className="flex items-center gap-3">
-                        <CheckCircle size={16} className="text-gold flex-shrink-0" />
-                        <span className="text-foreground text-sm">Dinner</span>
-                      </li>
-                    </ul>
-                    <p className="text-muted-foreground text-xs mt-3">Served as buffet or set menu</p>
-                  </div>
-                </div>
-              )}
 
               <div>
                 <h2 className="text-xl font-heading font-bold mb-4 tracking-tight">What's Included</h2>
