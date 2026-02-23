@@ -66,11 +66,14 @@ const Header = () => {
     >
       <div className="container-tourism flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 sm:gap-3">
-          <img
-            src="/image.png"
-            alt="Fayed International Travel Logo"
-            className="h-10 sm:h-12 md:h-14 w-auto object-contain"
-          />
+          <div className="h-14 sm:h-16 md:h-20 w-14 sm:w-16 md:w-20 flex items-center justify-center overflow-hidden">
+            <img
+              src="/image.png"
+              alt="Fayed International Travel Logo"
+              className="w-full h-full object-cover scale-150"
+              style={{ objectPosition: 'center' }}
+            />
+          </div>
           <span className="text-xl md:text-2xl font-heading font-bold tracking-tight">
             <span className={scrolled || isNonHomePage ? "gold-text" : "text-gold"}>Fayed</span>{" "}
             <span className={scrolled || isNonHomePage ? "text-foreground" : "text-background"}>

@@ -8,11 +8,14 @@ const HeroSection = () => {
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <div className="flex justify-center mb-8 animate-fade-up">
-          <img
-            src="/image.png"
-            alt="Fayed International Travel Logo"
-            className="h-32 sm:h-40 md:h-48 lg:h-56 w-auto object-contain"
-          />
+          <div className="h-48 sm:h-56 md:h-72 lg:h-80 w-48 sm:w-56 md:w-72 lg:w-80 flex items-center justify-center overflow-hidden">
+            <img
+              src="/image.png"
+              alt="Fayed International Travel Logo"
+              className="w-full h-full object-cover scale-150"
+              style={{ objectPosition: 'center' }}
+            />
+          </div>
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-background mb-6 animate-fade-up">
           Discover Egypt with{" "}
