@@ -17,7 +17,7 @@ const HeroSection = () => {
             />
           </div>
         </div>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-background mb-5 animate-fade-up" style={{ marginTop: '-2.5rem' }}>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-background mb-4 animate-fade-up" style={{ marginTop: '-2.5rem' }}>
           Discover Egypt with{" "}
           <span className="text-gold">Fayed International Travel</span>
         </h1>
