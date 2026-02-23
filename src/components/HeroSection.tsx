@@ -25,13 +25,13 @@ const HeroSection = () => {
           Explore the crystal-clear Red Sea, ride through the Sahara Desert, and uncover the ancient wonders of Luxor — all with expert guides by your side.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay">
-          <a href="#excursions" className="btn-gold text-base px-10 py-4">
+          <a href="#excursions" className="btn-gold text-base px-10 py-3">
             Explore Trips
           </a>
-          <a href="#contact" className="btn-outline-light text-base px-10 py-4">
+          <a href="#contact" className="btn-outline-light text-base px-10 py-3">
             Contact Us
           </a>
-          <a href="/b2b" className="btn-outline-light text-base px-10 py-4">
+          <a href="/b2b" className="btn-outline-light text-base px-10 py-3">
             B2B System
           </a>
         </div>
