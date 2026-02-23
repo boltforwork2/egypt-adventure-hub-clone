@@ -96,11 +96,11 @@ const TourDetail = () => {
                         <div className="flex items-start justify-between mb-3">
                           <div className="flex-1">
                             <h3 className="font-heading font-bold text-foreground mb-1 flex items-center gap-2">
-                              {option.name === "Dinner Cruise" && "🍽️"}
-                              {option.name === "Lunch Cruise" && "🍽️"}
-                              {option.name === "Pharaonic Dinner Cruise" && "🎭"}
-                              {option.name === "Day Use" && "🏨"}
-                              {option.name === "Multi-Day Nile Cruise" && "🚢"}
+                              {option.name === "Dinner Cruise" }
+                              {option.name === "Lunch Cruise" }
+                              {option.name === "Pharaonic Dinner Cruise" }
+                              {option.name === "Day Use" }
+                              {option.name === "Multi-Day Nile Cruise" }
                               <span>{option.name}</span>
                             </h3>
                             <p className="text-sm text-muted-foreground">
