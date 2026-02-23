@@ -21,6 +21,9 @@ const HeroSection = () => {
           <a href="#contact" className="btn-outline-light text-base px-10 py-4">
             Contact Us
           </a>
+          <a href="/b2b" className="btn-outline-light text-base px-10 py-4">
+            B2B System
+          </a>
         </div>
       </div>
 

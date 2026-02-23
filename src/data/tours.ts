@@ -273,6 +273,28 @@ export const tours: Tour[] = [
     priceAdults: 15,
     priceChildren: 0,
   },
+  {
+    id: "nile-cruise",
+    title: "Nile Cruise (Luxor ⇄ Aswan)",
+    category: "cultural",
+    duration: "3 Nights / 4 Days or 4 Nights / 5 Days",
+    location: "Luxor ⇄ Aswan, Egypt",
+    locationBadge: "Nile Cruise",
+    description: "Experience a luxury Nile River cruise combining hotel-style accommodation with ancient historical sightseeing and relaxation. Sail between Luxor and Aswan while exploring Egypt's most magnificent temples and monuments.",
+    includes: [
+      "Air-conditioned cabin with private bathroom",
+      "Full Board (Breakfast, Lunch, Dinner)",
+      "Professional tour guide",
+      "All temple visits and entrance fees",
+      "Swimming pool & sun deck access",
+      "Folklore entertainment",
+      "Wi-Fi (subject to availability)",
+    ],
+    imageFolderName: "Nile Cruise Images",
+    imagePrefix: "NileCruise",
+    image: "/Images/nile-cruise/nilecruise1.jpg",
+    galleryImages: getTourImages("nile-cruise", "nilecruise"),
+  },
 ];
 
 export const seaTours = tours.filter((t) => t.category === "sea");
