@@ -294,6 +294,7 @@ export const tours: Tour[] = [
     imagePrefix: "NileCruise",
     image: "/Images/nile-cruise/nilecruise1.jpg",
     galleryImages: getTourImages("nile-cruise", "nilecruise"),
+    price:20
   },
 ];
 
