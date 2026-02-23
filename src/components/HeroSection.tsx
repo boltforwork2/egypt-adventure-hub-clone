@@ -7,7 +7,7 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <div className="flex justify-center mb-2 sm:mb-3 md:mb-4 animate-fade-up" style={{ marginTop: '-0rem' }}>
+        <div className="flex justify-center mb-2 sm:mb-3 md:mb-4 animate-fade-up" style={{ marginTop: '-0.25rem' }}>
           <div className="h-48 sm:h-56 md:h-72 lg:h-80 w-48 sm:w-56 md:w-72 lg:w-80 flex items-center justify-center overflow-hidden">
             <img
               src="/image.png"
