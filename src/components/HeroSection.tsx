@@ -7,6 +7,13 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+        <div className="flex justify-center mb-8 animate-fade-up">
+          <img
+            src="/image.png"
+            alt="Fayed International Travel Logo"
+            className="h-32 sm:h-40 md:h-48 lg:h-56 w-auto object-contain"
+          />
+        </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-background mb-6 animate-fade-up">
           Discover Egypt with{" "}
           <span className="text-gold">Fayed International Travel</span>
