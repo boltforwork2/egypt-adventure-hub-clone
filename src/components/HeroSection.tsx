@@ -7,7 +7,7 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <div className="flex justify-center mb-8 animate-fade-up">
+        <div className="flex justify-center mb-2 sm:mb-3 md:mb-4 animate-fade-up" style={{ marginTop: '-1rem' }}>
           <div className="h-48 sm:h-56 md:h-72 lg:h-80 w-48 sm:w-56 md:w-72 lg:w-80 flex items-center justify-center overflow-hidden">
             <img
               src="/image.png"
@@ -17,11 +17,11 @@ const HeroSection = () => {
             />
           </div>
         </div>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-background mb-6 animate-fade-up">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-background mb-5 animate-fade-up" style={{ marginTop: '-1.5rem' }}>
           Discover Egypt with{" "}
           <span className="text-gold">Fayed International Travel</span>
         </h1>
-        <p className="text-lg md:text-xl text-background/80 max-w-2xl mx-auto mb-10 animate-fade-in-delay font-light leading-relaxed">
+        <p className="text-lg md:text-xl text-background/80 max-w-2xl mx-auto mb-8 animate-fade-in-delay font-light leading-relaxed">
           Explore the crystal-clear Red Sea, ride through the Sahara Desert, and uncover the ancient wonders of Luxor — all with expert guides by your side.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay">
