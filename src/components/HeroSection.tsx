@@ -21,7 +21,7 @@ const HeroSection = () => {
           Discover Egypt with{" "}
           <span className="text-gold">Fayed International Travel</span>
         </h1>
-        <p className="text-lg md:text-xl text-background/80 max-w-2xl mx-auto mb-8 animate-fade-in-delay font-light leading-relaxed">
+        <p className="text-lg md:text-xl text-background/80 max-w-2xl mx-auto mb-6 animate-fade-in-delay font-light leading-relaxed">
           Explore the crystal-clear Red Sea, ride through the Sahara Desert, and uncover the ancient wonders of Luxor — all with expert guides by your side.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay">
