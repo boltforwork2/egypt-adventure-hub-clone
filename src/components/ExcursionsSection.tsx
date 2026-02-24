@@ -1,6 +1,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import TourCard from "@/components/TourCard";
 import { seaTours, safariTours, leisureTours, culturalTours, serviceTours } from "@/data/tours";
+import { useTranslations } from "@/hooks/useTranslations";
 
 const WaveIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -61,6 +62,7 @@ const SectionHeading = ({ icon: Icon, title }: { icon: React.FC; title: string }
 );
 
 const ExcursionsSection = () => {
+  const { t } = useTranslations();
   const { ref, isVisible } = useScrollAnimation();
   const { ref: ref2, isVisible: vis2 } = useScrollAnimation();
   const { ref: ref3, isVisible: vis3 } = useScrollAnimation();
@@ -72,13 +74,13 @@ const ExcursionsSection = () => {
     <section id="excursions" className="section-padding bg-background">
       <div className="container-tourism">
         <div ref={ref} className={`text-center mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <p className="text-gold font-semibold text-sm tracking-widest uppercase mb-3">Our Tours & Excursions</p>
-          <h2 className="section-title">Unforgettable <span className="gold-text">Adventures</span> Await</h2>
-          <p className="section-subtitle mt-4">From the depths of the Red Sea to the golden sands of the Sahara — all tours depart from Hurghada.</p>
+          <p className="text-gold font-semibold text-sm tracking-widest uppercase mb-3">{t('sections.excursions.subtitle')}</p>
+          <h2 className="section-title">{t('sections.excursions.title')} <span className="gold-text">{t('sections.excursions.titleHighlight')}</span> {t('sections.excursions.titleEnd')}</h2>
+          <p className="section-subtitle mt-4">{t('sections.excursions.description')}</p>
         </div>
 
         <div id="sea" ref={ref2} className={`mb-16 transition-all duration-700 ${vis2 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <SectionHeading icon={WaveIcon} title=" Sea Trips" />
+          <SectionHeading icon={WaveIcon} title={t('sections.excursions.seaTrips')} />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {seaTours.map((tour, i) => (
               <TourCard key={tour.id} tour={tour} index={i} />
@@ -87,7 +89,7 @@ const ExcursionsSection = () => {
         </div>
 
         <div id="safari" ref={ref3} className={`mb-16 transition-all duration-700 ${vis3 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <SectionHeading icon={DesertIcon} title=" Safari Trips" />
+          <SectionHeading icon={DesertIcon} title={t('sections.excursions.safariTrips')} />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {safariTours.map((tour, i) => (
               <TourCard key={tour.id} tour={tour} index={i} />
@@ -96,7 +98,7 @@ const ExcursionsSection = () => {
         </div>
 
         <div id="leisure" ref={ref4} className={`mb-16 transition-all duration-700 ${vis4 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <SectionHeading icon={LeisureIcon} title="City & Leisure Tours – Hurghada" />
+          <SectionHeading icon={LeisureIcon} title={t('sections.excursions.cityLeisure')} />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {leisureTours.map((tour, i) => (
               <TourCard key={tour.id} tour={tour} index={i} />
@@ -105,7 +107,7 @@ const ExcursionsSection = () => {
         </div>
 
         <div id="cultural" ref={ref5} className={`mb-16 transition-all duration-700 ${vis5 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <SectionHeading icon={TempleIcon} title="Luxor & Cairo Trips (From Hurghada)" />
+          <SectionHeading icon={TempleIcon} title={t('sections.excursions.luxorCairo')} />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {culturalTours.map((tour, i) => (
               <TourCard key={tour.id} tour={tour} index={i} />
@@ -114,7 +116,7 @@ const ExcursionsSection = () => {
         </div>
 
         <div id="services" ref={ref6} className={`transition-all duration-700 ${vis6 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <SectionHeading icon={TransferIcon} title="Transfer Services" />
+          <SectionHeading icon={TransferIcon} title={t('sections.excursions.transferServices')} />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {serviceTours.map((tour, i) => (
               <TourCard key={tour.id} tour={tour} index={i} />
