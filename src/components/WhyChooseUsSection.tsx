@@ -1,24 +1,26 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Shield, DollarSign, HeartHandshake, Award, Headphones } from "lucide-react";
-
-const reasons = [
-  { icon: HeartHandshake, title: "Professional Guides", description: "Experienced, certified local guides who bring Egypt to life." },
-  { icon: DollarSign, title: "Best Prices", description: "Competitive pricing with no hidden fees. Value guaranteed." },
-  { icon: Shield, title: "Safe Trips", description: "Your safety is our top priority with fully insured adventures." },
-  { icon: Award, title: "High-Quality Service", description: "Premium equipment, comfortable transport, and attention to detail." },
-  { icon: Headphones, title: "24/7 Support", description: "Round-the-clock assistance whenever you need us." },
-];
+import { useTranslations } from "@/hooks/useTranslations";
 
 const WhyChooseUsSection = () => {
   const { ref, isVisible } = useScrollAnimation();
+  const { t } = useTranslations();
+
+  const reasons = [
+    { icon: HeartHandshake, title: t('sections.whyChooseUs.professionalGuides'), description: t('sections.whyChooseUs.professionalGuidesDesc') },
+    { icon: DollarSign, title: t('sections.whyChooseUs.bestPrices'), description: t('sections.whyChooseUs.bestPricesDesc') },
+    { icon: Shield, title: t('sections.whyChooseUs.safeTrips'), description: t('sections.whyChooseUs.safeTripsDesc') },
+    { icon: Award, title: t('sections.whyChooseUs.highQuality'), description: t('sections.whyChooseUs.highQualityDesc') },
+    { icon: Headphones, title: t('sections.whyChooseUs.support247'), description: t('sections.whyChooseUs.support247Desc') },
+  ];
 
   return (
     <section id="why-us" className="section-padding" style={{ background: "linear-gradient(180deg, hsl(220 20% 10%) 0%, hsl(220 15% 15%) 100%)" }}>
       <div className="container-tourism">
         <div ref={ref} className={`text-center mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <p className="text-gold font-semibold text-sm tracking-widest uppercase mb-3">Why Choose Us</p>
-          <h2 className="section-title text-background">Your Trusted <span className="gold-text">Travel Partner</span></h2>
-          <p className="text-background/60 text-lg mt-4 max-w-2xl mx-auto">We go above and beyond to make your Egyptian adventure extraordinary.</p>
+          <p className="text-gold font-semibold text-sm tracking-widest uppercase mb-3">{t('sections.whyChooseUs.subtitle')}</p>
+          <h2 className="section-title text-background">{t('sections.whyChooseUs.title')} <span className="gold-text">{t('sections.whyChooseUs.titleHighlight')}</span></h2>
+          <p className="text-background/60 text-lg mt-4 max-w-2xl mx-auto">{t('sections.whyChooseUs.description')}</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {reasons.map((reason, i) => (

@@ -1,26 +1,27 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Star } from "lucide-react";
-
-const testimonials = [
-  { name: "Sarah M.", country: "United Kingdom", rating: 5, text: "The snorkeling trip was absolutely magical! The crew was professional and the coral reefs were breathtaking. Best experience in Hurghada!" },
-  { name: "Hans W.", country: "Germany", rating: 5, text: "We booked the desert safari with Fayed Travel — the quad biking and sunset camel ride were unforgettable. Highly recommend!" },
-  { name: "Maria L.", country: "Italy", rating: 5, text: "Our Luxor day trip was perfectly organized. The guide was incredibly knowledgeable and the temples were awe-inspiring. A must-do!" },
-  { name: "James R.", country: "Australia", rating: 5, text: "From booking to the actual trip, everything was seamless. Great prices, friendly team, and amazing experiences. 10/10!" },
-];
+import { useTranslations } from "@/hooks/useTranslations";
 
 const TestimonialsSection = () => {
   const { ref, isVisible } = useScrollAnimation();
+  const { t } = useTranslations();
+
+  const testimonials = t('sections.testimonials.reviews', { returnObjects: true }) as Array<{
+    name: string;
+    country: string;
+    text: string;
+  }>;
 
   return (
     <section className="section-padding bg-muted">
       <div className="container-tourism">
         <div ref={ref} className={`text-center mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <p className="text-gold font-semibold text-sm tracking-widest uppercase mb-3">Testimonials</p>
-          <h2 className="section-title">What Our <span className="gold-text">Guests Say</span></h2>
+          <p className="text-gold font-semibold text-sm tracking-widest uppercase mb-3">{t('sections.testimonials.subtitle')}</p>
+          <h2 className="section-title">{t('sections.testimonials.title')} <span className="gold-text">{t('sections.testimonials.titleHighlight')}</span></h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {testimonials.map((t, i) => (
-            <TestimonialCard key={t.name} {...t} index={i} />
+          {testimonials.map((testimonial, i) => (
+            <TestimonialCard key={testimonial.name} name={testimonial.name} country={testimonial.country} rating={5} text={testimonial.text} index={i} />
           ))}
         </div>
       </div>

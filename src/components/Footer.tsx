@@ -1,13 +1,16 @@
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { useTranslations } from "@/hooks/useTranslations";
 
 const Footer = () => {
+  const { t } = useTranslations();
+
   const quickLinks = [
-    { label: "Home", href: "/#home" },
-    { label: "Sea Trips", href: "/#sea" },
-    { label: "Safari", href: "/#safari" },
-    { label: "Luxor & Cairo", href: "/#cultural" },
-    { label: "About Us", href: "/#why-us" },
-    { label: "Contact", href: "/#contact" },
+    { label: t('footer.links.home'), href: "/#home" },
+    { label: t('footer.links.seaTrips'), href: "/#sea" },
+    { label: t('footer.links.safari'), href: "/#safari" },
+    { label: t('footer.links.luxorCairo'), href: "/#cultural" },
+    { label: t('footer.links.aboutUs'), href: "/#why-us" },
+    { label: t('footer.links.contact'), href: "/#contact" },
   ];
 
   const socials = [
@@ -23,15 +26,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
             <h3 className="text-2xl font-heading font-bold text-background mb-4">
-              <span className="text-gold">Fayed</span> International Travel
+              <span className="text-gold">{t('footer.companyName')}</span> {t('footer.companyNameEnd')}
             </h3>
             <p className="text-sm leading-relaxed text-background/60">
-              Your trusted partner for unforgettable Hurghada adventures. Sea trips, desert safaris, and day trips to Luxor & Cairo.
+              {t('footer.description')}
             </p>
           </div>
 
           <div>
-            <h4 className="font-heading font-bold text-background mb-4">Quick Links</h4>
+            <h4 className="font-heading font-bold text-background mb-4">{t('footer.quickLinks')}</h4>
             <nav className="space-y-2">
               {quickLinks.map((link) => (
                 <a key={link.href} href={link.href} className="block text-sm text-background/60 hover:text-gold transition-colors duration-300">
@@ -42,7 +45,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-heading font-bold text-background mb-4">Follow Us</h4>
+            <h4 className="font-heading font-bold text-background mb-4">{t('footer.followUs')}</h4>
             <div className="flex gap-3">
               {socials.map(({ icon: Icon, href }, i) => (
                 <a
@@ -60,7 +63,7 @@ const Footer = () => {
 
         <div className="border-t border-background/10 pt-8 text-center">
           <p className="text-xs text-background/40">
-            © {new Date().getFullYear()} Fayed International Travel. All rights reserved.
+            {t('footer.copyright', { year: new Date().getFullYear() })}
           </p>
         </div>
       </div>

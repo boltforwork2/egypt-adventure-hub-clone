@@ -58,7 +58,29 @@
     "testimonials": {
       "subtitle": "Testimonials",
       "title": "What Our",
-      "titleHighlight": "Guests Say"
+      "titleHighlight": "Guests Say",
+      "reviews": [
+        {
+          "name": "Sarah M.",
+          "country": "United Kingdom",
+          "text": "The snorkeling trip was absolutely magical! The crew was professional and the coral reefs were breathtaking. Best experience in Hurghada!"
+        },
+        {
+          "name": "Hans W.",
+          "country": "Germany",
+          "text": "We booked the desert safari with Fayed Travel — the quad biking and sunset camel ride were unforgettable. Highly recommend!"
+        },
+        {
+          "name": "Maria L.",
+          "country": "Italy",
+          "text": "Our Luxor day trip was perfectly organized. The guide was incredibly knowledgeable and the temples were awe-inspiring. A must-do!"
+        },
+        {
+          "name": "James R.",
+          "country": "Australia",
+          "text": "From booking to the actual trip, everything was seamless. Great prices, friendly team, and amazing experiences. 10/10!"
+        }
+      ]
     },
     "contact": {
       "subtitle": "Get In Touch",
