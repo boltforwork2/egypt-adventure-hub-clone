@@ -1,4 +1,8 @@
+import { useTranslations } from "@/hooks/useTranslations";
+
 const HeroSection = () => {
+  const { t } = useTranslations();
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
@@ -18,21 +22,21 @@ const HeroSection = () => {
           </div>
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-background mb-4 animate-fade-up" style={{ marginTop: '-1.6rem' }}>
-          Discover Egypt with{" "}
-          <span className="text-gold">Fayed International Travel</span>
+          {t('hero.title')}{" "}
+          <span className="text-gold">{t('hero.companyName')}</span>
         </h1>
         <p className="text-lg md:text-xl text-background/80 max-w-2xl mx-auto mb-6 animate-fade-in-delay font-light leading-relaxed">
-          Explore the crystal-clear Red Sea, ride through the Sahara Desert, and uncover the ancient wonders of Luxor — all with expert guides by your side.
+          {t('hero.subtitle')}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay">
           <a href="#excursions" className="btn-gold text-base px-10 py-3">
-            Explore Trips
+            {t('hero.exploreTrips')}
           </a>
           <a href="#contact" className="btn-outline-light text-base px-10 py-3">
-            Contact Us
+            {t('hero.contactUs')}
           </a>
           <a href="/b2b" className="btn-outline-light text-base px-10 py-3">
-            B2B System
+            {t('hero.b2bSystem')}
           </a>
         </div>
       </div>

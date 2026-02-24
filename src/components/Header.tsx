@@ -1,27 +1,29 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-
-const navLinks = [
-  { label: "Home", href: "/#home", type: "link" },
-  {
-    label: "Trips",
-    type: "dropdown",
-    items: [
-      { label: "Sea Trips", href: "/#sea" },
-      { label: "Safari", href: "/#safari" },
-      { label: "City & Leisure", href: "/#leisure" },
-      { label: "Luxor & Cairo", href: "/#cultural" },
-    ],
-  },
-  { label: "Why Choose Us", href: "/#why-us", type: "link" },
-  { label: "About Us", href: "/about", type: "link" },
-  { label: "B2B System", href: "/b2b", type: "link" },
-  { label: "Gallery", href: "/#gallery", type: "link" },
-  { label: "Contact", href: "/#contact", type: "link" },
-];
+import { useTranslations } from "@/hooks/useTranslations";
 
 const Header = () => {
+  const { t } = useTranslations();
+
+  const navLinks = [
+    { label: t('nav.home'), href: "/#home", type: "link" },
+    {
+      label: t('nav.trips'),
+      type: "dropdown",
+      items: [
+        { label: t('nav.seaTrips'), href: "/#sea" },
+        { label: t('nav.safari'), href: "/#safari" },
+        { label: t('nav.cityLeisure'), href: "/#leisure" },
+        { label: t('nav.luxorCairo'), href: "/#cultural" },
+      ],
+    },
+    { label: t('nav.whyChooseUs'), href: "/#why-us", type: "link" },
+    { label: t('nav.aboutUs'), href: "/about", type: "link" },
+    { label: t('nav.b2bSystem'), href: "/b2b", type: "link" },
+    { label: t('nav.gallery'), href: "/#gallery", type: "link" },
+    { label: t('nav.contact'), href: "/#contact", type: "link" },
+  ];
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -134,7 +136,7 @@ const Header = () => {
             );
           })}
           <a href="/#contact" className="btn-gold text-sm px-6 py-2.5">
-            Book Now
+            {t('nav.bookNow')}
           </a>
         </nav>
 
@@ -196,7 +198,7 @@ const Header = () => {
               );
             })}
             <a href="/#contact" className="btn-gold text-center mt-3 py-3" onClick={() => setMenuOpen(false)}>
-              Book Now
+              {t('nav.bookNow')}
             </a>
           </nav>
         </div>
