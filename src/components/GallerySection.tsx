@@ -8,7 +8,7 @@ const GallerySection = () => {
   const [lightbox, setLightbox] = useState<{ tourIndex: number; imageIndex: number } | null>(null);
 
   const allGalleryImages = tours.flatMap((tour, tourIndex) =>
-    tour.galleryImages.slice(0, 3).map((src, imageIndex) => ({
+    tour.galleryImages.slice(0, 2).map((src, imageIndex) => ({
       src,
       alt: `${tour.title} - Image ${imageIndex + 1}`,
       tourIndex,
