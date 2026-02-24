@@ -78,7 +78,7 @@ const ExcursionsSection = () => {
         </div>
 
         <div id="sea" ref={ref2} className={`mb-16 transition-all duration-700 ${vis2 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <SectionHeading icon={WaveIcon} title="Hurghada Sea Trips" />
+          <SectionHeading icon={WaveIcon} title=" Sea Trips" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {seaTours.map((tour, i) => (
               <TourCard key={tour.id} tour={tour} index={i} />
