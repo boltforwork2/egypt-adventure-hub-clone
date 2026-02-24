@@ -1,0 +1,222 @@
+{
+  "hero": {
+    "title": "Discover Egypt with",
+    "companyName": "Fayed International Travel",
+    "subtitle": "Explore the crystal-clear Red Sea, ride through the Sahara Desert, and uncover the ancient wonders of Luxor — all with expert guides by your side.",
+    "exploreTrips": "Explore Trips",
+    "contactUs": "Contact Us",
+    "b2bSystem": "B2B System"
+  },
+  "nav": {
+    "home": "Home",
+    "trips": "Trips",
+    "seaTrips": "Sea Trips",
+    "safari": "Safari",
+    "cityLeisure": "City & Leisure",
+    "luxorCairo": "Luxor & Cairo",
+    "whyChooseUs": "Why Choose Us",
+    "aboutUs": "About Us",
+    "b2bSystem": "B2B System",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "bookNow": "Book Now"
+  },
+  "sections": {
+    "excursions": {
+      "subtitle": "Our Tours & Excursions",
+      "title": "Unforgettable",
+      "titleHighlight": "Adventures",
+      "titleEnd": "Await",
+      "description": "From the depths of the Red Sea to the golden sands of the Sahara — all tours depart from Hurghada.",
+      "seaTrips": "Sea Trips",
+      "safariTrips": "Safari Trips",
+      "cityLeisure": "City & Leisure Tours – Hurghada",
+      "luxorCairo": "Luxor & Cairo Trips (From Hurghada)",
+      "transferServices": "Transfer Services"
+    },
+    "whyChooseUs": {
+      "subtitle": "Why Choose Us",
+      "title": "Your Trusted",
+      "titleHighlight": "Travel Partner",
+      "description": "We go above and beyond to make your Egyptian adventure extraordinary.",
+      "professionalGuides": "Professional Guides",
+      "professionalGuidesDesc": "Experienced, certified local guides who bring Egypt to life.",
+      "bestPrices": "Best Prices",
+      "bestPricesDesc": "Competitive pricing with no hidden fees. Value guaranteed.",
+      "safeTrips": "Safe Trips",
+      "safeTripsDesc": "Your safety is our top priority with fully insured adventures.",
+      "highQuality": "High-Quality Service",
+      "highQualityDesc": "Premium equipment, comfortable transport, and attention to detail.",
+      "support247": "24/7 Support",
+      "support247Desc": "Round-the-clock assistance whenever you need us."
+    },
+    "gallery": {
+      "subtitle": "Gallery",
+      "title": "Moments from",
+      "titleHighlight": "Our Adventures"
+    },
+    "testimonials": {
+      "subtitle": "Testimonials",
+      "title": "What Our",
+      "titleHighlight": "Guests Say"
+    },
+    "contact": {
+      "subtitle": "Get In Touch",
+      "title": "Book Your",
+      "titleHighlight": "Adventure",
+      "description": "Ready to explore? Send us a message and we'll plan your perfect trip.",
+      "name": "Your Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "message": "Your Message",
+      "sendMessage": "Send Message via WhatsApp",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "locationLabel": "Location",
+      "phoneValue": "+20 112 242 4531",
+      "emailValue": "info@fayedtravel.com",
+      "locationValue": "Hurghada, Red Sea, Egypt"
+    }
+  },
+  "tour": {
+    "duration": "Duration",
+    "location": "Location",
+    "viewDetails": "View Details",
+    "backToAllTours": "Back to All Tours",
+    "aboutThisTour": "About This Tour",
+    "pricing": "Pricing",
+    "pricePerPerson": "Price per person",
+    "adults": "Adults",
+    "children": "Children",
+    "free": "Free",
+    "hurghada": "Hurghada",
+    "elGouna": "El Gouna",
+    "whatsIncluded": "What's Included",
+    "availableTravelOptions": "Available Travel Options",
+    "availableCruiseOptions": "Available Cruise Options",
+    "contact": "Contact",
+    "gallery": "Gallery",
+    "interestedInTour": "Interested in this tour?",
+    "bookViaWhatsApp": "Book via WhatsApp",
+    "contactUs": "Contact Us",
+    "tourNotFound": "Tour Not Found",
+    "backToHome": "Back to Home"
+  },
+  "footer": {
+    "companyName": "Fayed",
+    "companyNameEnd": "International Travel",
+    "description": "Your trusted partner for unforgettable Hurghada adventures. Sea trips, desert safaris, and day trips to Luxor & Cairo.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "copyright": "© {year} Fayed International Travel. All rights reserved.",
+    "links": {
+      "home": "Home",
+      "seaTrips": "Sea Trips",
+      "safari": "Safari",
+      "luxorCairo": "Luxor & Cairo",
+      "aboutUs": "About Us",
+      "contact": "Contact"
+    }
+  },
+  "aboutUs": {
+    "title": "Welcome to",
+    "titleHighlight": "Fayed International Travel Agency",
+    "subtitle": "Your trusted partner for unforgettable travel experiences in Egypt",
+    "intro": "Fayed International Travel Agency is an Egyptian travel company specialized in organizing tours and travel services across Egypt. We offer unforgettable experiences in the Red Sea, Cairo, Luxor, Aswan, and desert safari destinations.",
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive travel solutions designed to exceed your expectations",
+      "hotelReservations": "Hotel Reservations",
+      "hotelReservationsDesc": "Carefully selected accommodations to suit every budget and preference",
+      "airportTransfers": "Airport Transfers",
+      "airportTransfersDesc": "Reliable and comfortable transportation from arrival to departure",
+      "privateTours": "Private & Group Tours",
+      "privateToursDesc": "Tailored experiences with expert local guides",
+      "seaTrips": "Sea Trips & Snorkeling",
+      "seaTripsDesc": "Explore the stunning Red Sea marine life",
+      "desertSafari": "Desert Safari Adventures",
+      "desertSafariDesc": "Thrilling journeys across Egypt's golden landscapes",
+      "customPackages": "Customized Travel Packages",
+      "customPackagesDesc": "Personalized itineraries designed around your dreams"
+    },
+    "partnership": {
+      "title": "International",
+      "titleHighlight": "Partnership",
+      "point1": "We operate as an official tourism representative in Egypt, committed to the highest standards of service and professionalism",
+      "point2": "We proudly cooperate with international travel partners through our dedicated B2B services",
+      "point3": "Our services are tailored for European and international markets, ensuring seamless experiences for global travelers",
+      "point4": "We focus on reliability, consistency, and service quality to build lasting partnerships"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "value1": "Deliver professional service at every touchpoint",
+      "value2": "Ensure safety and comfort throughout your journey",
+      "value3": "Create unforgettable memories in Egypt"
+    },
+    "closing": {
+      "text1": "At Fayed International Travel Agency, we believe that travel is more than just a trip — it is an experience.",
+      "text2": "Let us turn your journey into a memory you will never forget."
+    }
+  },
+  "b2b": {
+    "title": "B2B Partnership",
+    "titleHighlight": "Egypt Ground Handling & DMC Services",
+    "subtitle": "Your trusted local executing partner in Egypt",
+    "intro1": "We are a professional Egypt-based tour operator and ground handling partner providing reliable B2B services for international travel agencies and tour operators.",
+    "intro2": "As a local executing agent in Egypt, we specialize in delivering high-quality travel services for European markets, ensuring smooth operations, competitive rates, and excellent client satisfaction.",
+    "whoWeAre": {
+      "title": "Who We Are",
+      "description": "We act as a trusted local representative and executing partner in Egypt, offering full destination management services (DMC) with strong operational control on the ground.",
+      "points": {
+        "coordination": "Professional coordination",
+        "transfers": "On-time transfers",
+        "assistance": "Multilingual tour assistance",
+        "standards": "High service standards",
+        "pricing": "Transparent pricing",
+        "management": "Direct management control"
+      }
+    },
+    "services": {
+      "title": "Our B2B Services in Egypt",
+      "subtitle": "Comprehensive solutions tailored for international travel partners",
+      "list": {
+        "airportTransfers": "Airport transfers (private & group)",
+        "hotelBookings": "Hotel bookings (3–5 stars & luxury resorts)",
+        "dailyExcursions": "Daily excursions in Hurghada, Cairo & Luxor",
+        "boatTrips": "Red Sea boat trips & snorkeling tours",
+        "desertSafari": "Desert safari & quad adventures",
+        "culturalTours": "Cultural tours & historical programs",
+        "customPackages": "Custom-made packages",
+        "vipServices": "VIP services upon request"
+      }
+    },
+    "advantages": {
+      "title": "Why Partner With Us?",
+      "competitiveRates": "Competitive NET Rates",
+      "competitiveRatesDesc": "Best pricing for travel agency partners",
+      "fastResponse": "Fast Response & Support",
+      "fastResponseDesc": "Dedicated B2B support team ready to assist",
+      "flexiblePayment": "Flexible Payment Terms",
+      "flexiblePaymentDesc": "Tailored payment solutions for partners",
+      "europeanExperience": "European Market Experience",
+      "europeanExperienceDesc": "Proven expertise with international clients",
+      "supplierNetwork": "Strong Supplier Network",
+      "supplierNetworkDesc": "Reliable local partner connections",
+      "reliableExecution": "Reliable Execution",
+      "reliableExecutionDesc": "On-ground professional service guarantee"
+    },
+    "cooperation": {
+      "text1": "We focus exclusively on bringing foreign clients to Egypt and operating their programs professionally from arrival to departure.",
+      "quote": "If you are looking for a reliable local partner in Egypt to handle your clients with care and professionalism, we are ready for cooperation on a B2B basis.",
+      "contactPrompt": "Contact us for our B2B rate list and partnership proposal."
+    }
+  },
+  "common": {
+    "from": "from",
+    "contact": "Contact",
+    "loading": "Loading",
+    "error": "Error",
+    "tryAgain": "Try Again",
+    "close": "Close"
+  }
+}
