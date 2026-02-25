@@ -3,25 +3,28 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { useEffect } from "react";
 import { Shield, Users, Award, Globe, Briefcase, Heart } from "lucide-react";
+import { useTranslations } from "@/hooks/useTranslations";
 
 const AboutUs = () => {
+  const { t } = useTranslations();
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
 
   const services = [
-    { icon: Shield, title: "Hotel Reservations", description: "Carefully selected accommodations to suit every budget and preference" },
-    { icon: Users, title: "Airport Transfers", description: "Reliable and comfortable transportation from arrival to departure" },
-    { icon: Globe, title: "Private & Group Tours", description: "Tailored experiences with expert local guides" },
-    { icon: Award, title: "Sea Trips & Snorkeling", description: "Explore the stunning Red Sea marine life" },
-    { icon: Briefcase, title: "Desert Safari Adventures", description: "Thrilling journeys across Egypt's golden landscapes" },
-    { icon: Heart, title: "Customized Travel Packages", description: "Personalized itineraries designed around your dreams" },
+    { icon: Shield, title: t("aboutUs.services.hotelReservations"), description: t("aboutUs.services.hotelReservationsDesc") },
+    { icon: Users, title: t("aboutUs.services.airportTransfers"), description: t("aboutUs.services.airportTransfersDesc") },
+    { icon: Globe, title: t("aboutUs.services.privateTours"), description: t("aboutUs.services.privateToursDesc") },
+    { icon: Award, title: t("aboutUs.services.seaTrips"), description: t("aboutUs.services.seaTripsDesc") },
+    { icon: Briefcase, title: t("aboutUs.services.desertSafari"), description: t("aboutUs.services.desertSafariDesc") },
+    { icon: Heart, title: t("aboutUs.services.customPackages"), description: t("aboutUs.services.customPackagesDesc") },
   ];
 
   const values = [
-    "Deliver professional service at every touchpoint",
-    "Ensure safety and comfort throughout your journey",
-    "Create unforgettable memories in Egypt",
+    t("aboutUs.mission.value1"),
+    t("aboutUs.mission.value2"),
+    t("aboutUs.mission.value3"),
   ];
 
   return (
@@ -33,10 +36,10 @@ const AboutUs = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-sand/30 to-transparent" />
         <div className="container-tourism max-w-5xl relative z-10 px-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 text-center leading-tight">
-            Welcome to <span className="gold-text">Fayed International Travel Agency</span>
+            {t("aboutUs.title")} <span className="gold-text">{t("aboutUs.titleHighlight")}</span>
           </h1>
           <p className="text-base md:text-lg text-muted-foreground text-center max-w-3xl mx-auto leading-relaxed">
-            Your trusted partner for unforgettable travel experiences in Egypt
+            {t("aboutUs.subtitle")}
           </p>
         </div>
       </section>
@@ -46,8 +49,11 @@ const AboutUs = () => {
         <div className="container-tourism max-w-4xl px-6">
           <div className="bg-white/70 backdrop-blur-sm border border-gold/10 rounded-2xl p-6 sm:p-8 md:p-10 shadow-sm">
             <p className="text-base md:text-lg text-foreground leading-relaxed text-left">
-              Fayed International Travel Agency is an Egyptian travel company specialized in organizing tours and travel services across Egypt.
-              We offer unforgettable experiences in the <span className="font-semibold text-gold">Red Sea</span>, <span className="font-semibold text-gold">Cairo</span>, <span className="font-semibold text-gold">Luxor</span>, <span className="font-semibold text-gold">Aswan</span>, and <span className="font-semibold text-gold">desert safari</span> destinations.
+              {t("aboutUs.intro").split(/(\bRed Sea\b|\bCairo\b|\bLuxor\b|\bAswan\b|\bdesert safari\b)/g).map((text, index) =>
+                /(\bRed Sea\b|\bCairo\b|\bLuxor\b|\bAswan\b|\bdesert safari\b)/g.test(text) ?
+                  <span key={index} className="font-semibold text-gold">{text}</span> :
+                  text
+              )}
             </p>
           </div>
         </div>
@@ -57,10 +63,10 @@ const AboutUs = () => {
       <section className="py-10 sm:py-12 md:py-16">
         <div className="container-tourism max-w-6xl px-6">
           <div className="text-center mb-10 md:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-3">Our Services</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-3">{t("aboutUs.services.title")}</h2>
             <div className="w-16 h-1 bg-gold mx-auto rounded-full mb-3" />
             <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
-              Comprehensive travel solutions designed to exceed your expectations
+              {t("aboutUs.services.subtitle")}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -86,7 +92,7 @@ const AboutUs = () => {
           <div className="bg-white/70 backdrop-blur-sm border border-gold/10 rounded-2xl p-6 sm:p-8 md:p-10">
             <div className="text-center mb-8 md:mb-10">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-3">
-                International <span className="gold-text">Partnership</span>
+                {t("aboutUs.partnership.title")} <span className="gold-text">{t("aboutUs.partnership.titleHighlight")}</span>
               </h2>
               <div className="w-16 h-1 bg-gold mx-auto rounded-full" />
             </div>
@@ -94,25 +100,50 @@ const AboutUs = () => {
               <div className="flex items-start gap-3 sm:gap-4">
                 <div className="w-2 h-2 rounded-full bg-gold mt-2 flex-shrink-0" />
                 <p className="text-base md:text-lg text-foreground leading-relaxed text-left">
-                  We operate as an <span className="font-semibold">official tourism representative in Egypt</span>, committed to the highest standards of service and professionalism
+                  {t("aboutUs.partnership.point1").split(/(<span>|<\/span>)/).map((text, index) => {
+                    if (text === "<span>") return null;
+                    if (text === "</span>") return null;
+                    const spanMatch = t("aboutUs.partnership.point1").match(/(.+?)<span>(.+?)<\/span>(.+)/);
+                    if (!spanMatch) return t("aboutUs.partnership.point1");
+                    return text;
+                  })}
+                  {t("aboutUs.partnership.point1").includes("official tourism representative") && (
+                    <>We operate as an <span className="font-semibold">official tourism representative in Egypt</span>, committed to the highest standards of service and professionalism</>
+                  )}
+                  {!t("aboutUs.partnership.point1").includes("official tourism representative") && t("aboutUs.partnership.point1")}
                 </p>
               </div>
               <div className="flex items-start gap-3 sm:gap-4">
                 <div className="w-2 h-2 rounded-full bg-gold mt-2 flex-shrink-0" />
                 <p className="text-base md:text-lg text-foreground leading-relaxed text-left">
-                  We proudly cooperate with <span className="font-semibold">international travel partners</span> through our dedicated B2B services
+                  {t("aboutUs.partnership.point2").split(/(\bofficial tourism representative in Egypt\b|\binternational travel partners\b|\bEuropean and international markets\b|\breliability, consistency, and service quality\b)/g).map((text, index) => {
+                    if (/(official tourism representative in Egypt|international travel partners|European and international markets|reliability, consistency, and service quality)/g.test(text)) {
+                      return <span key={index} className="font-semibold">{text}</span>;
+                    }
+                    return text;
+                  })}
                 </p>
               </div>
               <div className="flex items-start gap-3 sm:gap-4">
                 <div className="w-2 h-2 rounded-full bg-gold mt-2 flex-shrink-0" />
                 <p className="text-base md:text-lg text-foreground leading-relaxed text-left">
-                  Our services are tailored for <span className="font-semibold">European and international markets</span>, ensuring seamless experiences for global travelers
+                  {t("aboutUs.partnership.point3").split(/(\bofficial tourism representative in Egypt\b|\binternational travel partners\b|\bEuropean and international markets\b|\breliability, consistency, and service quality\b)/g).map((text, index) => {
+                    if (/(official tourism representative in Egypt|international travel partners|European and international markets|reliability, consistency, and service quality)/g.test(text)) {
+                      return <span key={index} className="font-semibold">{text}</span>;
+                    }
+                    return text;
+                  })}
                 </p>
               </div>
               <div className="flex items-start gap-3 sm:gap-4">
                 <div className="w-2 h-2 rounded-full bg-gold mt-2 flex-shrink-0" />
                 <p className="text-base md:text-lg text-foreground leading-relaxed text-left">
-                  We focus on <span className="font-semibold">reliability, consistency, and service quality</span> to build lasting partnerships
+                  {t("aboutUs.partnership.point4").split(/(\bofficial tourism representative in Egypt\b|\binternational travel partners\b|\bEuropean and international markets\b|\breliability, consistency, and service quality\b)/g).map((text, index) => {
+                    if (/(official tourism representative in Egypt|international travel partners|European and international markets|reliability, consistency, and service quality)/g.test(text)) {
+                      return <span key={index} className="font-semibold">{text}</span>;
+                    }
+                    return text;
+                  })}
                 </p>
               </div>
             </div>
@@ -124,7 +155,7 @@ const AboutUs = () => {
       <section className="py-10 sm:py-12 md:py-16">
         <div className="container-tourism max-w-4xl px-6">
           <div className="text-center mb-8 md:mb-10">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-3">Our Mission</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-3">{t("aboutUs.mission.title")}</h2>
             <div className="w-16 h-1 bg-gold mx-auto rounded-full" />
           </div>
           <div className="space-y-5">
@@ -152,10 +183,10 @@ const AboutUs = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-gold/8 to-sand/15" />
             <div className="relative z-10 p-6 sm:p-8 md:p-12">
               <p className="text-lg sm:text-xl md:text-2xl font-heading text-foreground leading-relaxed mb-4 text-left">
-                At Fayed International Travel Agency, we believe that travel is more than just a trip — it is an experience.
+                {t("aboutUs.closing.text1")}
               </p>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-left">
-                Let us turn your journey into a memory you will never forget.
+                {t("aboutUs.closing.text2")}
               </p>
             </div>
           </div>
