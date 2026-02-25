@@ -104,6 +104,8 @@
     "duration": "Duration",
     "location": "Location",
     "viewDetails": "View Details",
+    "startingFrom": "Starting from:",
+    "moreOptions": "+ More options available",
     "backToAllTours": "Back to All Tours",
     "aboutThisTour": "About This Tour",
     "pricing": "Pricing",

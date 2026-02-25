@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { X } from "lucide-react";
+import { useTranslations } from "@/hooks/useTranslations";
 import { tours } from "@/data/tours";
 
 const GallerySection = () => {
+  const { t } = useTranslations();
   const { ref, isVisible } = useScrollAnimation();
   const [lightbox, setLightbox] = useState<{ tourIndex: number; imageIndex: number } | null>(null);
 
@@ -21,8 +23,8 @@ const GallerySection = () => {
       <section id="gallery" className="section-padding bg-background">
         <div className="container-tourism">
           <div ref={ref} className={`text-center mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-            <p className="text-gold font-semibold text-sm tracking-widest uppercase mb-3">Gallery</p>
-            <h2 className="section-title">Moments from <span className="gold-text">Our Adventures</span></h2>
+            <p className="text-gold font-semibold text-sm tracking-widest uppercase mb-3">{t('sections.gallery.subtitle')}</p>
+            <h2 className="section-title">{t('sections.gallery.title')} <span className="gold-text">{t('sections.gallery.titleHighlight')}</span></h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {allGalleryImages.map((img, i) => (

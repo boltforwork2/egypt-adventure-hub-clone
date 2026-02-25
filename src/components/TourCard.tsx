@@ -1,6 +1,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Clock, MapPin } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useTranslations } from "@/hooks/useTranslations";
 import { Badge } from "@/components/ui/badge";
 import TourImageSlider from "@/components/TourImageSlider";
 import type { Tour } from "@/data/tours";
@@ -11,6 +12,7 @@ interface TourCardProps {
 }
 
 const TourCard = ({ tour, index }: TourCardProps) => {
+  const { t } = useTranslations();
   const { ref, isVisible } = useScrollAnimation();
   const navigate = useNavigate();
 
@@ -28,7 +30,7 @@ const TourCard = ({ tour, index }: TourCardProps) => {
       const firstThreeOptions = tour.cruiseOptions.slice(0, 3);
       return (
         <div className="text-sm space-y-1.5 mb-3">
-          <p className="text-xs text-muted-foreground font-medium mb-2">Starting from:</p>
+          <p className="text-xs text-muted-foreground font-medium mb-2">{t('tour.startingFrom')}</p>
           {firstThreeOptions.map((option) => (
             <div key={option.name} className="flex items-center justify-between">
               <span className="text-muted-foreground text-xs">{option.name}:</span>
@@ -38,7 +40,7 @@ const TourCard = ({ tour, index }: TourCardProps) => {
             </div>
           ))}
           {tour.cruiseOptions.length > 3 && (
-            <p className="text-xs text-gold font-medium pt-1">+ More options available</p>
+            <p className="text-xs text-gold font-medium pt-1">{t('tour.moreOptions')}</p>
           )}
         </div>
       );
@@ -48,12 +50,12 @@ const TourCard = ({ tour, index }: TourCardProps) => {
       return (
         <div className="text-sm space-y-1 mb-3">
           <div className="flex items-center justify-between">
-            <span className="text-muted-foreground">Adults:</span>
+            <span className="text-muted-foreground">{t('tour.adults')}:</span>
             <span className="font-bold text-gold">€{tour.priceAdults}</span>
           </div>
           <div className="flex items-center justify-between">
-            <span className="text-muted-foreground">Children:</span>
-            <span className="font-bold text-gold">Free</span>
+            <span className="text-muted-foreground">{t('tour.children')}:</span>
+            <span className="font-bold text-gold">{t('tour.free')}</span>
           </div>
         </div>
       );
@@ -63,11 +65,11 @@ const TourCard = ({ tour, index }: TourCardProps) => {
       return (
         <div className="text-sm space-y-1 mb-3">
           <div className="flex items-center justify-between">
-            <span className="text-muted-foreground">Hurghada:</span>
+            <span className="text-muted-foreground">{t('tour.hurghada')}:</span>
             <span className="font-bold text-gold">€{tour.priceHurghada}</span>
           </div>
           <div className="flex items-center justify-between">
-            <span className="text-muted-foreground">El Gouna:</span>
+            <span className="text-muted-foreground">{t('tour.elGouna')}:</span>
             <span className="font-bold text-gold">€{tour.priceElGouna}</span>
           </div>
         </div>
@@ -148,7 +150,7 @@ const TourCard = ({ tour, index }: TourCardProps) => {
           onClick={handleViewDetails}
           className="inline-flex items-center text-sm font-semibold text-gold hover:text-gold-dark transition-colors duration-200 group/link"
         >
-          View Details
+          {t('tour.viewDetails')}
           <svg className="ml-1.5 w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>
