@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useTranslations } from "@/hooks/useTranslations";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
   const { t } = useTranslations();
@@ -135,6 +136,7 @@ const Header = () => {
               </a>
             );
           })}
+          <LanguageSwitcher scrolled={scrolled} isNonHomePage={isNonHomePage} />
           <a href="/#contact" className="btn-gold text-sm px-6 py-2.5">
             {t('nav.bookNow')}
           </a>
@@ -197,7 +199,10 @@ const Header = () => {
                 </a>
               );
             })}
-            <a href="/#contact" className="btn-gold text-center mt-3 py-3" onClick={() => setMenuOpen(false)}>
+            <div className="border-t border-border/50 my-3 pt-3">
+              <LanguageSwitcher scrolled={true} isNonHomePage={true} />
+            </div>
+            <a href="/#contact" className="btn-gold text-center mt-1 py-3" onClick={() => setMenuOpen(false)}>
               {t('nav.bookNow')}
             </a>
           </nav>
