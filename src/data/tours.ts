@@ -27,7 +27,9 @@ export interface Tour {
   priceChildren?: number;
   cruiseOptions?: Array<{
     name: string;
+    nameKey?: string;
     duration: string;
+    durationKey?: string;
     includes: string[];
     price: number;
   }>;
@@ -389,7 +391,9 @@ export const tours: Tour[] = [
     cruiseOptions: [
       {
         name: "Dinner Cruise",
+        nameKey: "cruiseOptions.dinnerCruise",
         duration: "3 Hours",
+        durationKey: "cruiseOptions.dinnerCruiseDuration",
         includes: [
           "Buffet dinner",
           "Live music / entertainment show"
@@ -398,7 +402,9 @@ export const tours: Tour[] = [
       },
       {
         name: "Lunch Cruise",
+        nameKey: "cruiseOptions.lunchCruise",
         duration: "2–3 Hours",
+        durationKey: "cruiseOptions.lunchCruiseDuration",
         includes: [
           "Buffet lunch"
         ],
@@ -406,7 +412,9 @@ export const tours: Tour[] = [
       },
       {
         name: "Pharaonic Dinner Cruise",
+        nameKey: "cruiseOptions.pharaonicDinnerCruise",
         duration: "3 Hours",
+        durationKey: "cruiseOptions.pharaonicDinnerCruiseDuration",
         includes: [
           "Dinner",
           "Traditional artistic shows"
@@ -415,7 +423,9 @@ export const tours: Tour[] = [
       },
       {
         name: "Day Use",
+        nameKey: "cruiseOptions.dayUse",
         duration: "Until Evening",
+        durationKey: "cruiseOptions.dayUseDuration",
         includes: [
           "Cabin / room access",
           "Meals"
@@ -424,7 +434,9 @@ export const tours: Tour[] = [
       },
       {
         name: "Multi-Day Nile Cruise",
+        nameKey: "cruiseOptions.multiDayNileCruise",
         duration: "3–4 Nights",
+        durationKey: "cruiseOptions.multiDayNileCruiseDuration",
         includes: [
           "Accommodation",
           "Full board meals",
