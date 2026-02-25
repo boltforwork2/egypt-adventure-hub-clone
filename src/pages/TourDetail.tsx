@@ -110,7 +110,7 @@ const TourDetail = () => {
                         <div className="flex items-start justify-between mb-3">
                           <div className="flex-1">
                             <h3 className="font-heading font-bold text-foreground mb-1 flex items-center gap-2">
-                              {option.nameKey ? t(option.nameKey) : option.name}
+                              {option.name}
                             </h3>
                             <p className="text-sm text-muted-foreground">
                               <Clock size={14} className="inline mr-1" />
@@ -122,12 +122,26 @@ const TourDetail = () => {
                           </span>
                         </div>
                         <ul className="space-y-1.5 mt-3">
-                          {option.includes.map((item, idx) => (
-                            <li key={idx} className="flex items-center gap-2 text-sm text-foreground">
-                              <CheckCircle size={14} className="text-gold flex-shrink-0" />
-                              <span>{item}</span>
-                            </li>
-                          ))}
+                          {option.includes.map((item, idx) => {
+                            const cruiseIncludeMap: { [key: string]: string } = {
+                              "Buffet dinner": "cruiseOptions.buffetDinner",
+                              "Live music / entertainment show": "cruiseOptions.liveMusic",
+                              "Buffet lunch": "cruiseOptions.buffetLunch",
+                              "Traditional artistic shows": "cruiseOptions.traditionArtisticShows",
+                              "Cabin / room access": "cruiseOptions.cabinRoomAccess",
+                              "Meals": "cruiseOptions.meals",
+                              "Accommodation": "cruiseOptions.accommodation",
+                              "Full board meals": "cruiseOptions.fullBoardMeals",
+                              "Sightseeing tours": "cruiseOptions.sightSeeingTours"
+                            };
+                            const translationKey = cruiseIncludeMap[item];
+                            return (
+                              <li key={idx} className="flex items-center gap-2 text-sm text-foreground">
+                                <CheckCircle size={14} className="text-gold flex-shrink-0" />
+                                <span>{translationKey ? t(translationKey) : item}</span>
+                              </li>
+                            );
+                          })}
                         </ul>
                       </div>
                     ))}

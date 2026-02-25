@@ -86,33 +86,33 @@ const Header = () => {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-7">
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-6 flex-shrink-0 ml-auto">
           {navLinks.map((link) => {
             if (link.type === "dropdown") {
               return (
                 <div
                   key={link.label}
-                  className="relative"
+                  className="relative flex-shrink-0"
                   onMouseEnter={() => setDropdownOpen(true)}
                   onMouseLeave={() => setDropdownOpen(false)}
                 >
                   <button
-                    className={`text-sm font-medium transition-colors duration-200 hover:text-gold relative flex items-center gap-1 ${
+                    className={`text-sm font-medium transition-colors duration-200 hover:text-gold relative flex items-center gap-1 whitespace-nowrap ${
                       scrolled || isNonHomePage ? "text-foreground/80" : "text-background/90"
                     }`}
                   >
                     {link.label}
-                    <ChevronDown size={14} className={`transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`} />
+                    <ChevronDown size={14} className={`transition-transform duration-200 flex-shrink-0 ${dropdownOpen ? "rotate-180" : ""}`} />
                   </button>
                   {dropdownOpen && (
-                    <div className="absolute top-full left-0 pt-2 w-48">
+                    <div className="absolute top-full left-0 pt-2 w-48 z-50">
                       <div className="bg-background border border-border/50 rounded-xl shadow-lg py-2 animate-fade-in">
                         {link.items?.map((item) => (
                           <a
                             key={item.href}
                             href={item.href}
                             onClick={() => handleNavClick(item.href)}
-                            className="block px-4 py-2.5 text-sm font-medium text-foreground/80 hover:bg-muted hover:text-gold transition-all duration-200"
+                            className="block px-4 py-2.5 text-sm font-medium text-foreground/80 hover:bg-muted hover:text-gold transition-all duration-200 whitespace-nowrap"
                           >
                             {item.label}
                           </a>
@@ -128,7 +128,7 @@ const Header = () => {
                 key={link.href}
                 href={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className={`text-sm font-medium transition-colors duration-200 hover:text-gold relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-gold after:transition-all after:duration-200 hover:after:w-full ${
+                className={`text-sm font-medium transition-colors duration-200 hover:text-gold relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-gold after:transition-all after:duration-200 hover:after:w-full whitespace-nowrap flex-shrink-0 ${
                   scrolled || isNonHomePage ? "text-foreground/80" : "text-background/90"
                 }`}
               >
@@ -136,8 +136,10 @@ const Header = () => {
               </a>
             );
           })}
-          <LanguageSwitcher scrolled={scrolled} isNonHomePage={isNonHomePage} />
-          <a href="/#contact" className="btn-gold text-sm px-6 py-2.5">
+          <div className="flex-shrink-0">
+            <LanguageSwitcher scrolled={scrolled} isNonHomePage={isNonHomePage} />
+          </div>
+          <a href="/#contact" className="btn-gold text-sm px-5 xl:px-6 py-2.5 whitespace-nowrap flex-shrink-0">
             {t('nav.bookNow')}
           </a>
         </nav>
