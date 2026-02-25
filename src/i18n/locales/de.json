@@ -1,0 +1,244 @@
+{
+  "hero": {
+    "title": "Entdecken Sie Ägypten mit",
+    "companyName": "Fayed International Travel",
+    "subtitle": "Erkunden Sie das kristallklare Rote Meer, fahren Sie durch die Sahara-Wüste und entdecken Sie die antiken Wunder von Luxor — alles mit erfahrenen Führungen an Ihrer Seite.",
+    "exploreTrips": "Reisen Erkunden",
+    "contactUs": "Kontaktieren Sie Uns",
+    "b2bSystem": "B2B-System"
+  },
+  "nav": {
+    "home": "Startseite",
+    "trips": "Reisen",
+    "seaTrips": "Seefahrten",
+    "safari": "Safari",
+    "cityLeisure": "Stadt & Freizeit",
+    "luxorCairo": "Luxor & Kairo",
+    "whyChooseUs": "Warum uns wählen",
+    "aboutUs": "Über Uns",
+    "b2bSystem": "B2B-System",
+    "gallery": "Galerie",
+    "contact": "Kontakt",
+    "bookNow": "Jetzt Buchen"
+  },
+  "sections": {
+    "excursions": {
+      "subtitle": "Unsere Touren & Ausflüge",
+      "title": "Unvergessliche",
+      "titleHighlight": "Abenteuer",
+      "titleEnd": "Erwarten",
+      "description": "Von den Tiefen des Roten Meeres bis zu den goldenen Dünen der Sahara — alle Touren starten von Hurghada aus.",
+      "seaTrips": "Seefahrten",
+      "safariTrips": "Safari-Touren",
+      "cityLeisure": "Stadt- & Freizeitleisuretouren – Hurghada",
+      "luxorCairo": "Luxor & Kairo Touren (von Hurghada)",
+      "transferServices": "Transferdienste"
+    },
+    "whyChooseUs": {
+      "subtitle": "Warum uns wählen",
+      "title": "Ihr vertrauenswürdiger",
+      "titleHighlight": "Reisepartner",
+      "description": "Wir geben unser Bestes, um Ihr ägyptisches Abenteuer außergewöhnlich zu machen.",
+      "professionalGuides": "Professionelle Führer",
+      "professionalGuidesDesc": "Erfahrene, zertifizierte lokale Führer, die Ägypten zum Leben erwecken.",
+      "bestPrices": "Beste Preise",
+      "bestPricesDesc": "Wettbewerbsfähige Preise ohne versteckte Gebühren. Wertgarantie.",
+      "safeTrips": "Sichere Reisen",
+      "safeTripsDesc": "Ihre Sicherheit ist unsere oberste Priorität mit vollversicherten Abenteuern.",
+      "highQuality": "Hochwertige Dienstleistungen",
+      "highQualityDesc": "Premium-Ausrüstung, komfortabler Transport und Aufmerksamkeit für Details.",
+      "support247": "24/7 Unterstützung",
+      "support247Desc": "Rund um die Uhr Hilfe, wenn Sie uns brauchen."
+    },
+    "gallery": {
+      "subtitle": "Galerie",
+      "title": "Momente aus",
+      "titleHighlight": "Unseren Abenteuern"
+    },
+    "testimonials": {
+      "subtitle": "Testimonials",
+      "title": "Was unsere",
+      "titleHighlight": "Gäste sagen",
+      "reviews": [
+        {
+          "name": "Sarah M.",
+          "country": "Vereinigtes Königreich",
+          "text": "Die Schnorcheltour war absolut magisch! Die Crew war professionell und die Korallenriffe waren atemberaubend. Beste Erfahrung in Hurghada!"
+        },
+        {
+          "name": "Hans W.",
+          "country": "Deutschland",
+          "text": "Wir buchten die Wüstensafari bei Fayed Travel — das Quadfahren und die Kamelritt beim Sonnenuntergang waren unvergesslich. Sehr zu empfehlen!"
+        },
+        {
+          "name": "Maria L.",
+          "country": "Italien",
+          "text": "Unsere Tagestour nach Luxor war perfekt organisiert. Der Führer war unglaublich sachkundig und die Tempel waren beeindruckend. Ein Muss!"
+        },
+        {
+          "name": "James R.",
+          "country": "Australien",
+          "text": "Von der Buchung bis zur eigentlichen Reise war alles nahtlos. Großartige Preise, freundliches Team und großartige Erfahrungen. 10/10!"
+        }
+      ]
+    },
+    "contact": {
+      "subtitle": "Nehmen Sie Kontakt auf",
+      "title": "Buchen Sie",
+      "titleHighlight": "Ihr Abenteuer",
+      "description": "Bereit zu erkunden? Schicken Sie uns eine Nachricht und wir planen Ihre perfekte Reise.",
+      "name": "Ihr Name",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "message": "Ihre Nachricht",
+      "sendMessage": "Nachricht über WhatsApp senden",
+      "phoneLabel": "Telefon",
+      "emailLabel": "E-Mail",
+      "locationLabel": "Ort",
+      "phoneValue": "+20 112 242 4531",
+      "emailValue": "info@fayedtravel.com",
+      "locationValue": "Hurghada, Rotes Meer, Ägypten"
+    }
+  },
+  "tour": {
+    "duration": "Dauer",
+    "location": "Ort",
+    "viewDetails": "Details anzeigen",
+    "backToAllTours": "Zurück zu allen Touren",
+    "aboutThisTour": "Über diese Tour",
+    "pricing": "Preise",
+    "pricePerPerson": "Preis pro Person",
+    "adults": "Erwachsene",
+    "children": "Kinder",
+    "free": "Kostenlos",
+    "hurghada": "Hurghada",
+    "elGouna": "El Gouna",
+    "whatsIncluded": "Inbegriffen",
+    "availableTravelOptions": "Verfügbare Reiseoptionen",
+    "availableCruiseOptions": "Verfügbare Kreuzfahrtsoptionen",
+    "contact": "Kontakt",
+    "gallery": "Galerie",
+    "interestedInTour": "Interessiert an dieser Tour?",
+    "bookViaWhatsApp": "Über WhatsApp buchen",
+    "contactUs": "Kontaktieren Sie Uns",
+    "tourNotFound": "Tour nicht gefunden",
+    "backToHome": "Zurück zur Startseite"
+  },
+  "footer": {
+    "companyName": "Fayed",
+    "companyNameEnd": "International Travel",
+    "description": "Ihr vertrauenswürdiger Partner für unvergessliche Hurghada-Abenteuer. Seefahrten, Wüstensafaris und Tagestouren nach Luxor & Kairo.",
+    "quickLinks": "Schnelllinks",
+    "followUs": "Folgen Sie Uns",
+    "copyright": "© {year} Fayed International Travel. Alle Rechte vorbehalten.",
+    "links": {
+      "home": "Startseite",
+      "seaTrips": "Seefahrten",
+      "safari": "Safari",
+      "luxorCairo": "Luxor & Kairo",
+      "aboutUs": "Über Uns",
+      "contact": "Kontakt"
+    }
+  },
+  "aboutUs": {
+    "title": "Willkommen bei",
+    "titleHighlight": "Fayed International Travel Agency",
+    "subtitle": "Ihr vertrauenswürdiger Partner für unvergessliche Reiseerlebnisse in Ägypten",
+    "intro": "Fayed International Travel Agency ist ein ägyptisches Reiseunternehmen, das sich auf die Organisation von Touren und Reisedienstleistungen in ganz Ägypten spezialisiert hat. Wir bieten unvergessliche Erfahrungen im Roten Meer, Kairo, Luxor, Assuan und an Wüstensafari-Zielen.",
+    "services": {
+      "title": "Unsere Dienstleistungen",
+      "subtitle": "Umfassende Reiseveranstalter gestaltet, um Ihre Erwartungen zu übertreffen",
+      "hotelReservations": "Hotelreservierungen",
+      "hotelReservationsDesc": "Sorgfältig ausgewählte Unterkünfte für jeden Haushalt und Vorliebe",
+      "airportTransfers": "Flughafentransfers",
+      "airportTransfersDesc": "Zuverlässiger und komfortabler Transport von Ankunft bis Abreise",
+      "privateTours": "Private & Gruppentouren",
+      "privateToursDesc": "Maßgeschneiderte Erlebnisse mit erfahrenen lokalen Führungen",
+      "seaTrips": "Seefahrten & Schnorcheln",
+      "seaTripsDesc": "Erkunden Sie das wunderbare Meeresleben der Roten Meer",
+      "desertSafari": "Wüstensafari-Abenteuer",
+      "desertSafariDesc": "Spannende Reisen durch Ägyptens goldene Landschaften",
+      "customPackages": "Maßgeschneiderte Reisepakete",
+      "customPackagesDesc": "Personalisierte Itinerare für Ihre Träume"
+    },
+    "partnership": {
+      "title": "Internationale",
+      "titleHighlight": "Partnerschaft",
+      "point1": "Wir arbeiten als offizieller Tourismusvertreter in Ägypten und setzen uns für die höchsten Servicestandards ein",
+      "point2": "Wir kooperieren stolz mit internationalen Reisepartnern durch unsere dedizierten B2B-Dienstleistungen",
+      "point3": "Unsere Dienstleistungen sind auf europäische und internationale Märkte zugeschnitten und garantieren nahtlose Erlebnisse für globale Reisende",
+      "point4": "Wir konzentrieren uns auf Zuverlässigkeit, Konsistenz und Servicequalität, um dauerhafte Partnerschaften aufzubauen"
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "value1": "Professionellen Service an jedem Kontaktpunkt liefern",
+      "value2": "Sicherheit und Komfort während Ihrer Reise gewährleisten",
+      "value3": "Unvergessliche Erinnerungen in Ägypten schaffen"
+    },
+    "closing": {
+      "text1": "Bei Fayed International Travel Agency glauben wir, dass Reisen mehr als nur eine Reise ist — es ist ein Erlebnis.",
+      "text2": "Lassen Sie uns Ihre Reise in eine Erinnerung verwandeln, die Sie nie vergessen werden."
+    }
+  },
+  "b2b": {
+    "title": "B2B-Partnerschaft",
+    "titleHighlight": "Ägypten Ground Handling & DMC-Dienstleistungen",
+    "subtitle": "Ihr vertrauenswürdiger lokaler Executionspartner in Ägypten",
+    "intro1": "Wir sind ein professioneller ägyptischer Reiseveranstalter und Ground-Handling-Partner, der zuverlässige B2B-Dienstleistungen für internationale Reisebüros und Reiseveranstalter bietet.",
+    "intro2": "Als lokaler Executionsoberechtiger in Ägypten spezialisieren wir uns auf die Bereitstellung hochqualitativer Reisedienstleistungen für europäische Märkte und garantieren reibungslose Operationen, wettbewerbsfähige Preise und ausgezeichnete Kundenzufriedenheit.",
+    "whoWeAre": {
+      "title": "Wer Wir Sind",
+      "description": "Wir fungieren als vertrauenswürdiger lokaler Vertreter und Executionspartner in Ägypten und bieten vollständige Destination-Management-Dienstleistungen (DMC) mit starker operativer Kontrolle am Boden.",
+      "points": {
+        "coordination": "Professionelle Koordination",
+        "transfers": "Pünktliche Transfers",
+        "assistance": "Mehrsprachige Tourführung",
+        "standards": "Hohe Servicestandards",
+        "pricing": "Transparente Preisgestaltung",
+        "management": "Direkte Verwaltungskontrolle"
+      }
+    },
+    "services": {
+      "title": "Unsere B2B-Dienstleistungen in Ägypten",
+      "subtitle": "Umfassende Lösungen auf die internationalen Reisepartner zugeschnitten",
+      "list": {
+        "airportTransfers": "Flughafentransfers (privat & Gruppe)",
+        "hotelBookings": "Hotelreservierungen (3–5 Sterne & Luxusresorts)",
+        "dailyExcursions": "Tägliche Ausflüge in Hurghada, Kairo & Luxor",
+        "boatTrips": "Rotes-Meer-Bootsfahrten & Schnorcheltouren",
+        "desertSafari": "Wüstensafari & Quadabenteuer",
+        "culturalTours": "Kulturtouren & historische Programme",
+        "customPackages": "Maßgeschneiderte Pakete",
+        "vipServices": "VIP-Dienstleistungen auf Anfrage"
+      }
+    },
+    "advantages": {
+      "title": "Warum mit uns partnern?",
+      "competitiveRates": "Wettbewerbsfähige NET-Preise",
+      "competitiveRatesDesc": "Beste Preise für Reisebüro-Partner",
+      "fastResponse": "Schnelle Reaktion & Unterstützung",
+      "fastResponseDesc": "Dediziertes B2B-Unterstützungsteam bereit zu helfen",
+      "flexiblePayment": "Flexible Zahlungsbedingungen",
+      "flexiblePaymentDesc": "Maßgeschneiderte Zahlungslösungen für Partner",
+      "europeanExperience": "Europäische Markterfahrung",
+      "europeanExperienceDesc": "Bewährte Fachkenntnisse mit internationalen Kunden",
+      "supplierNetwork": "Starkes Lieferantennetzwerk",
+      "supplierNetworkDesc": "Zuverlässige lokale Partnerverbindungen",
+      "reliableExecution": "Zuverlässige Ausführung",
+      "reliableExecutionDesc": "Garantierte professionelle Vor-Ort-Dienstleistung"
+    },
+    "cooperation": {
+      "text1": "Wir konzentrieren uns ausschließlich auf die Ankunft ausländischer Gäste in Ägypten und die professionelle Abwicklung ihrer Programme von der Ankunft bis zur Abreise.",
+      "quote": "Wenn Sie nach einem zuverlässigen lokalen Partner in Ägypten suchen, um Ihre Gäste mit Sorgfalt und Professionalität zu betreuen, sind wir bereit zur B2B-Zusammenarbeit.",
+      "contactPrompt": "Kontaktieren Sie uns für unsere B2B-Preisliste und Partnerschaftsangebot."
+    }
+  },
+  "common": {
+    "from": "von",
+    "contact": "Kontakt",
+    "loading": "Wird geladen",
+    "error": "Fehler",
+    "tryAgain": "Erneut versuchen",
+    "close": "Schließen"
+  }
+}
