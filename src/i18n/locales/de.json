@@ -235,6 +235,127 @@
       "contactPrompt": "Kontaktieren Sie uns für unsere B2B-Preisliste und Partnerschaftsangebot."
     }
   },
+  "badges": {
+    "hurghada": "Hurghada Reise",
+    "elGouna": "El Gouna Reise",
+    "transferService": "Transferdienst",
+    "fromHurghada": "Von Hurghada",
+    "nileCruise": "Nilkreuzfahrt"
+  },
+  "tours": {
+    "orangeBayIsland": {
+      "title": "Orange Bay Insel",
+      "location": "Hurghada, Ägypten",
+      "duration": "Ganzer Tag (8 Stunden)",
+      "description": "Besuchen Sie die atemberaubende Orange Bay Island mit ihren makellosen weißen Sandstränden und kristallklarem türkisfarbenem Wasser. Ein perfekter Ganztages-Ausflug ins Rote Meer.",
+      "locationBadge": "Hurghada Reise"
+    },
+    "paradiseIsland": {
+      "title": "Paradies Insel",
+      "location": "Hurghada, Ägypten",
+      "duration": "Ganzer Tag",
+      "description": "Entdecken Sie die Paradiesinsel — ein atemberaubendes Ziel mit weißen Sandstränden, ideal zum Schwimmen, Sonnenbaden und Schnorcheln im Roten Meer.",
+      "locationBadge": "Hurghada Reise"
+    },
+    "dolphinHouse": {
+      "title": "Delfinhaus",
+      "location": "Hurghada, Ägypten",
+      "duration": "Ganzer Tag",
+      "description": "Schwimmen Sie neben wilden Delfinen in ihrem natürlichen Lebensraum am Delfinhaus-Riff. Eine unvergessliche Begegnung mit dem Meer mit professionellen Führern.",
+      "locationBadge": "Hurghada Reise"
+    },
+    "scubaDivingIntro": {
+      "title": "Anfänger Tauchen",
+      "location": "Hurghada, Ägypten",
+      "duration": "Ganzer Tag",
+      "description": "Nehmen Sie Ihren ersten Atemzug unter Wasser mit einer professionellen Einführung ins Tauchen. Keine Erfahrung erforderlich — erkunden Sie die lebendigen Korallenriffe des Roten Meeres.",
+      "locationBadge": "Hurghada Reise"
+    },
+    "privateSpeedboat": {
+      "title": "Privates Schnellboot",
+      "location": "El Gouna / Hurghada, Ägypten",
+      "duration": "4 Stunden",
+      "description": "Genießen Sie ein exklusives privates Schnellboot-Erlebnis entlang der Küste. Schnorcheln Sie an unberührten Stellen mit Ihrem eigenen Kapitän und Crew. Diese Tour ist in Hurghada und El Gouna verfügbar.",
+      "locationBadges": ["Hurghada Reise", "El Gouna Reise"]
+    },
+    "glassBoat": {
+      "title": "Glasboot",
+      "location": "El Gouna / Hurghada, Ägypten",
+      "duration": "2 Stunden",
+      "description": "Sehen Sie die magische Unterwasserwelt ohne nass zu werden! Das gelbe Boot mit Glaskiel zeigt atemberaubende Korallenriffe und farbenfrohe Fische unter Ihnen. Diese Tour ist in Hurghada und El Gouna verfügbar.",
+      "locationBadges": ["Hurghada Reise", "El Gouna Reise"]
+    },
+    "catamaranTrip": {
+      "title": "Katamaran Fahrt",
+      "location": "El Gouna, Ägypten",
+      "duration": "3–5 Stunden (Flexibel)",
+      "description": "Katamaranfahrten sind entspannende Seeerlebnisse in El Gouna, geeignet für Einzelpersonen, Paare und Gruppen.",
+      "locationBadge": "El Gouna Reise"
+    },
+    "quadBikeSafari": {
+      "title": "Quad Bike Safari",
+      "location": "Hurghada, Ägypten",
+      "duration": "3 Stunden",
+      "description": "Rasen Sie auf leistungsstarken Quads über die goldenen Sanddünen der Sahara. Ein adrenalingeladenes Wüstenabenteuer mit beduinischem Tee.",
+      "locationBadge": "Hurghada Reise"
+    },
+    "superSafari": {
+      "title": "Super Safari (Quad + Jeep + Kamel)",
+      "location": "El Gouna / Hurghada, Ägypten",
+      "duration": "5 Stunden",
+      "description": "Das ultimative Wüstenerlebnis, das Quad-Biking, Jeep-Safari und Kamelreiten kombiniert. Inkl. traditionelles Beduinen-Abendessen und Show. Diese Tour ist in Hurghada und El Gouna verfügbar.",
+      "locationBadges": ["Hurghada Reise", "El Gouna Reise"]
+    },
+    "cityTourHurghada": {
+      "title": "Stadtrundfahrt – Hurghada",
+      "location": "Hurghada, Ägypten",
+      "duration": "Flexible Dauer",
+      "description": "Eine Stadtsightseeing-Tour in Hurghada, die es Besuchern ermöglicht, den lokalen Lebensstil und die wichtigsten Attraktionen zu erkunden.",
+      "locationBadge": "Hurghada Reise"
+    },
+    "grandAquariumHurghada": {
+      "title": "Grand Aquarium – Hurghada",
+      "location": "Hurghada, Ägypten",
+      "duration": "Flexible Dauer",
+      "description": "Die Aquariumentour ist eines der besten familienfreundlichen Unterhaltungserlebnisse in Hurghada und kombiniert Beobachtung von Meereslebewesen mit bildungsorientierten und interaktiven Attraktionen.",
+      "locationBadge": "Hurghada Reise"
+    },
+    "horseRidingHurghada": {
+      "title": "Pferdereitour – Hurghada",
+      "location": "Hurghada, Ägypten",
+      "duration": "1–2 Stunden",
+      "description": "Pferdereittouren in Hurghada sind für alle Altersgruppen geeignet und bieten eine einzigartige Mischung aus natürlicher Landschaft und angenehmer physischer Aktivität.",
+      "locationBadge": "Hurghada Reise"
+    },
+    "luxorTrip": {
+      "title": "Luxor Reise",
+      "location": "Von Hurghada",
+      "duration": "Ganzer Tag",
+      "description": "Reisen Sie in die antike Stadt Luxor und erkunden Sie das größte Open-Air-Museum der Welt. Besuchen Sie Tempel, Gräber und legendäre Monumente.",
+      "locationBadge": "Von Hurghada"
+    },
+    "cairoTrip": {
+      "title": "Kairo Reise",
+      "location": "Von Hurghada",
+      "duration": "Ganzer Tag",
+      "description": "Erkunden Sie die ikonischen Pyramiden von Giza, die Sphinx und das Ägyptische Museum auf einem unvergesslichen Tagesausflug nach Kairo von Hurghada.",
+      "locationBadge": "Von Hurghada"
+    },
+    "airportTransfer": {
+      "title": "Flughafentransfer – Hurghada",
+      "location": "Hurghada Internationaler Flughafen",
+      "duration": "Nach Bedarf",
+      "description": "Private und gemeinsame Transferdienste vom internationalen Flughafen Hurghada zu Hotels, Resorts, El Gouna, Makadi Bay, Sahl Hasheesh und anderen nahegelegenen Zielen.",
+      "locationBadge": "Transferdienst"
+    },
+    "nileCruise": {
+      "title": "Nilkreuzfahrt",
+      "location": "Luxor ⇄ Aswan, Ägypten",
+      "duration": "Mehrere Optionen",
+      "description": "Erleben Sie unvergessliche Nilkreuzfahrten mit mehreren Optionen, die Ihrem Zeitplan entsprechen. Wählen Sie zwischen Dinnerkreuzfahrten, Mittagskreuzfahrten, pharaonischen Shows oder mehrtägigen Fahrten entlang Ägyptens legendärem Fluss.",
+      "locationBadge": "Nilkreuzfahrt"
+    }
+  },
   "common": {
     "from": "von",
     "contact": "Kontakt",

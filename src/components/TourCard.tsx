@@ -25,6 +25,17 @@ const TourCard = ({ tour, index }: TourCardProps) => {
   const sliderImages = tour.galleryImages.length > 0 ? tour.galleryImages : [tour.image];
   const isTransferService = tour.id === "airport-transfer-hurghada";
 
+  const getTranslatedBadge = (badge: string): string => {
+    const badgeMap: { [key: string]: string } = {
+      "Hurghada Trip": "badges.hurghada",
+      "El Gouna Trip": "badges.elGouna",
+      "Transfer Service": "badges.transferService",
+      "From Hurghada": "badges.fromHurghada",
+      "Nile Cruise": "badges.nileCruise",
+    };
+    return badgeMap[badge] ? t(badgeMap[badge]) : badge;
+  };
+
   const renderPriceInContent = () => {
     if (tour.cruiseOptions && tour.cruiseOptions.length > 0) {
       const firstThreeOptions = tour.cruiseOptions.slice(0, 3);
@@ -119,32 +130,32 @@ const TourCard = ({ tour, index }: TourCardProps) => {
           <div className="absolute top-3 left-3 z-10 flex flex-col gap-1.5">
             {tour.locationBadges.map((badge, idx) => (
               <Badge key={idx} className="bg-gold/90 text-dark border-none text-xs font-semibold tracking-wide backdrop-blur-sm">
-                {badge}
+                {getTranslatedBadge(badge)}
               </Badge>
             ))}
           </div>
         ) : (
           <Badge className="absolute top-3 left-3 z-10 bg-gold/90 text-dark border-none text-xs font-semibold tracking-wide backdrop-blur-sm">
-            {tour.locationBadge}
+            {getTranslatedBadge(tour.locationBadge)}
           </Badge>
         )}
       </div>
       <div className="p-5 sm:p-6 flex flex-col flex-1">
         <h3 className="text-base sm:text-lg font-heading font-bold mb-2 group-hover:text-gold transition-colors duration-300 line-clamp-1 leading-snug">
-          {tour.title}
+          {tour.titleKey ? t(tour.titleKey) : tour.title}
         </h3>
         <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-muted-foreground text-xs mb-3">
           <span className="flex items-center gap-1.5 whitespace-nowrap">
             <Clock size={13} className="flex-shrink-0" />
-            <span className="truncate">{tour.duration}</span>
+            <span className="truncate">{tour.durationKey ? t(tour.durationKey) : tour.duration}</span>
           </span>
           <span className="flex items-center gap-1.5">
             <MapPin size={13} className="flex-shrink-0" />
-            <span className={tour.id === "nile-cruise" ? "text-xs leading-tight" : ""}>{tour.location}</span>
+            <span className={tour.id === "nile-cruise" ? "text-xs leading-tight" : ""}>{tour.locationKey ? t(tour.locationKey) : tour.location}</span>
           </span>
         </div>
         {renderPriceInContent()}
-        <p className="text-muted-foreground text-sm mb-5 leading-relaxed line-clamp-2 flex-1">{tour.description}</p>
+        <p className="text-muted-foreground text-sm mb-5 leading-relaxed line-clamp-2 flex-1">{tour.descriptionKey ? t(tour.descriptionKey) : tour.description}</p>
         <a
           href={`/tour/${tour.id}`}
           onClick={handleViewDetails}
