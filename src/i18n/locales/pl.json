@@ -1,87 +1,87 @@
 {
   "hero": {
-    "title": "Discover Egypt with",
-    "companyName": "Fayed International Travel",
-    "subtitle": "Explore the crystal-clear Red Sea, ride through the Sahara Desert, and uncover the ancient wonders of Luxor — all with expert guides by your side.",
-    "exploreTrips": "Explore Trips",
-    "contactUs": "Contact Us",
-    "b2bSystem": "B2B System"
+  "title": "Odkryj Egipt z",
+  "companyName": "Fayed International Travel",
+  "subtitle": "Odkryj krystalicznie czyste wody Morza Czerwonego, przeżyj przygodę na Saharze i poznaj starożytne cuda Luksoru — wszystko to z doświadczonymi przewodnikami u boku.",
+  "exploreTrips": "Zobacz Wycieczki",
+  "contactUs": "Skontaktuj się z nami",
+  "b2bSystem": "System B2B"
+},
+"nav": {
+  "home": "Strona Główna",
+  "trips": "Wycieczki",
+  "seaTrips": "Wycieczki Morskie",
+  "safari": "Safari",
+  "cityLeisure": "Miasto & Wypoczynek",
+  "luxorCairo": "Luksor & Kair",
+  "whyChooseUs": "Dlaczego My",
+  "aboutUs": "O Nas",
+  "b2bSystem": "System B2B",
+  "gallery": "Galeria",
+  "contact": "Kontakt",
+  "bookNow": "Zarezerwuj Teraz"
+},
+"sections": {
+  "excursions": {
+    "subtitle": "Nasze Wycieczki i Atrakcje",
+    "title": "Niezapomniane",
+    "titleHighlight": "Przygody",
+    "titleEnd": "Czekają",
+    "description": "Od głębin Morza Czerwonego po złote piaski Sahary — wszystkie wycieczki rozpoczynają się w Hurghadzie.",
+    "seaTrips": "Wycieczki Morskie",
+    "safariTrips": "Safari na Pustyni",
+    "cityLeisure": "Wycieczki Miejskie & Wypoczynek – Hurghada",
+    "luxorCairo": "Wycieczki do Luksoru & Kairu (z Hurghady)",
+    "transferServices": "Usługi Transferowe"
   },
-  "nav": {
-    "home": "Home",
-    "trips": "Trips",
-    "seaTrips": "Sea Trips",
-    "safari": "Safari",
-    "cityLeisure": "City & Leisure",
-    "luxorCairo": "Luxor & Cairo",
-    "whyChooseUs": "Why Choose Us",
-    "aboutUs": "About Us",
-    "b2bSystem": "B2B System",
-    "gallery": "Gallery",
-    "contact": "Contact",
-    "bookNow": "Book Now"
+  "whyChooseUs": {
+    "subtitle": "Dlaczego My",
+    "title": "Twój Zaufany",
+    "titleHighlight": "Partner Podróży",
+    "description": "Robimy wszystko, aby Twoja podróż do Egiptu była naprawdę wyjątkowa.",
+    "professionalGuides": "Profesjonalni Przewodnicy",
+    "professionalGuidesDesc": "Doświadczeni, certyfikowani lokalni przewodnicy, którzy ożywiają historię Egiptu.",
+    "bestPrices": "Najlepsze Ceny",
+    "bestPricesDesc": "Konkurencyjne ceny bez ukrytych kosztów. Gwarancja jakości.",
+    "safeTrips": "Bezpieczne Wycieczki",
+    "safeTripsDesc": "Twoje bezpieczeństwo jest naszym priorytetem — wszystkie wycieczki są w pełni ubezpieczone.",
+    "highQuality": "Wysoka Jakość Usług",
+    "highQualityDesc": "Sprzęt premium, komfortowy transport i dbałość o każdy detal.",
+    "support247": "Wsparcie 24/7",
+    "support247Desc": "Całodobowa pomoc zawsze, gdy jej potrzebujesz."
   },
-  "sections": {
-    "excursions": {
-      "subtitle": "Our Tours & Excursions",
-      "title": "Unforgettable",
-      "titleHighlight": "Adventures",
-      "titleEnd": "Await",
-      "description": "From the depths of the Red Sea to the golden sands of the Sahara — all tours depart from Hurghada.",
-      "seaTrips": "Sea Trips",
-      "safariTrips": "Safari Trips",
-      "cityLeisure": "City & Leisure Tours – Hurghada",
-      "luxorCairo": "Luxor & Cairo Trips (From Hurghada)",
-      "transferServices": "Transfer Services"
-    },
-    "whyChooseUs": {
-      "subtitle": "Why Choose Us",
-      "title": "Your Trusted",
-      "titleHighlight": "Travel Partner",
-      "description": "We go above and beyond to make your Egyptian adventure extraordinary.",
-      "professionalGuides": "Professional Guides",
-      "professionalGuidesDesc": "Experienced, certified local guides who bring Egypt to life.",
-      "bestPrices": "Best Prices",
-      "bestPricesDesc": "Competitive pricing with no hidden fees. Value guaranteed.",
-      "safeTrips": "Safe Trips",
-      "safeTripsDesc": "Your safety is our top priority with fully insured adventures.",
-      "highQuality": "High-Quality Service",
-      "highQualityDesc": "Premium equipment, comfortable transport, and attention to detail.",
-      "support247": "24/7 Support",
-      "support247Desc": "Round-the-clock assistance whenever you need us."
-    },
-    "gallery": {
-      "subtitle": "Gallery",
-      "title": "Moments from",
-      "titleHighlight": "Our Adventures"
-    },
-    "testimonials": {
-      "subtitle": "Testimonials",
-      "title": "What Our",
-      "titleHighlight": "Guests Say",
-      "reviews": [
-        {
-          "name": "Sarah M.",
-          "country": "United Kingdom",
-          "text": "The snorkeling trip was absolutely magical! The crew was professional and the coral reefs were breathtaking. Best experience in Hurghada!"
-        },
-        {
-          "name": "Hans W.",
-          "country": "Germany",
-          "text": "We booked the desert safari with Fayed Travel — the quad biking and sunset camel ride were unforgettable. Highly recommend!"
-        },
-        {
-          "name": "Maria L.",
-          "country": "Italy",
-          "text": "Our Luxor day trip was perfectly organized. The guide was incredibly knowledgeable and the temples were awe-inspiring. A must-do!"
-        },
-        {
-          "name": "James R.",
-          "country": "Australia",
-          "text": "From booking to the actual trip, everything was seamless. Great prices, friendly team, and amazing experiences. 10/10!"
-        }
-      ]
-    },
+  "gallery": {
+    "subtitle": "Galeria",
+    "title": "Chwile z",
+    "titleHighlight": "Naszych Przygód"
+  },
+  "testimonials": {
+    "subtitle": "Opinie",
+    "title": "Co Mówią",
+    "titleHighlight": "Nasi Goście",
+    "reviews": [
+      {
+        "name": "Sarah M.",
+        "country": "Wielka Brytania",
+        "text": "Wycieczka snorkelingowa była absolutnie magiczna! Profesjonalna załoga i zapierające dech w piersiach rafy koralowe. Najlepsze doświadczenie w Hurghadzie!"
+      },
+      {
+        "name": "Hans W.",
+        "country": "Niemcy",
+        "text": "Zarezerwowaliśmy safari na pustyni z Fayed Travel — jazda quadami i przejażdżka na wielbłądzie o zachodzie słońca były niezapomniane. Gorąco polecam!"
+      },
+      {
+        "name": "Maria L.",
+        "country": "Włochy",
+        "text": "Nasza jednodniowa wycieczka do Luksoru była perfekcyjnie zorganizowana. Przewodnik niezwykle kompetentny, a świątynie robiły ogromne wrażenie. Obowiązkowy punkt programu!"
+      },
+      {
+        "name": "James R.",
+        "country": "Australia",
+        "text": "Od rezerwacji aż po samą wycieczkę wszystko przebiegło idealnie. Świetne ceny, przyjazny zespół i niesamowite przeżycia. 10/10!"
+      }
+    ]
+  },
     "contact": {
       "subtitle": "Get In Touch",
       "title": "Book Your",
