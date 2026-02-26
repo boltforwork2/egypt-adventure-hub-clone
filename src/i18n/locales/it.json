@@ -127,21 +127,21 @@
   "backToHome": "Torna alla Home"
 },
   "footer": {
-    "companyName": "Fayed",
-    "companyNameEnd": "International Travel",
-    "description": "Votre partenaire de confiance pour des aventures inoubliables à Hurghada. Voyages en mer, safaris du désert et excursions d'une journée à Louxor & Le Caire.",
-    "quickLinks": "Liens Rapides",
-    "followUs": "Nous Suivre",
-    "copyright": "© 2026 Fayed International Travel. Tous les droits réservés.",
-    "links": {
-      "home": "Accueil",
-      "seaTrips": "Voyages en Mer",
-      "safari": "Safari",
-      "luxorCairo": "Louxor & Le Caire",
-      "aboutUs": "À Propos de Nous",
-      "contact": "Contact"
-    }
-  },
+  "companyName": "Fayed",
+  "companyNameEnd": "International Travel",
+  "description": "Il tuo partner di fiducia per avventure indimenticabili a Hurghada. Escursioni in mare, safari nel deserto e gite di un giorno a Luxor & Il Cairo.",
+  "quickLinks": "Link Utili",
+  "followUs": "Seguici",
+  "copyright": "© 2026 Fayed International Travel. Tutti i diritti riservati.",
+  "links": {
+    "home": "Home",
+    "seaTrips": "Escursioni Mare",
+    "safari": "Safari",
+    "luxorCairo": "Luxor & Il Cairo",
+    "aboutUs": "Chi Siamo",
+    "contact": "Contatti"
+  }
+},
 
   "aboutUs": {
     "title": "Benvenuti in",
