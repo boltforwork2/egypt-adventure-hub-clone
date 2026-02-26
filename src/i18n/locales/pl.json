@@ -98,6 +98,7 @@
   "phoneValue": "+20 112 242 4531",
   "emailValue": "info@fayedtravel.com",
   "locationValue": "Hurghada, Morze Czerwone, Egipt"
+}
 },
 "tour": {
   "duration": "Czas trwania",
@@ -445,6 +446,6 @@
   "error": "Błąd",
   "tryAgain": "Spróbuj ponownie",
   "close": "Zamknij"
-}
-}
+ }
+
 }
