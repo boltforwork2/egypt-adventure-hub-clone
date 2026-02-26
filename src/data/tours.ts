@@ -260,7 +260,12 @@ export const tours: Tour[] = [
     locationBadgesKeys: ["tours.superSafari.locationBadges"],
     description: "The ultimate desert experience combining quad biking, jeep safari, and camel riding. Includes a traditional Bedouin dinner and show. This tour is available in both Hurghada and El Gouna.",
     descriptionKey: "tours.superSafari.description",
-    includes: ["Dinner", "Show", "Desert activities", "Transfers"],
+    includes: [
+  "tourIncludes.dinner",
+  "tourIncludes.show",
+  "tourIncludes.desertActivities",
+  "tourIncludes.transfers",
+],
     imageFolderName: "Super Safari Images",
     imagePrefix: "SuperSafari",
     image: "/Images/super-safari/supersafari1.jpg",
