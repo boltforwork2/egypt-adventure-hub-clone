@@ -366,7 +366,11 @@ export const tours: Tour[] = [
     locationBadgeKey: "tours.luxorTrip.locationBadge",
     description: "Journey to the ancient city of Luxor and explore the world's greatest open-air museum. Visit temples, tombs, and legendary monuments.",
     descriptionKey: "tours.luxorTrip.description",
-    includes: ["Professional guide", "Lunch", "Transfers"],
+    includes: [
+  "tourIncludes.professionalGuide",
+  "tourIncludes.lunch",
+  "tourIncludes.transfers",
+],
     transportOptions: ["By Bus", "Private"],
     transportOptionsKeys: ["transport.byBus", "transport.private"],
     transportPrices: {
