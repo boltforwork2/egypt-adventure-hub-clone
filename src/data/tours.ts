@@ -61,7 +61,7 @@ export const tours: Tour[] = [
     locationBadgeKey: "tours.orangeBayIsland.locationBadge",
     description: "Visit the stunning Orange Bay Island with its pristine white sand beaches and crystal-clear turquoise waters. A perfect full-day escape in the Red Sea.",
     descriptionKey: "tours.orangeBayIsland.description",
-    includes: ["tourIncludes.boatTrip", "tourIncludes.snorkeling", "Lunch", "Soft drinks"],
+    includes: ["tourIncludes.boatTrip", "tourIncludes.snorkeling", "tourIncludes.lunch", "tourIncludes.softDrinks"],
     imageFolderName: "Orange Bay Island Images",
     imagePrefix: "OrangeBay",
     image: "/Images/orange-bay/orangebay1.jpg",
