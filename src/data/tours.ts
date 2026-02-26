@@ -105,7 +105,12 @@ export const tours: Tour[] = [
     locationBadgeKey: "tours.dolphinHouse.locationBadge",
     description: "Swim alongside wild dolphins in their natural habitat at Dolphin House reef. An unforgettable marine encounter with professional guides.",
     descriptionKey: "tours.dolphinHouse.description",
-    includes: ["Dolphin area", "Snorkeling", "Lunch", "Professional guide"],
+    includes: [
+  "tourIncludes.dolphinArea",
+  "tourIncludes.snorkeling",
+  "tourIncludes.lunch",
+  "tourIncludes.professionalGuide",
+],
     imageFolderName: "Dolphin House Images",
     imagePrefix: "DolphinHouse",
     image: "/Images/dolphin-house/dolphinhouse1.jpg",
