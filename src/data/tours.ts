@@ -130,7 +130,12 @@ export const tours: Tour[] = [
     locationBadgeKey: "tours.scubaDivingIntro.locationBadge",
     description: "Take your first breath underwater with a professional scuba diving introduction. No experience needed — explore the Red Sea's vibrant coral reefs.",
     descriptionKey: "tours.scubaDivingIntro.description",
-    includes: ["2 dives", "Instructor", "Equipment", "Lunch"],
+    includes: [
+  "tourIncludes.twoVesselsDives",
+  "tourIncludes.instructor",
+  "tourIncludes.equipment",
+  "tourIncludes.lunch",
+],
     imageFolderName: "Scuba Diving Intro Images",
     imagePrefix: "ScubaDiving",
     image: "/Images/scuba-diving/scubadiving1.jpg",
