@@ -184,7 +184,9 @@ export const tours: Tour[] = [
     locationBadgesKeys: ["tours.glassBoat.locationBadges"],
     description: "See the magical underwater world without getting wet! The yellow glass-bottom boat reveals stunning coral reefs and colorful fish beneath you. This tour is available in both Hurghada and El Gouna.",
     descriptionKey: "tours.glassBoat.description",
-    includes: ["Underwater viewing experience"],
+    includes: [
+  "tourIncludes.underwaterViewingExperience"
+],
     imageFolderName: "Glass Boat Images",
     imagePrefix: "GlassBoat",
     image: "/Images/glass-boat/glassboat1.jpg",
