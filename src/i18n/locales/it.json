@@ -1,238 +1,198 @@
 {
   "hero": {
-    "title": "Discover Egypt with",
+    "title": "Scopri l’Egitto con",
     "companyName": "Fayed International Travel",
-    "subtitle": "Explore the crystal-clear Red Sea, ride through the Sahara Desert, and uncover the ancient wonders of Luxor — all with expert guides by your side.",
-    "exploreTrips": "Explore Trips",
-    "contactUs": "Contact Us",
-    "b2bSystem": "B2B System"
+    "subtitle": "Esplora il Mar Rosso dalle acque cristalline, vivi l’avventura nel Deserto del Sahara e scopri le meraviglie antiche di Luxor — sempre accompagnato da guide esperte.",
+    "exploreTrips": "Scopri le Escursioni",
+    "contactUs": "Contattaci",
+    "b2bSystem": "Sistema B2B"
   },
   "nav": {
     "home": "Home",
-    "trips": "Trips",
-    "seaTrips": "Sea Trips",
+    "trips": "Escursioni",
+    "seaTrips": "Escursioni Mare",
     "safari": "Safari",
-    "cityLeisure": "City & Leisure",
-    "luxorCairo": "Luxor & Cairo",
-    "whyChooseUs": "Why Choose Us",
-    "aboutUs": "About Us",
-    "b2bSystem": "B2B System",
-    "gallery": "Gallery",
-    "contact": "Contact",
-    "bookNow": "Book Now"
+    "cityLeisure": "Città & Relax",
+    "luxorCairo": "Luxor & Il Cairo",
+    "whyChooseUs": "Perché Sceglierci",
+    "aboutUs": "Chi Siamo",
+    "b2bSystem": "Sistema B2B",
+    "gallery": "Galleria",
+    "contact": "Contatti",
+    "bookNow": "Prenota Ora"
   },
   "sections": {
     "excursions": {
-      "subtitle": "Our Tours & Excursions",
-      "title": "Unforgettable",
-      "titleHighlight": "Adventures",
-      "titleEnd": "Await",
-      "description": "From the depths of the Red Sea to the golden sands of the Sahara — all tours depart from Hurghada.",
-      "seaTrips": "Sea Trips",
-      "safariTrips": "Safari Trips",
-      "cityLeisure": "City & Leisure Tours – Hurghada",
-      "luxorCairo": "Luxor & Cairo Trips (From Hurghada)",
-      "transferServices": "Transfer Services"
+      "subtitle": "I Nostri Tour & Escursioni",
+      "title": "Avventure",
+      "titleHighlight": "Indimenticabili",
+      "titleEnd": "Ti Aspettano",
+      "description": "Dalle profondità del Mar Rosso alle dune dorate del Sahara — tutte le escursioni partono da Hurghada.",
+      "seaTrips": "Escursioni Mare",
+      "safariTrips": "Safari nel Deserto",
+      "cityLeisure": "Tour Città & Relax – Hurghada",
+      "luxorCairo": "Escursioni Luxor & Il Cairo (da Hurghada)",
+      "transferServices": "Servizi Transfer"
     },
     "whyChooseUs": {
-      "subtitle": "Why Choose Us",
-      "title": "Your Trusted",
-      "titleHighlight": "Travel Partner",
-      "description": "We go above and beyond to make your Egyptian adventure extraordinary.",
-      "professionalGuides": "Professional Guides",
-      "professionalGuidesDesc": "Experienced, certified local guides who bring Egypt to life.",
-      "bestPrices": "Best Prices",
-      "bestPricesDesc": "Competitive pricing with no hidden fees. Value guaranteed.",
-      "safeTrips": "Safe Trips",
-      "safeTripsDesc": "Your safety is our top priority with fully insured adventures.",
-      "highQuality": "High-Quality Service",
-      "highQualityDesc": "Premium equipment, comfortable transport, and attention to detail.",
-      "support247": "24/7 Support",
-      "support247Desc": "Round-the-clock assistance whenever you need us."
+      "subtitle": "Perché Sceglierci",
+      "title": "Il Tuo",
+      "titleHighlight": "Partner di Viaggio",
+      "description": "Superiamo le aspettative per rendere la tua esperienza in Egitto davvero straordinaria.",
+      "professionalGuides": "Guide Professionali",
+      "professionalGuidesDesc": "Guide locali certificate ed esperte che fanno vivere l’Egitto.",
+      "bestPrices": "Migliori Prezzi",
+      "bestPricesDesc": "Prezzi competitivi senza costi nascosti. Qualità garantita.",
+      "safeTrips": "Escursioni Sicure",
+      "safeTripsDesc": "La tua sicurezza è la nostra priorità con attività completamente assicurate.",
+      "highQuality": "Servizio di Alta Qualità",
+      "highQualityDesc": "Attrezzature premium, trasporti confortevoli e massima attenzione ai dettagli.",
+      "support247": "Assistenza 24/7",
+      "support247Desc": "Supporto continuo ogni volta che ne hai bisogno."
     },
     "gallery": {
-      "subtitle": "Gallery",
-      "title": "Moments from",
-      "titleHighlight": "Our Adventures"
+      "subtitle": "Galleria",
+      "title": "Momenti delle",
+      "titleHighlight": "Nostre Avventure"
     },
     "testimonials": {
-      "subtitle": "Testimonials",
-      "title": "What Our",
-      "titleHighlight": "Guests Say",
+      "subtitle": "Testimonianze",
+      "title": "Cosa Dicono",
+      "titleHighlight": "I Nostri Ospiti",
       "reviews": [
         {
           "name": "Sarah M.",
-          "country": "United Kingdom",
-          "text": "The snorkeling trip was absolutely magical! The crew was professional and the coral reefs were breathtaking. Best experience in Hurghada!"
+          "country": "Regno Unito",
+          "text": "L’escursione di snorkeling è stata assolutamente magica! Equipaggio professionale e barriere coralline mozzafiato. La migliore esperienza a Hurghada!"
         },
         {
           "name": "Hans W.",
-          "country": "Germany",
-          "text": "We booked the desert safari with Fayed Travel — the quad biking and sunset camel ride were unforgettable. Highly recommend!"
+          "country": "Germania",
+          "text": "Abbiamo prenotato il safari nel deserto con Fayed Travel — quad e giro in cammello al tramonto indimenticabili. Consigliatissimo!"
         },
         {
           "name": "Maria L.",
-          "country": "Italy",
-          "text": "Our Luxor day trip was perfectly organized. The guide was incredibly knowledgeable and the temples were awe-inspiring. A must-do!"
+          "country": "Italia",
+          "text": "La nostra escursione a Luxor è stata organizzata alla perfezione. Guida preparatissima e templi spettacolari. Da non perdere!"
         },
         {
           "name": "James R.",
           "country": "Australia",
-          "text": "From booking to the actual trip, everything was seamless. Great prices, friendly team, and amazing experiences. 10/10!"
+          "text": "Dalla prenotazione al tour tutto è stato perfetto. Ottimi prezzi, team cordiale ed esperienze incredibili. 10/10!"
         }
       ]
     },
     "contact": {
-      "subtitle": "Get In Touch",
-      "title": "Book Your",
-      "titleHighlight": "Adventure",
-      "description": "Ready to explore? Send us a message and we'll plan your perfect trip.",
-      "name": "Your Name",
-      "email": "Email Address",
-      "phone": "Phone Number",
-      "message": "Your Message",
-      "sendMessage": "Send Message via WhatsApp",
-      "phoneLabel": "Phone",
+      "subtitle": "Contattaci",
+      "title": "Prenota la Tua",
+      "titleHighlight": "Avventura",
+      "description": "Pronto a esplorare? Scrivici e organizzeremo il viaggio perfetto per te.",
+      "name": "Il Tuo Nome",
+      "email": "Indirizzo Email",
+      "phone": "Numero di Telefono",
+      "message": "Il Tuo Messaggio",
+      "sendMessage": "Invia Messaggio via WhatsApp",
+      "phoneLabel": "Telefono",
       "emailLabel": "Email",
-      "locationLabel": "Location",
+      "locationLabel": "Località",
       "phoneValue": "+20 112 242 4531",
       "emailValue": "info@fayedtravel.com",
-      "locationValue": "Hurghada, Red Sea, Egypt"
+      "locationValue": "Hurghada, Mar Rosso, Egitto"
     }
   },
-  "tour": {
-    "duration": "Duration",
-    "location": "Location",
-    "viewDetails": "View Details",
-    "startingFrom": "Starting from:",
-    "moreOptions": "+ More options available",
-    "backToAllTours": "Back to All Tours",
-    "aboutThisTour": "About This Tour",
-    "pricing": "Pricing",
-    "pricePerPerson": "Price per person",
-    "adults": "Adults",
-    "children": "Children",
-    "free": "Free",
-    "hurghada": "Hurghada",
-    "elGouna": "El Gouna",
-    "whatsIncluded": "What's Included",
-    "availableTravelOptions": "Available Travel Options",
-    "availableCruiseOptions": "Available Cruise Options",
-    "contact": "Contact",
-    "gallery": "Gallery",
-    "interestedInTour": "Interested in this tour?",
-    "bookViaWhatsApp": "Book via WhatsApp",
-    "contactUs": "Contact Us",
-    "tourNotFound": "Tour Not Found",
-    "backToHome": "Back to Home"
-  },
-  "footer": {
-    "companyName": "Fayed",
-    "companyNameEnd": "International Travel",
-    "description": "Your trusted partner for unforgettable Hurghada adventures. Sea trips, desert safaris, and day trips to Luxor & Cairo.",
-    "quickLinks": "Quick Links",
-    "followUs": "Follow Us",
-    "copyright": "© 2026 Fayed International Travel. All rights reserved.",
-    "links": {
-      "home": "Home",
-      "seaTrips": "Sea Trips",
-      "safari": "Safari",
-      "luxorCairo": "Luxor & Cairo",
-      "aboutUs": "About Us",
-      "contact": "Contact"
-    }
-  },
+
   "aboutUs": {
-    "title": "Welcome to",
+    "title": "Benvenuti in",
     "titleHighlight": "Fayed International Travel Agency",
-    "subtitle": "Your trusted partner for unforgettable travel experiences in Egypt",
-    "intro": "Fayed International Travel Agency is an Egyptian travel company specialized in organizing tours and travel services across Egypt. We offer unforgettable experiences in the Red Sea, Cairo, Luxor, Aswan, and desert safari destinations.",
+    "subtitle": "Il tuo partner di fiducia per esperienze di viaggio indimenticabili in Egitto",
+    "intro": "Fayed International Travel Agency è una compagnia turistica egiziana specializzata nell’organizzazione di tour e servizi di viaggio in tutto l’Egitto. Offriamo esperienze uniche nel Mar Rosso, al Cairo, a Luxor, ad Assuan e nei safari nel deserto.",
     "services": {
-      "title": "Our Services",
-      "subtitle": "Comprehensive travel solutions designed to exceed your expectations",
-      "hotelReservations": "Hotel Reservations",
-      "hotelReservationsDesc": "Carefully selected accommodations to suit every budget and preference",
-      "airportTransfers": "Airport Transfers",
-      "airportTransfersDesc": "Reliable and comfortable transportation from arrival to departure",
-      "privateTours": "Private & Group Tours",
-      "privateToursDesc": "Tailored experiences with expert local guides",
-      "seaTrips": "Sea Trips & Snorkeling",
-      "seaTripsDesc": "Explore the stunning Red Sea marine life",
-      "desertSafari": "Desert Safari Adventures",
-      "desertSafariDesc": "Thrilling journeys across Egypt's golden landscapes",
-      "customPackages": "Customized Travel Packages",
-      "customPackagesDesc": "Personalized itineraries designed around your dreams"
+      "title": "I Nostri Servizi",
+      "subtitle": "Soluzioni di viaggio complete progettate per superare le tue aspettative",
+      "hotelReservations": "Prenotazioni Alberghiere",
+      "hotelReservationsDesc": "Strutture accuratamente selezionate per ogni budget ed esigenza",
+      "airportTransfers": "Transfer Aeroportuali",
+      "airportTransfersDesc": "Trasporti affidabili e confortevoli dall’arrivo alla partenza",
+      "privateTours": "Tour Privati & di Gruppo",
+      "privateToursDesc": "Esperienze su misura con guide locali esperte",
+      "seaTrips": "Escursioni Mare & Snorkeling",
+      "seaTripsDesc": "Scopri la straordinaria vita marina del Mar Rosso",
+      "desertSafari": "Avventure Safari nel Deserto",
+      "desertSafariDesc": "Viaggi emozionanti tra i paesaggi dorati dell’Egitto",
+      "customPackages": "Pacchetti di Viaggio Personalizzati",
+      "customPackagesDesc": "Itinerari su misura creati intorno ai tuoi sogni"
     },
     "partnership": {
-      "title": "International",
-      "titleHighlight": "Partnership",
-      "point1": "We operate as an official tourism representative in Egypt, committed to the highest standards of service and professionalism",
-      "point2": "We proudly cooperate with international travel partners through our dedicated B2B services",
-      "point3": "Our services are tailored for European and international markets, ensuring seamless experiences for global travelers",
-      "point4": "We focus on reliability, consistency, and service quality to build lasting partnerships"
+      "title": "Partnership",
+      "titleHighlight": "Internazionale",
+      "point1": "Operiamo come rappresentante turistico ufficiale in Egitto, rispettando i più alti standard di servizio e professionalità",
+      "point2": "Collaboriamo con partner turistici internazionali tramite i nostri servizi B2B dedicati",
+      "point3": "I nostri servizi sono pensati per il mercato europeo e internazionale",
+      "point4": "Affidabilità, continuità e qualità del servizio sono alla base delle nostre partnership"
     },
     "mission": {
-      "title": "Our Mission",
-      "value1": "Deliver professional service at every touchpoint",
-      "value2": "Ensure safety and comfort throughout your journey",
-      "value3": "Create unforgettable memories in Egypt"
+      "title": "La Nostra Missione",
+      "value1": "Offrire un servizio professionale in ogni fase del viaggio",
+      "value2": "Garantire sicurezza e comfort durante tutta l’esperienza",
+      "value3": "Creare ricordi indimenticabili in Egitto"
     },
     "closing": {
-      "text1": "At Fayed International Travel Agency, we believe that travel is more than just a trip — it is an experience.",
-      "text2": "Let us turn your journey into a memory you will never forget."
+      "text1": "In Fayed International Travel Agency crediamo che viaggiare sia molto più di uno spostamento.",
+      "text2": "Lascia che trasformiamo il tuo viaggio in un ricordo indimenticabile."
     }
   },
+
   "b2b": {
-    "title": "B2B Partnership",
-    "titleHighlight": "Egypt Ground Handling & DMC Services",
-    "subtitle": "Your trusted local executing partner in Egypt",
-    "intro1": "We are a professional Egypt-based tour operator and ground handling partner providing reliable B2B services for international travel agencies and tour operators.",
-    "intro2": "As a local executing agent in Egypt, we specialize in delivering high-quality travel services for European markets, ensuring smooth operations, competitive rates, and excellent client satisfaction.",
+    "title": "Partnership B2B",
+    "titleHighlight": "Servizi DMC & Ground Handling in Egitto",
+    "subtitle": "Il tuo partner operativo locale di fiducia in Egitto",
+    "intro1": "Siamo un tour operator professionale con sede in Egitto che fornisce servizi B2B affidabili per agenzie di viaggio e tour operator internazionali.",
+    "intro2": "Come agente operativo locale, offriamo servizi di alta qualità per il mercato europeo, garantendo operazioni fluide, tariffe competitive e massima soddisfazione del cliente.",
     "whoWeAre": {
-      "title": "Who We Are",
-      "description": "We act as a trusted local representative and executing partner in Egypt, offering full destination management services (DMC) with strong operational control on the ground.",
+      "title": "Chi Siamo",
+      "description": "Agiamo come rappresentante locale affidabile e partner operativo in Egitto, offrendo servizi completi di Destination Management (DMC).",
       "points": {
-        "coordination": "Professional coordination",
-        "transfers": "On-time transfers",
-        "assistance": "Multilingual tour assistance",
-        "standards": "High service standards",
-        "pricing": "Transparent pricing",
-        "management": "Direct management control"
+        "coordination": "Coordinamento professionale",
+        "transfers": "Transfer puntuali",
+        "assistance": "Assistenza turistica multilingue",
+        "standards": "Alti standard di servizio",
+        "pricing": "Prezzi trasparenti",
+        "management": "Controllo operativo diretto"
       }
     },
     "services": {
-      "title": "Our B2B Services in Egypt",
-      "subtitle": "Comprehensive solutions tailored for international travel partners",
+      "title": "I Nostri Servizi B2B in Egitto",
+      "subtitle": "Soluzioni complete pensate per partner turistici internazionali",
       "list": {
-        "airportTransfers": "Airport transfers (private & group)",
-        "hotelBookings": "Hotel bookings (3–5 stars & luxury resorts)",
-        "dailyExcursions": "Daily excursions in Hurghada, Cairo & Luxor",
-        "boatTrips": "Red Sea boat trips & snorkeling tours",
-        "desertSafari": "Desert safari & quad adventures",
-        "culturalTours": "Cultural tours & historical programs",
-        "customPackages": "Custom-made packages",
-        "vipServices": "VIP services upon request"
+        "airportTransfers": "Transfer aeroportuali (privati e di gruppo)",
+        "hotelBookings": "Prenotazioni alberghiere (3–5 stelle e resort di lusso)",
+        "dailyExcursions": "Escursioni giornaliere a Hurghada, Il Cairo e Luxor",
+        "boatTrips": "Escursioni in barca nel Mar Rosso & snorkeling",
+        "desertSafari": "Safari nel deserto & avventure in quad",
+        "culturalTours": "Tour culturali & programmi storici",
+        "customPackages": "Pacchetti su misura",
+        "vipServices": "Servizi VIP su richiesta"
       }
     },
     "advantages": {
-      "title": "Why Partner With Us?",
-      "competitiveRates": "Competitive NET Rates",
-      "competitiveRatesDesc": "Best pricing for travel agency partners",
-      "fastResponse": "Fast Response & Support",
-      "fastResponseDesc": "Dedicated B2B support team ready to assist",
-      "flexiblePayment": "Flexible Payment Terms",
-      "flexiblePaymentDesc": "Tailored payment solutions for partners",
-      "europeanExperience": "European Market Experience",
-      "europeanExperienceDesc": "Proven expertise with international clients",
-      "supplierNetwork": "Strong Supplier Network",
-      "supplierNetworkDesc": "Reliable local partner connections",
-      "reliableExecution": "Reliable Execution",
-      "reliableExecutionDesc": "On-ground professional service guarantee"
+      "title": "Perché Collaborare con Noi?",
+      "competitiveRates": "Tariffe NET Competitive",
+      "competitiveRatesDesc": "Prezzi vantaggiosi per partner e agenzie",
+      "fastResponse": "Risposta Rapida & Supporto",
+      "fastResponseDesc": "Team B2B dedicato sempre disponibile",
+      "flexiblePayment": "Pagamenti Flessibili",
+      "flexiblePaymentDesc": "Soluzioni di pagamento personalizzate",
+      "europeanExperience": "Esperienza nel Mercato Europeo",
+      "europeanExperienceDesc": "Comprovata esperienza con clienti internazionali",
+      "supplierNetwork": "Rete di Fornitori Affidabili",
+      "supplierNetworkDesc": "Collaborazioni locali solide",
+      "reliableExecution": "Esecuzione Affidabile",
+      "reliableExecutionDesc": "Garanzia di servizio professionale sul campo"
     },
     "cooperation": {
-      "text1": "We focus exclusively on bringing foreign clients to Egypt and operating their programs professionally from arrival to departure.",
-      "quote": "If you are looking for a reliable local partner in Egypt to handle your clients with care and professionalism, we are ready for cooperation on a B2B basis.",
-      "contactPrompt": "Contact us for our B2B rate list and partnership proposal."
+      "text1": "Ci concentriamo esclusivamente sull’accoglienza e la gestione professionale di clienti stranieri in Egitto.",
+      "quote": "Se cerchi un partner locale affidabile in Egitto per gestire i tuoi clienti con cura e professionalità, siamo pronti a collaborare su base B2B.",
+      "contactPrompt": "Contattaci per ricevere il listino B2B e la proposta di partnership."
     }
   },
   "badges": {
@@ -243,119 +203,119 @@
   "nileCruise": "Crociera sul Nilo"
 },
   "tours": {
-    "orangeBayIsland": {
-      "title": "Orange Bay Island",
-      "location": "Hurghada, Egypt",
-      "duration": "Full Day (8 hours)",
-      "description": "Visit the stunning Orange Bay Island with its pristine white sand beaches and crystal-clear turquoise waters. A perfect full-day escape in the Red Sea.",
-      "locationBadge": "Hurghada Trip"
-    },
-    "paradiseIsland": {
-      "title": "Paradise Island",
-      "location": "Hurghada, Egypt",
-      "duration": "Full Day",
-      "description": "Discover Paradise Island — a breathtaking destination with white sandy shores, ideal for swimming, sunbathing, and snorkeling in the Red Sea.",
-      "locationBadge": "Hurghada Trip"
-    },
-    "dolphinHouse": {
-      "title": "Dolphin House",
-      "location": "Hurghada, Egypt",
-      "duration": "Full Day",
-      "description": "Swim alongside wild dolphins in their natural habitat at Dolphin House reef. An unforgettable marine encounter with professional guides.",
-      "locationBadge": "Hurghada Trip"
-    },
-    "scubaDivingIntro": {
-      "title": "Scuba Diving Intro",
-      "location": "Hurghada, Egypt",
-      "duration": "Full Day",
-      "description": "Take your first breath underwater with a professional scuba diving introduction. No experience needed — explore the Red Sea's vibrant coral reefs.",
-      "locationBadge": "Hurghada Trip"
-    },
-    "privateSpeedboat": {
-      "title": "Private Speedboat",
-      "location": "El Gouna / Hurghada, Egypt",
-      "duration": "4 hours",
-      "description": "Enjoy an exclusive private speedboat experience along the coast. Snorkel at pristine spots with your own captain and crew. This tour is available in both Hurghada and El Gouna.",
-      "locationBadges": ["Hurghada Trip", "El Gouna Trip"]
-    },
-    "glassBoat": {
-      "title": "Glass Boat",
-      "location": "El Gouna / Hurghada, Egypt",
-      "duration": "2 hours",
-      "description": "See the magical underwater world without getting wet! The yellow glass-bottom boat reveals stunning coral reefs and colorful fish beneath you. This tour is available in both Hurghada and El Gouna.",
-      "locationBadges": ["Hurghada Trip", "El Gouna Trip"]
-    },
-    "catamaranTrip": {
-      "title": "Catamaran Trip",
-      "location": "El Gouna, Egypt",
-      "duration": "3–5 Hours (Flexible)",
-      "description": "Catamaran trips are relaxing sea experiences in El Gouna, suitable for individuals, couples, and groups.",
-      "locationBadge": "El Gouna Trip"
-    },
-    "quadBikeSafari": {
-      "title": "Quad Bike Safari",
-      "location": "Hurghada, Egypt",
-      "duration": "3 hours",
-      "description": "Race across the golden sand dunes of the Sahara on powerful quad bikes. An adrenaline-filled desert adventure with Bedouin tea.",
-      "locationBadge": "Hurghada Trip"
-    },
-    "superSafari": {
-      "title": "Super Safari (Quad + Jeep + Camel)",
-      "location": "El Gouna / Hurghada, Egypt",
-      "duration": "5 hours",
-      "description": "The ultimate desert experience combining quad biking, jeep safari, and camel riding. Includes a traditional Bedouin dinner and show. This tour is available in both Hurghada and El Gouna.",
-      "locationBadges": ["Hurghada Trip", "El Gouna Trip"]
-    },
-    "cityTourHurghada": {
-      "title": "City Tour – Hurghada",
-      "location": "Hurghada, Egypt",
-      "duration": "Flexible Duration",
-      "description": "A city sightseeing tour around Hurghada that allows visitors to explore the local lifestyle and main attractions.",
-      "locationBadge": "Hurghada Trip"
-    },
-    "grandAquariumHurghada": {
-      "title": "Grand Aquarium – Hurghada",
-      "location": "Hurghada, Egypt",
-      "duration": "Flexible Duration",
-      "description": "The Aquarium Tour is one of the best family-friendly entertainment experiences in Hurghada, combining marine life observation with educational and interactive attractions.",
-      "locationBadge": "Hurghada Trip"
-    },
-    "horseRidingHurghada": {
-      "title": "Horse Riding Tour – Hurghada",
-      "location": "Hurghada, Egypt",
-      "duration": "1–2 Hours",
-      "description": "Horse riding tours in Hurghada are suitable for all ages and offer a unique mix of natural scenery and enjoyable physical activity.",
-      "locationBadge": "Hurghada Trip"
-    },
-    "luxorTrip": {
-      "title": "Luxor Trip",
-      "location": "From Hurghada",
-      "duration": "Full Day",
-      "description": "Journey to the ancient city of Luxor and explore the world's greatest open-air museum. Visit temples, tombs, and legendary monuments.",
-      "locationBadge": "From Hurghada"
-    },
-    "cairoTrip": {
-      "title": "Cairo Trip",
-      "location": "From Hurghada",
-      "duration": "Full Day",
-      "description": "Explore the iconic Pyramids of Giza, the Sphinx, and the Egyptian Museum on an unforgettable day trip to Cairo from Hurghada.",
-      "locationBadge": "From Hurghada"
-    },
-    "airportTransfer": {
-      "title": "Airport Transfer – Hurghada",
-      "location": "Hurghada International Airport",
-      "duration": "As Needed",
-      "description": "Private and shared transfer services from Hurghada International Airport to hotels, resorts, El Gouna, Makadi Bay, Sahl Hasheesh, and other nearby destinations.",
-      "locationBadge": "Transfer Service"
-    },
-    "nileCruise": {
-      "title": "Nile Cruise",
-      "location": "Luxor ⇄ Aswan, Egypt",
-      "duration": "Multiple Options",
-      "description": "Experience unforgettable Nile River cruise adventures with multiple options to suit your schedule. Choose from dinner cruises, lunch cruises, pharaonic shows, or multi-day journeys along Egypt's legendary river.",
-      "locationBadge": "Nile Cruise"
-    }
+  "orangeBayIsland": {
+    "title": "Isola di Orange Bay",
+    "location": "Hurghada, Egitto",
+    "duration": "Intera Giornata (8 ore)",
+    "description": "Visita la splendida Isola di Orange Bay con le sue spiagge di sabbia bianca incontaminata e le acque turchesi cristalline. Una perfetta fuga di un’intera giornata nel Mar Rosso.",
+    "locationBadge": "Escursione Hurghada"
   },
+  "paradiseIsland": {
+    "title": "Isola Paradise",
+    "location": "Hurghada, Egitto",
+    "duration": "Intera Giornata",
+    "description": "Scopri Paradise Island — una destinazione mozzafiato con spiagge di sabbia bianca, ideale per nuotare, prendere il sole e fare snorkeling nel Mar Rosso.",
+    "locationBadge": "Escursione Hurghada"
+  },
+  "dolphinHouse": {
+    "title": "Dolphin House",
+    "location": "Hurghada, Egitto",
+    "duration": "Intera Giornata",
+    "description": "Nuota accanto ai delfini nel loro habitat naturale presso la barriera di Dolphin House. Un incontro marino indimenticabile accompagnato da guide professionali.",
+    "locationBadge": "Escursione Hurghada"
+  },
+  "scubaDivingIntro": {
+    "title": "Introduzione alle Immersioni Subacquee",
+    "location": "Hurghada, Egitto",
+    "duration": "Intera Giornata",
+    "description": "Vivi la tua prima esperienza sott’acqua con un’introduzione professionale alle immersioni. Nessuna esperienza richiesta — esplora le colorate barriere coralline del Mar Rosso.",
+    "locationBadge": "Escursione Hurghada"
+  },
+  "privateSpeedboat": {
+    "title": "Motoscafo Privato",
+    "location": "El Gouna / Hurghada, Egitto",
+    "duration": "4 ore",
+    "description": "Goditi un’esperienza esclusiva in motoscafo privato lungo la costa. Snorkeling in punti incontaminati con capitano ed equipaggio dedicati. Disponibile a Hurghada ed El Gouna.",
+    "locationBadges": ["Escursione Hurghada", "Escursione El Gouna"]
+  },
+  "glassBoat": {
+    "title": "Barca con Fondo di Vetro",
+    "location": "El Gouna / Hurghada, Egitto",
+    "duration": "2 ore",
+    "description": "Scopri il magico mondo sottomarino senza bagnarti! La barca gialla con fondo di vetro mostra splendide barriere coralline e pesci colorati sotto di te. Disponibile a Hurghada ed El Gouna.",
+    "locationBadges": ["Escursione Hurghada", "Escursione El Gouna"]
+  },
+  "catamaranTrip": {
+    "title": "Escursione in Catamarano",
+    "location": "El Gouna, Egitto",
+    "duration": "3–5 Ore (Flessibile)",
+    "description": "Le escursioni in catamarano sono esperienze rilassanti in mare a El Gouna, ideali per singoli, coppie e gruppi.",
+    "locationBadge": "Escursione El Gouna"
+  },
+  "quadBikeSafari": {
+    "title": "Safari in Quad",
+    "location": "Hurghada, Egitto",
+    "duration": "3 ore",
+    "description": "Sfreccia tra le dune dorate del Sahara a bordo di potenti quad. Un’avventura nel deserto ricca di adrenalina con tè beduino incluso.",
+    "locationBadge": "Escursione Hurghada"
+  },
+  "superSafari": {
+    "title": "Super Safari (Quad + Jeep + Cammello)",
+    "location": "El Gouna / Hurghada, Egitto",
+    "duration": "5 ore",
+    "description": "L’esperienza definitiva nel deserto che combina quad, safari in jeep e giro in cammello. Include cena beduina tradizionale e spettacolo. Disponibile a Hurghada ed El Gouna.",
+    "locationBadges": ["Escursione Hurghada", "Escursione El Gouna"]
+  },
+  "cityTourHurghada": {
+    "title": "Tour della Città – Hurghada",
+    "location": "Hurghada, Egitto",
+    "duration": "Durata Flessibile",
+    "description": "Tour panoramico della città di Hurghada che permette di scoprire la vita locale e le principali attrazioni.",
+    "locationBadge": "Escursione Hurghada"
+  },
+  "grandAquariumHurghada": {
+    "title": "Grand Aquarium – Hurghada",
+    "location": "Hurghada, Egitto",
+    "duration": "Durata Flessibile",
+    "description": "Il tour dell’Acquario è una delle migliori esperienze per famiglie a Hurghada, combinando osservazione della vita marina con attrazioni educative e interattive.",
+    "locationBadge": "Escursione Hurghada"
+  },
+  "horseRidingHurghada": {
+    "title": "Escursione a Cavallo – Hurghada",
+    "location": "Hurghada, Egitto",
+    "duration": "1–2 Ore",
+    "description": "Le escursioni a cavallo a Hurghada sono adatte a tutte le età e offrono un mix unico di natura e attività fisica piacevole.",
+    "locationBadge": "Escursione Hurghada"
+  },
+  "luxorTrip": {
+    "title": "Escursione a Luxor",
+    "location": "Da Hurghada",
+    "duration": "Intera Giornata",
+    "description": "Viaggia verso l’antica città di Luxor ed esplora il più grande museo a cielo aperto del mondo. Templi, tombe e monumenti leggendari.",
+    "locationBadge": "Da Hurghada"
+  },
+  "cairoTrip": {
+    "title": "Escursione al Cairo",
+    "location": "Da Hurghada",
+    "duration": "Intera Giornata",
+    "description": "Scopri le iconiche Piramidi di Giza, la Sfinge e il Museo Egizio in un’indimenticabile escursione giornaliera al Cairo da Hurghada.",
+    "locationBadge": "Da Hurghada"
+  },
+  "airportTransfer": {
+    "title": "Transfer Aeroportuale – Hurghada",
+    "location": "Aeroporto Internazionale di Hurghada",
+    "duration": "Secondo Necessità",
+    "description": "Servizi di transfer privati e condivisi dall’Aeroporto Internazionale di Hurghada verso hotel, resort, El Gouna, Makadi Bay, Sahl Hasheesh e altre destinazioni vicine.",
+    "locationBadge": "Servizio Transfer"
+  },
+  "nileCruise": {
+    "title": "Crociera sul Nilo",
+    "location": "Luxor ⇄ Assuan, Egitto",
+    "duration": "Opzioni Multiple",
+    "description": "Vivi un’indimenticabile crociera sul Nilo con diverse opzioni in base al tuo programma. Scegli tra crociere con cena, pranzo, spettacoli faraonici o viaggi di più giorni lungo il leggendario fiume egiziano.",
+    "locationBadge": "Crociera sul Nilo"
+  }
+},
   "tourIncludes": {
     "boatTrip": "Boat trip",
     "snorkeling": "Snorkeling",
