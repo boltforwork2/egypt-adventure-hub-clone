@@ -16,6 +16,7 @@ const LanguageSwitcher = ({ scrolled, isNonHomePage }: { scrolled: boolean; isNo
     { code: "en", label: "English" },
     { code: "de", label: "German" },
     { code: "fr", label: "French" },
+    { code: "rs", label: "Russian"}
   ];
 
   useEffect(() => {
