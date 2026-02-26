@@ -399,7 +399,11 @@ export const tours: Tour[] = [
     locationBadgeKey: "tours.cairoTrip.locationBadge",
     description: "Explore the iconic Pyramids of Giza, the Sphinx, and the Egyptian Museum on an unforgettable day trip to Cairo from Hurghada.",
     descriptionKey: "tours.cairoTrip.description",
-    includes: ["Professional guide", "Sightseeing program", "Transfers"],
+    includes: [
+  "tourIncludes.professionalGuide",
+  "tourIncludes.sightSeeingProgram",
+  "tourIncludes.transfers",
+],
     transportOptions: ["By Bus", "By Plane", "Private"],
     transportOptionsKeys: ["transport.byBus", "transport.byPlane", "transport.private"],
     transportPrices: {
