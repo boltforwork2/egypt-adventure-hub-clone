@@ -81,7 +81,11 @@ export const tours: Tour[] = [
     locationBadgeKey: "tours.paradiseIsland.locationBadge",
     description: "Discover Paradise Island — a breathtaking destination with white sandy shores, ideal for swimming, sunbathing, and snorkeling in the Red Sea.",
     descriptionKey: "tours.paradiseIsland.description",
-    includes: ["Boat trip", "Snorkeling equipment", "Lunch"],
+    includes: [
+  "tourIncludes.boatTrip",
+  "tourIncludes.snorkelingEquipment",
+  "tourIncludes.lunch",
+],
     imageFolderName: "Paradise Island Images",
     imagePrefix: "Paradise",
     image: "/Images/paradise-island/paradise1.jpg",
