@@ -19,10 +19,12 @@ export interface Tour {
   imageFolderName: string;
   imagePrefix: string;
   transportOptions?: string[];
+  transportOptionsKeys?: string[];
   price?: number;
   priceHurghada?: number;
   priceElGouna?: number;
   transportPrices?: { [key: string]: number };
+  transportPricesKeys?: { [key: string]: string };
   priceAdults?: number;
   priceChildren?: number;
   cruiseOptions?: Array<{
@@ -310,9 +312,14 @@ export const tours: Tour[] = [
     descriptionKey: "tours.luxorTrip.description",
     includes: ["Professional guide", "Lunch", "Transfers"],
     transportOptions: ["By Bus", "Private"],
+    transportOptionsKeys: ["transport.byBus", "transport.private"],
     transportPrices: {
       "By Bus": 65,
       "Private": 150,
+    },
+    transportPricesKeys: {
+      "By Bus": "transport.byBus",
+      "Private": "transport.private",
     },
     imageFolderName: "Luxor Trip Images",
     imagePrefix: "Luxor",
@@ -334,10 +341,16 @@ export const tours: Tour[] = [
     descriptionKey: "tours.cairoTrip.description",
     includes: ["Professional guide", "Sightseeing program", "Transfers"],
     transportOptions: ["By Bus", "By Plane", "Private"],
+    transportOptionsKeys: ["transport.byBus", "transport.byPlane", "transport.private"],
     transportPrices: {
       "By Bus": 70,
       "By Plane": 195,
       "Private": 160,
+    },
+    transportPricesKeys: {
+      "By Bus": "transport.byBus",
+      "By Plane": "transport.byPlane",
+      "Private": "transport.private",
     },
     imageFolderName: "Cairo Trip Images",
     imagePrefix: "Cairo",

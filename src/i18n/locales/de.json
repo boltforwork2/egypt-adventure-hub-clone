@@ -434,6 +434,11 @@
     "fullBoardMeals": "Vollpension-Mahlzeiten",
     "sightSeeingTours": "Besichtigungstouren"
   },
+  "transport": {
+    "byBus": "Mit Bus",
+    "byPlane": "Mit Flugzeug",
+    "private": "Privat"
+  },
   "common": {
     "from": "von",
     "contact": "Kontakt",

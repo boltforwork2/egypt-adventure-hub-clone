@@ -434,6 +434,11 @@
     "fullBoardMeals": "Full board meals",
     "sightSeeingTours": "Sightseeing tours"
   },
+  "transport": {
+    "byBus": "By Bus",
+    "byPlane": "By Plane",
+    "private": "Private"
+  },
   "common": {
     "from": "from",
     "contact": "Contact",

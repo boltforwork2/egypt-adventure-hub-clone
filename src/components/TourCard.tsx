@@ -42,14 +42,17 @@ const TourCard = ({ tour, index }: TourCardProps) => {
       return (
         <div className="text-sm space-y-1.5 mb-3">
           <p className="text-xs text-muted-foreground font-medium mb-2">{t('tour.startingFrom')}</p>
-          {firstThreeOptions.map((option) => (
-            <div key={option.name} className="flex items-center justify-between">
-              <span className="text-muted-foreground text-xs">{option.name}:</span>
-              <span className="font-bold text-gold">
-                {option.price > 0 ? `€${option.price}` : 'Contact'}
-              </span>
-            </div>
-          ))}
+          {firstThreeOptions.map((option) => {
+            const displayName = option.nameKey ? t(option.nameKey) : option.name;
+            return (
+              <div key={option.name} className="flex items-center justify-between">
+                <span className="text-muted-foreground text-xs">{displayName}:</span>
+                <span className="font-bold text-gold">
+                  {option.price > 0 ? `€${option.price}` : 'Contact'}
+                </span>
+              </div>
+            );
+          })}
           {tour.cruiseOptions.length > 3 && (
             <p className="text-xs text-gold font-medium pt-1">{t('tour.moreOptions')}</p>
           )}
@@ -90,12 +93,16 @@ const TourCard = ({ tour, index }: TourCardProps) => {
     if (tour.transportPrices && Object.keys(tour.transportPrices).length > 0) {
       return (
         <div className="text-sm space-y-1 mb-3">
-          {Object.entries(tour.transportPrices).map(([option, price]) => (
-            <div key={option} className="flex items-center justify-between">
-              <span className="text-muted-foreground">{option}:</span>
-              <span className="font-bold text-gold">€{price}</span>
-            </div>
-          ))}
+          {Object.entries(tour.transportPrices).map(([option, price]) => {
+            const translationKey = tour.transportPricesKeys?.[option];
+            const displayLabel = translationKey ? t(translationKey) : option;
+            return (
+              <div key={option} className="flex items-center justify-between">
+                <span className="text-muted-foreground">{displayLabel}:</span>
+                <span className="font-bold text-gold">€{price}</span>
+              </div>
+            );
+          })}
         </div>
       );
     }

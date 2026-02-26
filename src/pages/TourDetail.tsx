@@ -105,46 +105,49 @@ const TourDetail = () => {
                 <div>
                   <h2 className="text-xl font-heading font-bold mb-4 tracking-tight">{t('tour.availableCruiseOptions')}</h2>
                   <div className="space-y-4">
-                    {tour.cruiseOptions.map((option, index) => (
-                      <div key={index} className="bg-muted/30 rounded-xl p-5 border border-border/50">
-                        <div className="flex items-start justify-between mb-3">
-                          <div className="flex-1">
-                            <h3 className="font-heading font-bold text-foreground mb-1 flex items-center gap-2">
-                              {option.name}
-                            </h3>
-                            <p className="text-sm text-muted-foreground">
-                              <Clock size={14} className="inline mr-1" />
-                              {option.durationKey ? t(option.durationKey) : option.duration}
-                            </p>
+                    {tour.cruiseOptions.map((option, index) => {
+                      const displayName = option.nameKey ? t(option.nameKey) : option.name;
+                      return (
+                        <div key={index} className="bg-muted/30 rounded-xl p-5 border border-border/50">
+                          <div className="flex items-start justify-between mb-3">
+                            <div className="flex-1">
+                              <h3 className="font-heading font-bold text-foreground mb-1 flex items-center gap-2">
+                                {displayName}
+                              </h3>
+                              <p className="text-sm text-muted-foreground">
+                                <Clock size={14} className="inline mr-1" />
+                                {option.durationKey ? t(option.durationKey) : option.duration}
+                              </p>
+                            </div>
+                            <span className="text-xl font-bold text-gold ml-4">
+                              {option.price > 0 ? `€${option.price}` : t('common.contact')}
+                            </span>
                           </div>
-                          <span className="text-xl font-bold text-gold ml-4">
-                            {option.price > 0 ? `€${option.price}` : t('common.contact')}
-                          </span>
+                          <ul className="space-y-1.5 mt-3">
+                            {option.includes.map((item, idx) => {
+                              const cruiseIncludeMap: { [key: string]: string } = {
+                                "Buffet dinner": "cruiseOptions.buffetDinner",
+                                "Live music / entertainment show": "cruiseOptions.liveMusic",
+                                "Buffet lunch": "cruiseOptions.buffetLunch",
+                                "Traditional artistic shows": "cruiseOptions.traditionArtisticShows",
+                                "Cabin / room access": "cruiseOptions.cabinRoomAccess",
+                                "Meals": "cruiseOptions.meals",
+                                "Accommodation": "cruiseOptions.accommodation",
+                                "Full board meals": "cruiseOptions.fullBoardMeals",
+                                "Sightseeing tours": "cruiseOptions.sightSeeingTours"
+                              };
+                              const translationKey = cruiseIncludeMap[item];
+                              return (
+                                <li key={idx} className="flex items-center gap-2 text-sm text-foreground">
+                                  <CheckCircle size={14} className="text-gold flex-shrink-0" />
+                                  <span>{translationKey ? t(translationKey) : item}</span>
+                                </li>
+                              );
+                            })}
+                          </ul>
                         </div>
-                        <ul className="space-y-1.5 mt-3">
-                          {option.includes.map((item, idx) => {
-                            const cruiseIncludeMap: { [key: string]: string } = {
-                              "Buffet dinner": "cruiseOptions.buffetDinner",
-                              "Live music / entertainment show": "cruiseOptions.liveMusic",
-                              "Buffet lunch": "cruiseOptions.buffetLunch",
-                              "Traditional artistic shows": "cruiseOptions.traditionArtisticShows",
-                              "Cabin / room access": "cruiseOptions.cabinRoomAccess",
-                              "Meals": "cruiseOptions.meals",
-                              "Accommodation": "cruiseOptions.accommodation",
-                              "Full board meals": "cruiseOptions.fullBoardMeals",
-                              "Sightseeing tours": "cruiseOptions.sightSeeingTours"
-                            };
-                            const translationKey = cruiseIncludeMap[item];
-                            return (
-                              <li key={idx} className="flex items-center gap-2 text-sm text-foreground">
-                                <CheckCircle size={14} className="text-gold flex-shrink-0" />
-                                <span>{translationKey ? t(translationKey) : item}</span>
-                              </li>
-                            );
-                          })}
-                        </ul>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 </div>
               )}
@@ -177,12 +180,16 @@ const TourDetail = () => {
                       </div>
                     ) : tour.transportPrices && Object.keys(tour.transportPrices).length > 0 ? (
                       <div className="space-y-2">
-                        {Object.entries(tour.transportPrices).map(([option, price]) => (
-                          <div key={option} className="flex items-center justify-between">
-                            <span className="text-foreground font-medium">{option}:</span>
-                            <span className="text-xl font-bold text-gold">€{price}</span>
-                          </div>
-                        ))}
+                        {Object.entries(tour.transportPrices).map(([option, price]) => {
+                          const translationKey = tour.transportPricesKeys?.[option];
+                          const displayLabel = translationKey ? t(translationKey) : option;
+                          return (
+                            <div key={option} className="flex items-center justify-between">
+                              <span className="text-foreground font-medium">{displayLabel}:</span>
+                              <span className="text-xl font-bold text-gold">€{price}</span>
+                            </div>
+                          );
+                        })}
                       </div>
                     ) : tour.price !== undefined ? (
                       <div className="flex items-center justify-between">
@@ -211,12 +218,16 @@ const TourDetail = () => {
                 <div>
                   <h2 className="text-xl font-heading font-bold mb-4 tracking-tight">{t('tour.availableTravelOptions')}</h2>
                   <ul className="space-y-2.5">
-                    {tour.transportOptions.map((option) => (
-                      <li key={option} className="flex items-center gap-3">
-                        <CheckCircle size={16} className="text-gold flex-shrink-0" />
-                        <span className="text-foreground text-sm">{option}</span>
-                      </li>
-                    ))}
+                    {tour.transportOptions.map((option, idx) => {
+                      const translationKey = tour.transportOptionsKeys?.[idx];
+                      const displayLabel = translationKey ? t(translationKey) : option;
+                      return (
+                        <li key={option} className="flex items-center gap-3">
+                          <CheckCircle size={16} className="text-gold flex-shrink-0" />
+                          <span className="text-foreground text-sm">{displayLabel}</span>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               )}
