@@ -243,119 +243,119 @@
   "nileCruise": "Croazieră pe Nil"
 },
   "tours": {
-    "orangeBayIsland": {
-      "title": "Orange Bay Island",
-      "location": "Hurghada, Egypt",
-      "duration": "Full Day (8 hours)",
-      "description": "Visit the stunning Orange Bay Island with its pristine white sand beaches and crystal-clear turquoise waters. A perfect full-day escape in the Red Sea.",
-      "locationBadge": "Hurghada Trip"
-    },
-    "paradiseIsland": {
-      "title": "Paradise Island",
-      "location": "Hurghada, Egypt",
-      "duration": "Full Day",
-      "description": "Discover Paradise Island — a breathtaking destination with white sandy shores, ideal for swimming, sunbathing, and snorkeling in the Red Sea.",
-      "locationBadge": "Hurghada Trip"
-    },
-    "dolphinHouse": {
-      "title": "Dolphin House",
-      "location": "Hurghada, Egypt",
-      "duration": "Full Day",
-      "description": "Swim alongside wild dolphins in their natural habitat at Dolphin House reef. An unforgettable marine encounter with professional guides.",
-      "locationBadge": "Hurghada Trip"
-    },
-    "scubaDivingIntro": {
-      "title": "Scuba Diving Intro",
-      "location": "Hurghada, Egypt",
-      "duration": "Full Day",
-      "description": "Take your first breath underwater with a professional scuba diving introduction. No experience needed — explore the Red Sea's vibrant coral reefs.",
-      "locationBadge": "Hurghada Trip"
-    },
-    "privateSpeedboat": {
-      "title": "Private Speedboat",
-      "location": "El Gouna / Hurghada, Egypt",
-      "duration": "4 hours",
-      "description": "Enjoy an exclusive private speedboat experience along the coast. Snorkel at pristine spots with your own captain and crew. This tour is available in both Hurghada and El Gouna.",
-      "locationBadges": ["Hurghada Trip", "El Gouna Trip"]
-    },
-    "glassBoat": {
-      "title": "Glass Boat",
-      "location": "El Gouna / Hurghada, Egypt",
-      "duration": "2 hours",
-      "description": "See the magical underwater world without getting wet! The yellow glass-bottom boat reveals stunning coral reefs and colorful fish beneath you. This tour is available in both Hurghada and El Gouna.",
-      "locationBadges": ["Hurghada Trip", "El Gouna Trip"]
-    },
-    "catamaranTrip": {
-      "title": "Catamaran Trip",
-      "location": "El Gouna, Egypt",
-      "duration": "3–5 Hours (Flexible)",
-      "description": "Catamaran trips are relaxing sea experiences in El Gouna, suitable for individuals, couples, and groups.",
-      "locationBadge": "El Gouna Trip"
-    },
-    "quadBikeSafari": {
-      "title": "Quad Bike Safari",
-      "location": "Hurghada, Egypt",
-      "duration": "3 hours",
-      "description": "Race across the golden sand dunes of the Sahara on powerful quad bikes. An adrenaline-filled desert adventure with Bedouin tea.",
-      "locationBadge": "Hurghada Trip"
-    },
-    "superSafari": {
-      "title": "Super Safari (Quad + Jeep + Camel)",
-      "location": "El Gouna / Hurghada, Egypt",
-      "duration": "5 hours",
-      "description": "The ultimate desert experience combining quad biking, jeep safari, and camel riding. Includes a traditional Bedouin dinner and show. This tour is available in both Hurghada and El Gouna.",
-      "locationBadges": ["Hurghada Trip", "El Gouna Trip"]
-    },
-    "cityTourHurghada": {
-      "title": "City Tour – Hurghada",
-      "location": "Hurghada, Egypt",
-      "duration": "Flexible Duration",
-      "description": "A city sightseeing tour around Hurghada that allows visitors to explore the local lifestyle and main attractions.",
-      "locationBadge": "Hurghada Trip"
-    },
-    "grandAquariumHurghada": {
-      "title": "Grand Aquarium – Hurghada",
-      "location": "Hurghada, Egypt",
-      "duration": "Flexible Duration",
-      "description": "The Aquarium Tour is one of the best family-friendly entertainment experiences in Hurghada, combining marine life observation with educational and interactive attractions.",
-      "locationBadge": "Hurghada Trip"
-    },
-    "horseRidingHurghada": {
-      "title": "Horse Riding Tour – Hurghada",
-      "location": "Hurghada, Egypt",
-      "duration": "1–2 Hours",
-      "description": "Horse riding tours in Hurghada are suitable for all ages and offer a unique mix of natural scenery and enjoyable physical activity.",
-      "locationBadge": "Hurghada Trip"
-    },
-    "luxorTrip": {
-      "title": "Luxor Trip",
-      "location": "From Hurghada",
-      "duration": "Full Day",
-      "description": "Journey to the ancient city of Luxor and explore the world's greatest open-air museum. Visit temples, tombs, and legendary monuments.",
-      "locationBadge": "From Hurghada"
-    },
-    "cairoTrip": {
-      "title": "Cairo Trip",
-      "location": "From Hurghada",
-      "duration": "Full Day",
-      "description": "Explore the iconic Pyramids of Giza, the Sphinx, and the Egyptian Museum on an unforgettable day trip to Cairo from Hurghada.",
-      "locationBadge": "From Hurghada"
-    },
-    "airportTransfer": {
-      "title": "Airport Transfer – Hurghada",
-      "location": "Hurghada International Airport",
-      "duration": "As Needed",
-      "description": "Private and shared transfer services from Hurghada International Airport to hotels, resorts, El Gouna, Makadi Bay, Sahl Hasheesh, and other nearby destinations.",
-      "locationBadge": "Transfer Service"
-    },
-    "nileCruise": {
-      "title": "Nile Cruise",
-      "location": "Luxor ⇄ Aswan, Egypt",
-      "duration": "Multiple Options",
-      "description": "Experience unforgettable Nile River cruise adventures with multiple options to suit your schedule. Choose from dinner cruises, lunch cruises, pharaonic shows, or multi-day journeys along Egypt's legendary river.",
-      "locationBadge": "Nile Cruise"
-    }
+  "orangeBayIsland": {
+    "title": "Insula Orange Bay",
+    "location": "Hurghada, Egipt",
+    "duration": "Zi întreagă (8 ore)",
+    "description": "Vizitează spectaculoasa Insulă Orange Bay, cu plaje de nisip alb imaculat și ape turcoaz cristaline. O evadare perfectă de o zi în Marea Roșie.",
+    "locationBadge": "Excursie Hurghada"
   },
+  "paradiseIsland": {
+    "title": "Insula Paradise",
+    "location": "Hurghada, Egipt",
+    "duration": "Zi întreagă",
+    "description": "Descoperă Paradise Island — o destinație deosebită, cu plaje cu nisip alb, ideală pentru înot, plajă și snorkeling în Marea Roșie.",
+    "locationBadge": "Excursie Hurghada"
+  },
+  "dolphinHouse": {
+    "title": "Dolphin House",
+    "location": "Hurghada, Egipt",
+    "duration": "Zi întreagă",
+    "description": "Înoată alături de delfini sălbatici în habitatul lor natural, la reciful Dolphin House. O întâlnire marină de neuitat, alături de ghizi profesioniști.",
+    "locationBadge": "Excursie Hurghada"
+  },
+  "scubaDivingIntro": {
+    "title": "Introducere în Scuba Diving",
+    "location": "Hurghada, Egipt",
+    "duration": "Zi întreagă",
+    "description": "Fă primul tău pas sub apă cu o introducere profesională în scuba diving. Nu este necesară experiență — explorează recifele colorate ale Mării Roșii.",
+    "locationBadge": "Excursie Hurghada"
+  },
+  "privateSpeedboat": {
+    "title": "Barcă Rapidă Privată",
+    "location": "El Gouna / Hurghada, Egipt",
+    "duration": "4 ore",
+    "description": "Bucură-te de o experiență exclusivă cu barcă rapidă privată de-a lungul coastei. Snorkeling în locuri neatinse, cu propriul căpitan și echipaj. Tur disponibil atât în Hurghada, cât și în El Gouna.",
+    "locationBadges": ["Excursie Hurghada", "Excursie El Gouna"]
+  },
+  "glassBoat": {
+    "title": "Barcă cu Fund de Sticlă",
+    "location": "El Gouna / Hurghada, Egipt",
+    "duration": "2 ore",
+    "description": "Descoperă lumea subacvatică fără să te uzi! Barca galbenă cu fund de sticlă dezvăluie recife spectaculoase și pești colorați sub picioarele tale. Tur disponibil în Hurghada și El Gouna.",
+    "locationBadges": ["Excursie Hurghada", "Excursie El Gouna"]
+  },
+  "catamaranTrip": {
+    "title": "Excursie cu Catamaranul",
+    "location": "El Gouna, Egipt",
+    "duration": "3–5 ore (flexibil)",
+    "description": "Excursiile cu catamaranul sunt experiențe relaxante pe mare în El Gouna, potrivite pentru persoane singure, cupluri și grupuri.",
+    "locationBadge": "Excursie El Gouna"
+  },
+  "quadBikeSafari": {
+    "title": "Safari cu Quad-ul",
+    "location": "Hurghada, Egipt",
+    "duration": "3 ore",
+    "description": "Traversează dunele aurii ale Saharei pe quad-uri puternice. O aventură plină de adrenalină în deșert, cu ceai beduin inclus.",
+    "locationBadge": "Excursie Hurghada"
+  },
+  "superSafari": {
+    "title": "Super Safari (Quad + Jeep + Cămilă)",
+    "location": "El Gouna / Hurghada, Egipt",
+    "duration": "5 ore",
+    "description": "Experiența supremă în deșert, combinând quad-ul, safariul cu jeep-ul și plimbarea cu cămila. Include cină tradițională beduină și spectacol. Disponibil în Hurghada și El Gouna.",
+    "locationBadges": ["Excursie Hurghada", "Excursie El Gouna"]
+  },
+  "cityTourHurghada": {
+    "title": "Turul Orașului – Hurghada",
+    "location": "Hurghada, Egipt",
+    "duration": "Durată flexibilă",
+    "description": "Un tur al orașului Hurghada care permite vizitatorilor să descopere stilul de viață local și principalele atracții.",
+    "locationBadge": "Excursie Hurghada"
+  },
+  "grandAquariumHurghada": {
+    "title": "Grand Aquarium – Hurghada",
+    "location": "Hurghada, Egipt",
+    "duration": "Durată flexibilă",
+    "description": "Turul Acvariului este una dintre cele mai bune experiențe pentru familii din Hurghada, combinând observarea vieții marine cu atracții educative și interactive.",
+    "locationBadge": "Excursie Hurghada"
+  },
+  "horseRidingHurghada": {
+    "title": "Plimbare Călare – Hurghada",
+    "location": "Hurghada, Egipt",
+    "duration": "1–2 ore",
+    "description": "Plimbările călare în Hurghada sunt potrivite pentru toate vârstele și oferă o combinație unică de natură și activitate fizică plăcută.",
+    "locationBadge": "Excursie Hurghada"
+  },
+  "luxorTrip": {
+    "title": "Excursie la Luxor",
+    "location": "Din Hurghada",
+    "duration": "Zi întreagă",
+    "description": "Călătorește către orașul antic Luxor și explorează cel mai mare muzeu în aer liber din lume. Temple, morminte și monumente legendare.",
+    "locationBadge": "Din Hurghada"
+  },
+  "cairoTrip": {
+    "title": "Excursie la Cairo",
+    "location": "Din Hurghada",
+    "duration": "Zi întreagă",
+    "description": "Descoperă emblematicele Piramide din Giza, Sfinxul și Muzeul Egiptean într-o excursie de neuitat de o zi la Cairo din Hurghada.",
+    "locationBadge": "Din Hurghada"
+  },
+  "airportTransfer": {
+    "title": "Transfer Aeroport – Hurghada",
+    "location": "Aeroportul Internațional Hurghada",
+    "duration": "La cerere",
+    "description": "Servicii de transfer private și partajate de la Aeroportul Internațional Hurghada către hoteluri, resorturi, El Gouna, Makadi Bay, Sahl Hasheesh și alte destinații din apropiere.",
+    "locationBadge": "Serviciu Transfer"
+  },
+  "nileCruise": {
+    "title": "Croazieră pe Nil",
+    "location": "Luxor ⇄ Aswan, Egipt",
+    "duration": "Opțiuni multiple",
+    "description": "Trăiește experiențe de neuitat într-o croazieră pe Nil, cu opțiuni variate adaptate programului tău. Alege dintre croaziere cu cină, prânz, spectacole faraonice sau călătorii de mai multe zile pe legendarul fluviu al Egiptului.",
+    "locationBadge": "Croazieră pe Nil"
+  }
+},
   "tourIncludes": {
     "boatTrip": "Boat trip",
     "snorkeling": "Snorkeling",
