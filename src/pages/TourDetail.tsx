@@ -208,7 +208,7 @@ const TourDetail = () => {
                   {tour.includes.map((item) => (
                     <li key={item} className="flex items-center gap-3">
                       <CheckCircle size={16} className="text-gold flex-shrink-0" />
-                      <span className="text-foreground text-sm">{item}</span>
+                      <span className="text-foreground text-sm">{t(item)}</span>
                     </li>
                   ))}
                 </ul>
