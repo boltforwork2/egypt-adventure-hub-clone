@@ -100,6 +100,48 @@
       "locationValue": "Hurghada, Mar Rosso, Egitto"
     }
   },
+  "tour": {
+    "duration": "Durée",
+    "location": "Localisation",
+    "viewDetails": "Voir les Détails",
+    "startingFrom": "À partir de :",
+    "moreOptions": "+ Plus d'options disponibles",
+    "backToAllTours": "Retour à Tous les Voyages",
+    "aboutThisTour": "À Propos de ce Voyage",
+    "pricing": "Tarification",
+    "pricePerPerson": "Prix par personne",
+    "adults": "Adultes",
+    "children": "Enfants",
+    "free": "Gratuit",
+    "hurghada": "Hurghada",
+    "elGouna": "El Gouna",
+    "whatsIncluded": "Qu'est-ce qui est Inclus",
+    "availableTravelOptions": "Options de Voyage Disponibles",
+    "availableCruiseOptions": "Options de Croisière Disponibles",
+    "contact": "Contact",
+    "gallery": "Galerie",
+    "interestedInTour": "Intéressé par ce voyage ?",
+    "bookViaWhatsApp": "Réserver via WhatsApp",
+    "contactUs": "Nous Contacter",
+    "tourNotFound": "Voyage Non Trouvé",
+    "backToHome": "Retour à l'Accueil"
+  },
+  "footer": {
+    "companyName": "Fayed",
+    "companyNameEnd": "International Travel",
+    "description": "Votre partenaire de confiance pour des aventures inoubliables à Hurghada. Voyages en mer, safaris du désert et excursions d'une journée à Louxor & Le Caire.",
+    "quickLinks": "Liens Rapides",
+    "followUs": "Nous Suivre",
+    "copyright": "© 2026 Fayed International Travel. Tous les droits réservés.",
+    "links": {
+      "home": "Accueil",
+      "seaTrips": "Voyages en Mer",
+      "safari": "Safari",
+      "luxorCairo": "Louxor & Le Caire",
+      "aboutUs": "À Propos de Nous",
+      "contact": "Contact"
+    }
+  },
 
   "aboutUs": {
     "title": "Benvenuti in",
