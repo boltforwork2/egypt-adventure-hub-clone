@@ -1,87 +1,87 @@
 {
   "hero": {
-    "title": "Discover Egypt with",
-    "companyName": "Fayed International Travel",
-    "subtitle": "Explore the crystal-clear Red Sea, ride through the Sahara Desert, and uncover the ancient wonders of Luxor — all with expert guides by your side.",
-    "exploreTrips": "Explore Trips",
-    "contactUs": "Contact Us",
-    "b2bSystem": "B2B System"
+  "title": "Descoperă Egiptul cu",
+  "companyName": "Fayed International Travel",
+  "subtitle": "Explorează Marea Roșie cu ape cristaline, pornește într-o aventură prin Deșertul Sahara și descoperă minunile antice ale Luxorului — totul alături de ghizi profesioniști.",
+  "exploreTrips": "Descoperă Excursiile",
+  "contactUs": "Contactează-ne",
+  "b2bSystem": "Sistem B2B"
+},
+"nav": {
+  "home": "Acasă",
+  "trips": "Excursii",
+  "seaTrips": "Excursii pe Mare",
+  "safari": "Safari",
+  "cityLeisure": "Oraș & Relaxare",
+  "luxorCairo": "Luxor & Cairo",
+  "whyChooseUs": "De ce să ne alegi",
+  "aboutUs": "Despre Noi",
+  "b2bSystem": "Sistem B2B",
+  "gallery": "Galerie",
+  "contact": "Contact",
+  "bookNow": "Rezervă Acum"
+},
+"sections": {
+  "excursions": {
+    "subtitle": "Tururile și Excursiile Noastre",
+    "title": "Aventuri",
+    "titleHighlight": "De Neuitat",
+    "titleEnd": "Te Așteaptă",
+    "description": "De la adâncurile Mării Roșii până la nisipurile aurii ale Saharei — toate excursiile pornesc din Hurghada.",
+    "seaTrips": "Excursii pe Mare",
+    "safariTrips": "Excursii Safari",
+    "cityLeisure": "Tururi Oraș & Relaxare – Hurghada",
+    "luxorCairo": "Excursii Luxor & Cairo (din Hurghada)",
+    "transferServices": "Servicii de Transfer"
   },
-  "nav": {
-    "home": "Home",
-    "trips": "Trips",
-    "seaTrips": "Sea Trips",
-    "safari": "Safari",
-    "cityLeisure": "City & Leisure",
-    "luxorCairo": "Luxor & Cairo",
-    "whyChooseUs": "Why Choose Us",
-    "aboutUs": "About Us",
-    "b2bSystem": "B2B System",
-    "gallery": "Gallery",
-    "contact": "Contact",
-    "bookNow": "Book Now"
+  "whyChooseUs": {
+    "subtitle": "De ce să ne alegi",
+    "title": "Partenerul Tău",
+    "titleHighlight": "De Încredere",
+    "description": "Facem tot posibilul pentru ca aventura ta în Egipt să fie cu adevărat extraordinară.",
+    "professionalGuides": "Ghizi Profesioniști",
+    "professionalGuidesDesc": "Ghizi locali experimentați și certificați care aduc Egiptul la viață.",
+    "bestPrices": "Cele Mai Bune Prețuri",
+    "bestPricesDesc": "Prețuri competitive, fără costuri ascunse. Valoare garantată.",
+    "safeTrips": "Excursii Sigure",
+    "safeTripsDesc": "Siguranța ta este prioritatea noastră — toate excursiile sunt complet asigurate.",
+    "highQuality": "Servicii de Înaltă Calitate",
+    "highQualityDesc": "Echipamente premium, transport confortabil și atenție la fiecare detaliu.",
+    "support247": "Asistență 24/7",
+    "support247Desc": "Asistență permanentă, oricând ai nevoie."
   },
-  "sections": {
-    "excursions": {
-      "subtitle": "Our Tours & Excursions",
-      "title": "Unforgettable",
-      "titleHighlight": "Adventures",
-      "titleEnd": "Await",
-      "description": "From the depths of the Red Sea to the golden sands of the Sahara — all tours depart from Hurghada.",
-      "seaTrips": "Sea Trips",
-      "safariTrips": "Safari Trips",
-      "cityLeisure": "City & Leisure Tours – Hurghada",
-      "luxorCairo": "Luxor & Cairo Trips (From Hurghada)",
-      "transferServices": "Transfer Services"
-    },
-    "whyChooseUs": {
-      "subtitle": "Why Choose Us",
-      "title": "Your Trusted",
-      "titleHighlight": "Travel Partner",
-      "description": "We go above and beyond to make your Egyptian adventure extraordinary.",
-      "professionalGuides": "Professional Guides",
-      "professionalGuidesDesc": "Experienced, certified local guides who bring Egypt to life.",
-      "bestPrices": "Best Prices",
-      "bestPricesDesc": "Competitive pricing with no hidden fees. Value guaranteed.",
-      "safeTrips": "Safe Trips",
-      "safeTripsDesc": "Your safety is our top priority with fully insured adventures.",
-      "highQuality": "High-Quality Service",
-      "highQualityDesc": "Premium equipment, comfortable transport, and attention to detail.",
-      "support247": "24/7 Support",
-      "support247Desc": "Round-the-clock assistance whenever you need us."
-    },
-    "gallery": {
-      "subtitle": "Gallery",
-      "title": "Moments from",
-      "titleHighlight": "Our Adventures"
-    },
-    "testimonials": {
-      "subtitle": "Testimonials",
-      "title": "What Our",
-      "titleHighlight": "Guests Say",
-      "reviews": [
-        {
-          "name": "Sarah M.",
-          "country": "United Kingdom",
-          "text": "The snorkeling trip was absolutely magical! The crew was professional and the coral reefs were breathtaking. Best experience in Hurghada!"
-        },
-        {
-          "name": "Hans W.",
-          "country": "Germany",
-          "text": "We booked the desert safari with Fayed Travel — the quad biking and sunset camel ride were unforgettable. Highly recommend!"
-        },
-        {
-          "name": "Maria L.",
-          "country": "Italy",
-          "text": "Our Luxor day trip was perfectly organized. The guide was incredibly knowledgeable and the temples were awe-inspiring. A must-do!"
-        },
-        {
-          "name": "James R.",
-          "country": "Australia",
-          "text": "From booking to the actual trip, everything was seamless. Great prices, friendly team, and amazing experiences. 10/10!"
-        }
-      ]
-    },
+  "gallery": {
+    "subtitle": "Galerie",
+    "title": "Momente din",
+    "titleHighlight": "Aventurile Noastre"
+  },
+  "testimonials": {
+    "subtitle": "Testimoniale",
+    "title": "Ce Spun",
+    "titleHighlight": "Clienții Noștri",
+    "reviews": [
+      {
+        "name": "Sarah M.",
+        "country": "Regatul Unit",
+        "text": "Excursia de snorkeling a fost absolut magică! Echipajul a fost profesionist, iar recifele de corali au fost spectaculoase. Cea mai frumoasă experiență din Hurghada!"
+      },
+      {
+        "name": "Hans W.",
+        "country": "Germania",
+        "text": "Am rezervat safariul în deșert cu Fayed Travel — plimbarea cu quad-ul și cămila la apus au fost de neuitat. Recomand cu încredere!"
+      },
+      {
+        "name": "Maria L.",
+        "country": "Italia",
+        "text": "Excursia noastră de o zi la Luxor a fost organizată perfect. Ghidul a fost extrem de bine pregătit, iar templele impresionante. O experiență obligatorie!"
+      },
+      {
+        "name": "James R.",
+        "country": "Australia",
+        "text": "De la rezervare până la excursia propriu-zisă, totul a decurs perfect. Prețuri excelente, echipă prietenoasă și experiențe minunate. 10/10!"
+      }
+    ]
+  },
     "contact": {
       "subtitle": "Get In Touch",
       "title": "Book Your",
