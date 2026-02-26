@@ -157,7 +157,11 @@ export const tours: Tour[] = [
     locationBadgesKeys: ["tours.privateSpeedboat.locationBadges"],
     description: "Enjoy an exclusive private speedboat experience along the coast. Snorkel at pristine spots with your own captain and crew. This tour is available in both Hurghada and El Gouna.",
     descriptionKey: "tours.privateSpeedboat.description",
-    includes: ["Snorkeling", "Drinks", "Private captain"],
+    includes: [
+  "tourIncludes.snorkeling",
+  "tourIncludes.drinks",
+  "tourIncludes.privateCapitain",
+],
     imageFolderName: "Private Speedboat Images",
     imagePrefix: "PrivateSpeedboat",
     image: "/Images/private-speedboat/privatespeedboat1.jpg",
