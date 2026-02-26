@@ -141,99 +141,99 @@
     "contact": "Kontakt"
   }
 },
-  "aboutUs": {
-    "title": "Welcome to",
-    "titleHighlight": "Fayed International Travel Agency",
-    "subtitle": "Your trusted partner for unforgettable travel experiences in Egypt",
-    "intro": "Fayed International Travel Agency is an Egyptian travel company specialized in organizing tours and travel services across Egypt. We offer unforgettable experiences in the Red Sea, Cairo, Luxor, Aswan, and desert safari destinations.",
-    "services": {
-      "title": "Our Services",
-      "subtitle": "Comprehensive travel solutions designed to exceed your expectations",
-      "hotelReservations": "Hotel Reservations",
-      "hotelReservationsDesc": "Carefully selected accommodations to suit every budget and preference",
-      "airportTransfers": "Airport Transfers",
-      "airportTransfersDesc": "Reliable and comfortable transportation from arrival to departure",
-      "privateTours": "Private & Group Tours",
-      "privateToursDesc": "Tailored experiences with expert local guides",
-      "seaTrips": "Sea Trips & Snorkeling",
-      "seaTripsDesc": "Explore the stunning Red Sea marine life",
-      "desertSafari": "Desert Safari Adventures",
-      "desertSafariDesc": "Thrilling journeys across Egypt's golden landscapes",
-      "customPackages": "Customized Travel Packages",
-      "customPackagesDesc": "Personalized itineraries designed around your dreams"
-    },
-    "partnership": {
-      "title": "International",
-      "titleHighlight": "Partnership",
-      "point1": "We operate as an official tourism representative in Egypt, committed to the highest standards of service and professionalism",
-      "point2": "We proudly cooperate with international travel partners through our dedicated B2B services",
-      "point3": "Our services are tailored for European and international markets, ensuring seamless experiences for global travelers",
-      "point4": "We focus on reliability, consistency, and service quality to build lasting partnerships"
-    },
-    "mission": {
-      "title": "Our Mission",
-      "value1": "Deliver professional service at every touchpoint",
-      "value2": "Ensure safety and comfort throughout your journey",
-      "value3": "Create unforgettable memories in Egypt"
-    },
-    "closing": {
-      "text1": "At Fayed International Travel Agency, we believe that travel is more than just a trip — it is an experience.",
-      "text2": "Let us turn your journey into a memory you will never forget."
+"aboutUs": {
+  "title": "Witamy w",
+  "titleHighlight": "Fayed International Travel Agency",
+  "subtitle": "Twój zaufany partner niezapomnianych podróży po Egipcie",
+  "intro": "Fayed International Travel Agency to egipska firma turystyczna specjalizująca się w organizacji wycieczek i usług turystycznych na terenie całego Egiptu. Oferujemy wyjątkowe doświadczenia nad Morzem Czerwonym, w Kairze, Luksorze, Asuanie oraz podczas safari na pustyni.",
+  "services": {
+    "title": "Nasze Usługi",
+    "subtitle": "Kompleksowe rozwiązania turystyczne stworzone, by przekroczyć Twoje oczekiwania",
+    "hotelReservations": "Rezerwacje Hoteli",
+    "hotelReservationsDesc": "Starannie wyselekcjonowane obiekty dopasowane do każdego budżetu i preferencji",
+    "airportTransfers": "Transfery Lotniskowe",
+    "airportTransfersDesc": "Niezawodny i komfortowy transport od przylotu do wylotu",
+    "privateTours": "Wycieczki Prywatne i Grupowe",
+    "privateToursDesc": "Indywidualnie dopasowane programy z doświadczonymi lokalnymi przewodnikami",
+    "seaTrips": "Wycieczki Morskie & Snorkeling",
+    "seaTripsDesc": "Odkrywaj niezwykłe życie morskie Morza Czerwonego",
+    "desertSafari": "Safari na Pustyni",
+    "desertSafariDesc": "Pełne emocji wyprawy po złotych krajobrazach Egiptu",
+    "customPackages": "Pakiety Szyte na Miarę",
+    "customPackagesDesc": "Spersonalizowane trasy zaprojektowane według Twoich marzeń"
+  },
+  "partnership": {
+    "title": "Partnerstwo",
+    "titleHighlight": "Międzynarodowe",
+    "point1": "Działamy jako oficjalny przedstawiciel turystyczny w Egipcie, zachowując najwyższe standardy obsługi i profesjonalizmu",
+    "point2": "Z dumą współpracujemy z międzynarodowymi partnerami turystycznymi w ramach dedykowanych usług B2B",
+    "point3": "Nasze usługi są dostosowane do rynku europejskiego i międzynarodowego, gwarantując płynne i komfortowe podróże",
+    "point4": "Stawiamy na niezawodność, spójność i jakość obsługi, budując długoterminowe relacje partnerskie"
+  },
+  "mission": {
+    "title": "Nasza Misja",
+    "value1": "Świadczenie profesjonalnej obsługi na każdym etapie podróży",
+    "value2": "Zapewnienie bezpieczeństwa i komfortu przez cały pobyt",
+    "value3": "Tworzenie niezapomnianych wspomnień z Egiptu"
+  },
+  "closing": {
+    "text1": "W Fayed International Travel Agency wierzymy, że podróż to coś więcej niż tylko przemieszczanie się — to wyjątkowe doświadczenie.",
+    "text2": "Pozwól nam zamienić Twoją podróż w wspomnienie, którego nigdy nie zapomnisz."
+  }
+},
+"b2b": {
+  "title": "Partnerstwo B2B",
+  "titleHighlight": "Obsługa Turystyczna & Usługi DMC w Egipcie",
+  "subtitle": "Twój zaufany lokalny partner operacyjny w Egipcie",
+  "intro1": "Jesteśmy profesjonalnym touroperatorem z siedzibą w Egipcie, oferującym niezawodne usługi B2B dla międzynarodowych biur podróży i touroperatorów.",
+  "intro2": "Jako lokalny agent wykonawczy w Egipcie specjalizujemy się w świadczeniu wysokiej jakości usług turystycznych dla rynku europejskiego, zapewniając sprawną realizację, konkurencyjne stawki oraz pełne zadowolenie klientów.",
+  "whoWeAre": {
+    "title": "Kim Jesteśmy",
+    "description": "Działamy jako zaufany lokalny przedstawiciel i partner operacyjny w Egipcie, oferując kompleksowe usługi zarządzania destynacją (DMC) z pełną kontrolą operacyjną na miejscu.",
+    "points": {
+      "coordination": "Profesjonalna koordynacja",
+      "transfers": "Punktualne transfery",
+      "assistance": "Wielojęzyczna obsługa turystyczna",
+      "standards": "Wysokie standardy obsługi",
+      "pricing": "Przejrzysta polityka cenowa",
+      "management": "Bezpośrednia kontrola operacyjna"
     }
   },
-  "b2b": {
-    "title": "B2B Partnership",
-    "titleHighlight": "Egypt Ground Handling & DMC Services",
-    "subtitle": "Your trusted local executing partner in Egypt",
-    "intro1": "We are a professional Egypt-based tour operator and ground handling partner providing reliable B2B services for international travel agencies and tour operators.",
-    "intro2": "As a local executing agent in Egypt, we specialize in delivering high-quality travel services for European markets, ensuring smooth operations, competitive rates, and excellent client satisfaction.",
-    "whoWeAre": {
-      "title": "Who We Are",
-      "description": "We act as a trusted local representative and executing partner in Egypt, offering full destination management services (DMC) with strong operational control on the ground.",
-      "points": {
-        "coordination": "Professional coordination",
-        "transfers": "On-time transfers",
-        "assistance": "Multilingual tour assistance",
-        "standards": "High service standards",
-        "pricing": "Transparent pricing",
-        "management": "Direct management control"
-      }
-    },
-    "services": {
-      "title": "Our B2B Services in Egypt",
-      "subtitle": "Comprehensive solutions tailored for international travel partners",
-      "list": {
-        "airportTransfers": "Airport transfers (private & group)",
-        "hotelBookings": "Hotel bookings (3–5 stars & luxury resorts)",
-        "dailyExcursions": "Daily excursions in Hurghada, Cairo & Luxor",
-        "boatTrips": "Red Sea boat trips & snorkeling tours",
-        "desertSafari": "Desert safari & quad adventures",
-        "culturalTours": "Cultural tours & historical programs",
-        "customPackages": "Custom-made packages",
-        "vipServices": "VIP services upon request"
-      }
-    },
-    "advantages": {
-      "title": "Why Partner With Us?",
-      "competitiveRates": "Competitive NET Rates",
-      "competitiveRatesDesc": "Best pricing for travel agency partners",
-      "fastResponse": "Fast Response & Support",
-      "fastResponseDesc": "Dedicated B2B support team ready to assist",
-      "flexiblePayment": "Flexible Payment Terms",
-      "flexiblePaymentDesc": "Tailored payment solutions for partners",
-      "europeanExperience": "European Market Experience",
-      "europeanExperienceDesc": "Proven expertise with international clients",
-      "supplierNetwork": "Strong Supplier Network",
-      "supplierNetworkDesc": "Reliable local partner connections",
-      "reliableExecution": "Reliable Execution",
-      "reliableExecutionDesc": "On-ground professional service guarantee"
-    },
-    "cooperation": {
-      "text1": "We focus exclusively on bringing foreign clients to Egypt and operating their programs professionally from arrival to departure.",
-      "quote": "If you are looking for a reliable local partner in Egypt to handle your clients with care and professionalism, we are ready for cooperation on a B2B basis.",
-      "contactPrompt": "Contact us for our B2B rate list and partnership proposal."
+  "services": {
+    "title": "Nasze Usługi B2B w Egipcie",
+    "subtitle": "Kompleksowe rozwiązania dla międzynarodowych partnerów turystycznych",
+    "list": {
+      "airportTransfers": "Transfery lotniskowe (prywatne i grupowe)",
+      "hotelBookings": "Rezerwacje hoteli (3–5 gwiazdek oraz luksusowe resorty)",
+      "dailyExcursions": "Codzienne wycieczki w Hurghadzie, Kairze i Luksorze",
+      "boatTrips": "Rejsy po Morzu Czerwonym & snorkeling",
+      "desertSafari": "Safari na pustyni & wyprawy quadami",
+      "culturalTours": "Wycieczki kulturowe & programy historyczne",
+      "customPackages": "Pakiety szyte na miarę",
+      "vipServices": "Usługi VIP na życzenie"
     }
   },
+  "advantages": {
+    "title": "Dlaczego Warto z Nami Współpracować?",
+    "competitiveRates": "Konkurencyjne Stawki NET",
+    "competitiveRatesDesc": "Atrakcyjne ceny dla partnerów i biur podróży",
+    "fastResponse": "Szybka Reakcja & Wsparcie",
+    "fastResponseDesc": "Dedykowany zespół B2B gotowy do pomocy",
+    "flexiblePayment": "Elastyczne Warunki Płatności",
+    "flexiblePaymentDesc": "Indywidualnie dopasowane rozwiązania płatnicze",
+    "europeanExperience": "Doświadczenie na Rynku Europejskim",
+    "europeanExperienceDesc": "Sprawdzone kompetencje w obsłudze klientów międzynarodowych",
+    "supplierNetwork": "Silna Sieć Dostawców",
+    "supplierNetworkDesc": "Niezawodni lokalni partnerzy",
+    "reliableExecution": "Rzetelna Realizacja",
+    "reliableExecutionDesc": "Gwarancja profesjonalnej obsługi na miejscu"
+  },
+  "cooperation": {
+    "text1": "Skupiamy się wyłącznie na obsłudze klientów zagranicznych i profesjonalnej realizacji ich programów w Egipcie od przylotu do wylotu.",
+    "quote": "Jeśli szukasz rzetelnego lokalnego partnera w Egipcie, który zadba o Twoich klientów z pełnym profesjonalizmem — jesteśmy gotowi do współpracy B2B.",
+    "contactPrompt": "Skontaktuj się z nami, aby otrzymać cennik B2B oraz propozycję współpracy."
+  }
+},
   "badges": {
     "hurghada": "Hurghada Trip",
     "elGouna": "El Gouna Trip",
