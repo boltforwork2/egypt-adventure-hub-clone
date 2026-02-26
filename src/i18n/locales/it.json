@@ -400,11 +400,11 @@
   "private": "Privato"
 },
   "common": {
-    "from": "from",
-    "contact": "Contact",
-    "loading": "Loading",
-    "error": "Error",
-    "tryAgain": "Try Again",
-    "close": "Close"
-  }
+  "from": "da",
+  "contact": "Contatti",
+  "loading": "Caricamento",
+  "error": "Errore",
+  "tryAgain": "Riprova",
+  "close": "Chiudi"
+}
 }
