@@ -22,7 +22,7 @@ i18n
       },
       it: {
         translation:it,
-      }
+      },
     },
     fallbackLng: 'en',
     lng: 'en',
