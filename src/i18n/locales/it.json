@@ -236,12 +236,12 @@
     }
   },
   "badges": {
-    "hurghada": "Hurghada Trip",
-    "elGouna": "El Gouna Trip",
-    "transferService": "Transfer Service",
-    "fromHurghada": "From Hurghada",
-    "nileCruise": "Nile Cruise"
-  },
+  "hurghada": "Escursione Hurghada",
+  "elGouna": "Escursione El Gouna",
+  "transferService": "Servizio Transfer",
+  "fromHurghada": "Da Hurghada",
+  "nileCruise": "Crociera sul Nilo"
+},
   "tours": {
     "orangeBayIsland": {
       "title": "Orange Bay Island",
