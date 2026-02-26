@@ -234,7 +234,11 @@ export const tours: Tour[] = [
     locationBadgeKey: "tours.quadBikeSafari.locationBadge",
     description: "Race across the golden sand dunes of the Sahara on powerful quad bikes. An adrenaline-filled desert adventure with Bedouin tea.",
     descriptionKey: "tours.quadBikeSafari.description",
-    includes: ["Quad bike", "Guide", "Bedouin tea"],
+    includes: [
+  "tourIncludes.quadBike",
+  "tourIncludes.guide",
+  "tourIncludes.bedouinTea",
+],
     imageFolderName: "Quad Bike Safari Images",
     imagePrefix: "QuadBike",
     image: "/Images/quad-bike/quanbike1.jpg",
