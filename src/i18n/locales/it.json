@@ -395,10 +395,10 @@
   "sightSeeingTours": "Tour panoramici"
 },
   "transport": {
-    "byBus": "By Bus",
-    "byPlane": "By Plane",
-    "private": "Private"
-  },
+  "byBus": "In Autobus",
+  "byPlane": "In Aereo",
+  "private": "Privato"
+},
   "common": {
     "from": "from",
     "contact": "Contact",
