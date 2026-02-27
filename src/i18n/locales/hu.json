@@ -1,87 +1,87 @@
 {
   "hero": {
-    "title": "Discover Egypt with",
-    "companyName": "Fayed International Travel",
-    "subtitle": "Explore the crystal-clear Red Sea, ride through the Sahara Desert, and uncover the ancient wonders of Luxor — all with expert guides by your side.",
-    "exploreTrips": "Explore Trips",
-    "contactUs": "Contact Us",
-    "b2bSystem": "B2B System"
+  "title": "Fedezd fel Egyiptomot a",
+  "companyName": "Fayed International Travel",
+  "subtitle": "Fedezd fel a kristálytiszta Vörös-tengert, vágj neki a Szahara sivatagnak, és ismerd meg Luxor ősi csodáit — mindezt tapasztalt idegenvezetők kíséretében.",
+  "exploreTrips": "Túrák Megtekintése",
+  "contactUs": "Kapcsolat",
+  "b2bSystem": "B2B Rendszer"
+},
+"nav": {
+  "home": "Kezdőlap",
+  "trips": "Kirándulások",
+  "seaTrips": "Tengeri Programok",
+  "safari": "Szafari",
+  "cityLeisure": "Város & Kikapcsolódás",
+  "luxorCairo": "Luxor & Kairó",
+  "whyChooseUs": "Miért Minket Válassz",
+  "aboutUs": "Rólunk",
+  "b2bSystem": "B2B Rendszer",
+  "gallery": "Galéria",
+  "contact": "Kapcsolat",
+  "bookNow": "Foglalás Most"
+},
+"sections": {
+  "excursions": {
+    "subtitle": "Kirándulásaink és Programjaink",
+    "title": "Felejthetetlen",
+    "titleHighlight": "Kalandok",
+    "titleEnd": "Várnak",
+    "description": "A Vörös-tenger mélyétől a Szahara aranyhomokjáig — minden kirándulás Hurghadából indul.",
+    "seaTrips": "Tengeri Kirándulások",
+    "safariTrips": "Szafari Programok",
+    "cityLeisure": "Városi & Szabadidős Túrák – Hurghada",
+    "luxorCairo": "Luxor & Kairó Kirándulások (Hurghadából)",
+    "transferServices": "Transzfer Szolgáltatások"
   },
-  "nav": {
-    "home": "Home",
-    "trips": "Trips",
-    "seaTrips": "Sea Trips",
-    "safari": "Safari",
-    "cityLeisure": "City & Leisure",
-    "luxorCairo": "Luxor & Cairo",
-    "whyChooseUs": "Why Choose Us",
-    "aboutUs": "About Us",
-    "b2bSystem": "B2B System",
-    "gallery": "Gallery",
-    "contact": "Contact",
-    "bookNow": "Book Now"
+  "whyChooseUs": {
+    "subtitle": "Miért Minket Válassz",
+    "title": "Megbízható",
+    "titleHighlight": "Utazási Partnered",
+    "description": "Mindent megteszünk azért, hogy egyiptomi utazásod igazán különleges élmény legyen.",
+    "professionalGuides": "Profi Idegenvezetők",
+    "professionalGuidesDesc": "Tapasztalt, minősített helyi idegenvezetők, akik életre keltik Egyiptomot.",
+    "bestPrices": "Legjobb Árak",
+    "bestPricesDesc": "Versenyképes árak, rejtett költségek nélkül. Garantált érték.",
+    "safeTrips": "Biztonságos Kirándulások",
+    "safeTripsDesc": "Biztonságod a legfontosabb számunkra — minden program teljes körűen biztosított.",
+    "highQuality": "Magas Színvonalú Szolgáltatás",
+    "highQualityDesc": "Prémium felszerelés, kényelmes közlekedés és maximális odafigyelés.",
+    "support247": "24/7 Ügyfélszolgálat",
+    "support247Desc": "Éjjel-nappali segítség, amikor csak szükséged van rá."
   },
-  "sections": {
-    "excursions": {
-      "subtitle": "Our Tours & Excursions",
-      "title": "Unforgettable",
-      "titleHighlight": "Adventures",
-      "titleEnd": "Await",
-      "description": "From the depths of the Red Sea to the golden sands of the Sahara — all tours depart from Hurghada.",
-      "seaTrips": "Sea Trips",
-      "safariTrips": "Safari Trips",
-      "cityLeisure": "City & Leisure Tours – Hurghada",
-      "luxorCairo": "Luxor & Cairo Trips (From Hurghada)",
-      "transferServices": "Transfer Services"
-    },
-    "whyChooseUs": {
-      "subtitle": "Why Choose Us",
-      "title": "Your Trusted",
-      "titleHighlight": "Travel Partner",
-      "description": "We go above and beyond to make your Egyptian adventure extraordinary.",
-      "professionalGuides": "Professional Guides",
-      "professionalGuidesDesc": "Experienced, certified local guides who bring Egypt to life.",
-      "bestPrices": "Best Prices",
-      "bestPricesDesc": "Competitive pricing with no hidden fees. Value guaranteed.",
-      "safeTrips": "Safe Trips",
-      "safeTripsDesc": "Your safety is our top priority with fully insured adventures.",
-      "highQuality": "High-Quality Service",
-      "highQualityDesc": "Premium equipment, comfortable transport, and attention to detail.",
-      "support247": "24/7 Support",
-      "support247Desc": "Round-the-clock assistance whenever you need us."
-    },
-    "gallery": {
-      "subtitle": "Gallery",
-      "title": "Moments from",
-      "titleHighlight": "Our Adventures"
-    },
-    "testimonials": {
-      "subtitle": "Testimonials",
-      "title": "What Our",
-      "titleHighlight": "Guests Say",
-      "reviews": [
-        {
-          "name": "Sarah M.",
-          "country": "United Kingdom",
-          "text": "The snorkeling trip was absolutely magical! The crew was professional and the coral reefs were breathtaking. Best experience in Hurghada!"
-        },
-        {
-          "name": "Hans W.",
-          "country": "Germany",
-          "text": "We booked the desert safari with Fayed Travel — the quad biking and sunset camel ride were unforgettable. Highly recommend!"
-        },
-        {
-          "name": "Maria L.",
-          "country": "Italy",
-          "text": "Our Luxor day trip was perfectly organized. The guide was incredibly knowledgeable and the temples were awe-inspiring. A must-do!"
-        },
-        {
-          "name": "James R.",
-          "country": "Australia",
-          "text": "From booking to the actual trip, everything was seamless. Great prices, friendly team, and amazing experiences. 10/10!"
-        }
-      ]
-    },
+  "gallery": {
+    "subtitle": "Galéria",
+    "title": "Pillanatok",
+    "titleHighlight": "Kalandjainkból"
+  },
+  "testimonials": {
+    "subtitle": "Vélemények",
+    "title": "Mit Mondanak",
+    "titleHighlight": "Vendégeink",
+    "reviews": [
+      {
+        "name": "Sarah M.",
+        "country": "Egyesült Királyság",
+        "text": "A snorkeling kirándulás egyszerűen varázslatos volt! Profi csapat és lenyűgöző korallzátonyok. A legjobb élmény Hurghadában!"
+      },
+      {
+        "name": "Hans W.",
+        "country": "Németország",
+        "text": "A sivatagi szafarit a Fayed Travelnél foglaltuk — a quadozás és a naplementés tevegelés felejthetetlen volt. Nagyon ajánlom!"
+      },
+      {
+        "name": "Maria L.",
+        "country": "Olaszország",
+        "text": "A luxori egynapos kirándulás tökéletesen meg volt szervezve. A vezető rendkívül felkészült volt, a templomok lenyűgözőek. Kötelező program!"
+      },
+      {
+        "name": "James R.",
+        "country": "Ausztrália",
+        "text": "A foglalástól a program végéig minden zökkenőmentes volt. Remek árak, barátságos csapat és fantasztikus élmények. 10/10!"
+      }
+    ]
+  },
     "contact": {
       "subtitle": "Get In Touch",
       "title": "Book Your",
