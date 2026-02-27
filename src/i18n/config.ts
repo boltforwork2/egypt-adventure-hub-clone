@@ -10,6 +10,7 @@ import pl from './locales/pl.json';
 import ro from './locales/ro.json';
 import hu from './locales/hu.json';
 import ru from './locales/ru.json';
+import cs from './locales/cs.json';
 
 
 i18n
@@ -40,6 +41,9 @@ i18n
       },
       ru: {
         translation: ru,
+      },
+      cs: {
+        translation: cs,
       },
     },
     fallbackLng: 'en',
