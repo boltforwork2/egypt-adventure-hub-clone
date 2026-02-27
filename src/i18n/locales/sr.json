@@ -1,87 +1,87 @@
 {
   "hero": {
-    "title": "Discover Egypt with",
-    "companyName": "Fayed International Travel",
-    "subtitle": "Explore the crystal-clear Red Sea, ride through the Sahara Desert, and uncover the ancient wonders of Luxor — all with expert guides by your side.",
-    "exploreTrips": "Explore Trips",
-    "contactUs": "Contact Us",
-    "b2bSystem": "B2B System"
+  "title": "Otkrijte Egipat uz",
+  "companyName": "Fayed International Travel",
+  "subtitle": "Istražite kristalno čisto Crveno more, provozajte se Saharskom pustinjom i otkrijte drevna čuda Luksora — uz iskusne vodiče koji su uvek uz vas.",
+  "exploreTrips": "Istražite izlete",
+  "contactUs": "Kontaktirajte nas",
+  "b2bSystem": "B2B sistem"
+},
+"nav": {
+  "home": "Početna",
+  "trips": "Izleti",
+  "seaTrips": "Morski izleti",
+  "safari": "Safari",
+  "cityLeisure": "Grad i slobodno vreme",
+  "luxorCairo": "Luksor i Kairo",
+  "whyChooseUs": "Zašto izabrati nas",
+  "aboutUs": "O nama",
+  "b2bSystem": "B2B sistem",
+  "gallery": "Galerija",
+  "contact": "Kontakt",
+  "bookNow": "Rezervišite sada"
+},
+"sections": {
+  "excursions": {
+    "subtitle": "Naši izleti i ture",
+    "title": "Nezaboravne",
+    "titleHighlight": "Avanture",
+    "titleEnd": "Vas očekuju",
+    "description": "Od dubina Crvenog mora do zlatnih peskova Sahare — svi izleti polaze iz Hurgade.",
+    "seaTrips": "Morski izleti",
+    "safariTrips": "Safari izleti",
+    "cityLeisure": "Gradski i rekreativni izleti – Hurgada",
+    "luxorCairo": "Izleti u Luksor i Kairo (iz Hurgade)",
+    "transferServices": "Transfer usluge"
   },
-  "nav": {
-    "home": "Home",
-    "trips": "Trips",
-    "seaTrips": "Sea Trips",
-    "safari": "Safari",
-    "cityLeisure": "City & Leisure",
-    "luxorCairo": "Luxor & Cairo",
-    "whyChooseUs": "Why Choose Us",
-    "aboutUs": "About Us",
-    "b2bSystem": "B2B System",
-    "gallery": "Gallery",
-    "contact": "Contact",
-    "bookNow": "Book Now"
+  "whyChooseUs": {
+    "subtitle": "Zašto izabrati nas",
+    "title": "Vaš pouzdani",
+    "titleHighlight": "Partner za putovanja",
+    "description": "Idemo korak dalje kako bismo vaše putovanje Egiptom učinili zaista posebnim.",
+    "professionalGuides": "Profesionalni vodiči",
+    "professionalGuidesDesc": "Iskusni i licencirani lokalni vodiči koji oživljavaju Egipat.",
+    "bestPrices": "Najbolje cene",
+    "bestPricesDesc": "Konkurentne cene bez skrivenih troškova. Zagarantovana vrednost.",
+    "safeTrips": "Bezbedni izleti",
+    "safeTripsDesc": "Vaša bezbednost je naš prioritet uz potpuno osigurane programe.",
+    "highQuality": "Usluga visokog kvaliteta",
+    "highQualityDesc": "Vrhunska oprema, udoban prevoz i pažnja prema detaljima.",
+    "support247": "Podrška 24/7",
+    "support247Desc": "Pomoć dostupna u svakom trenutku, kad god vam zatreba."
   },
-  "sections": {
-    "excursions": {
-      "subtitle": "Our Tours & Excursions",
-      "title": "Unforgettable",
-      "titleHighlight": "Adventures",
-      "titleEnd": "Await",
-      "description": "From the depths of the Red Sea to the golden sands of the Sahara — all tours depart from Hurghada.",
-      "seaTrips": "Sea Trips",
-      "safariTrips": "Safari Trips",
-      "cityLeisure": "City & Leisure Tours – Hurghada",
-      "luxorCairo": "Luxor & Cairo Trips (From Hurghada)",
-      "transferServices": "Transfer Services"
-    },
-    "whyChooseUs": {
-      "subtitle": "Why Choose Us",
-      "title": "Your Trusted",
-      "titleHighlight": "Travel Partner",
-      "description": "We go above and beyond to make your Egyptian adventure extraordinary.",
-      "professionalGuides": "Professional Guides",
-      "professionalGuidesDesc": "Experienced, certified local guides who bring Egypt to life.",
-      "bestPrices": "Best Prices",
-      "bestPricesDesc": "Competitive pricing with no hidden fees. Value guaranteed.",
-      "safeTrips": "Safe Trips",
-      "safeTripsDesc": "Your safety is our top priority with fully insured adventures.",
-      "highQuality": "High-Quality Service",
-      "highQualityDesc": "Premium equipment, comfortable transport, and attention to detail.",
-      "support247": "24/7 Support",
-      "support247Desc": "Round-the-clock assistance whenever you need us."
-    },
-    "gallery": {
-      "subtitle": "Gallery",
-      "title": "Moments from",
-      "titleHighlight": "Our Adventures"
-    },
-    "testimonials": {
-      "subtitle": "Testimonials",
-      "title": "What Our",
-      "titleHighlight": "Guests Say",
-      "reviews": [
-        {
-          "name": "Sarah M.",
-          "country": "United Kingdom",
-          "text": "The snorkeling trip was absolutely magical! The crew was professional and the coral reefs were breathtaking. Best experience in Hurghada!"
-        },
-        {
-          "name": "Hans W.",
-          "country": "Germany",
-          "text": "We booked the desert safari with Fayed Travel — the quad biking and sunset camel ride were unforgettable. Highly recommend!"
-        },
-        {
-          "name": "Maria L.",
-          "country": "Italy",
-          "text": "Our Luxor day trip was perfectly organized. The guide was incredibly knowledgeable and the temples were awe-inspiring. A must-do!"
-        },
-        {
-          "name": "James R.",
-          "country": "Australia",
-          "text": "From booking to the actual trip, everything was seamless. Great prices, friendly team, and amazing experiences. 10/10!"
-        }
-      ]
-    },
+  "gallery": {
+    "subtitle": "Galerija",
+    "title": "Trenuci sa",
+    "titleHighlight": "Naših avantura"
+  },
+  "testimonials": {
+    "subtitle": "Utisci gostiju",
+    "title": "Šta naši",
+    "titleHighlight": "Gosti kažu",
+    "reviews": [
+      {
+        "name": "Sarah M.",
+        "country": "Ujedinjeno Kraljevstvo",
+        "text": "Izlet sa ronjenjem je bio apsolutno čaroban! Posada je bila profesionalna, a koralni grebeni prelepi. Najbolje iskustvo u Hurgadi!"
+      },
+      {
+        "name": "Hans W.",
+        "country": "Nemačka",
+        "text": "Rezervisali smo pustinjski safari sa Fayed Travel — vožnja kvadovima i jahanje kamila u zalazak sunca bili su nezaboravni. Topla preporuka!"
+      },
+      {
+        "name": "Maria L.",
+        "country": "Italija",
+        "text": "Naš jednodnevni izlet u Luksor bio je savršeno organizovan. Vodič je bio izuzetno stručan, a hramovi impresivni. Obavezno iskustvo!"
+      },
+      {
+        "name": "James R.",
+        "country": "Australija",
+        "text": "Od rezervacije do samog putovanja, sve je proteklo besprekorno. Odlične cene, ljubazan tim i sjajna iskustva. 10/10!"
+      }
+    ]
+  },
     "contact": {
       "subtitle": "Get In Touch",
       "title": "Book Your",
