@@ -8,6 +8,7 @@ import fr from './locales/fr.json';
 import it from './locales/it.json';
 import pl from './locales/pl.json';
 import ro from './locales/ro.json';
+import hu from './locales/hu.json';
 
 i18n
   .use(LanguageDetector)
@@ -31,6 +32,9 @@ i18n
       },
       ro: {
         translation: ro,
+      },
+      hu: {
+        translation: hu,
       },
     },
     fallbackLng: 'en',
