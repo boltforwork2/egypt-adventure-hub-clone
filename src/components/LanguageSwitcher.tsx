@@ -22,6 +22,7 @@ const LanguageSwitcher = ({ scrolled, isNonHomePage }: { scrolled: boolean; isNo
     { code: 'hu', label: "Hurgarian"},
     { code: 'ru', label: "Russian"},
     { code: 'cs', label: "Czech"},
+    { code: 'sr', label: "Serbian"}
   ];
 
   useEffect(() => {
