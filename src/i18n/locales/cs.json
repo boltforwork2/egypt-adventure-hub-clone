@@ -1,87 +1,87 @@
 {
   "hero": {
-    "title": "Discover Egypt with",
-    "companyName": "Fayed International Travel",
-    "subtitle": "Explore the crystal-clear Red Sea, ride through the Sahara Desert, and uncover the ancient wonders of Luxor — all with expert guides by your side.",
-    "exploreTrips": "Explore Trips",
-    "contactUs": "Contact Us",
-    "b2bSystem": "B2B System"
+  "title": "Objevte Egypt s",
+  "companyName": "Fayed International Travel",
+  "subtitle": "Prozkoumejte křišťálově čisté vody Rudého moře, vydejte se na cestu pouští Sahara a objevte starověké divy Luxoru — to vše s odbornými průvodci po vašem boku.",
+  "exploreTrips": "Prohlédnout výlety",
+  "contactUs": "Kontaktujte nás",
+  "b2bSystem": "B2B systém"
+},
+"nav": {
+  "home": "Domů",
+  "trips": "Výlety",
+  "seaTrips": "Mořské výlety",
+  "safari": "Safari",
+  "cityLeisure": "Město a volný čas",
+  "luxorCairo": "Luxor a Káhira",
+  "whyChooseUs": "Proč si vybrat nás",
+  "aboutUs": "O nás",
+  "b2bSystem": "B2B systém",
+  "gallery": "Galerie",
+  "contact": "Kontakt",
+  "bookNow": "Rezervovat nyní"
+},
+"sections": {
+  "excursions": {
+    "subtitle": "Naše zájezdy a exkurze",
+    "title": "Nezapomenutelná",
+    "titleHighlight": "Dobrodružství",
+    "titleEnd": "na vás čekají",
+    "description": "Od hlubin Rudého moře až po zlaté písky Sahary — všechny výlety vyrážejí z Hurghady.",
+    "seaTrips": "Mořské výlety",
+    "safariTrips": "Safari výlety",
+    "cityLeisure": "Městské a volnočasové výlety – Hurghada",
+    "luxorCairo": "Výlety do Luxoru a Káhiry (z Hurghady)",
+    "transferServices": "Transferové služby"
   },
-  "nav": {
-    "home": "Home",
-    "trips": "Trips",
-    "seaTrips": "Sea Trips",
-    "safari": "Safari",
-    "cityLeisure": "City & Leisure",
-    "luxorCairo": "Luxor & Cairo",
-    "whyChooseUs": "Why Choose Us",
-    "aboutUs": "About Us",
-    "b2bSystem": "B2B System",
-    "gallery": "Gallery",
-    "contact": "Contact",
-    "bookNow": "Book Now"
+  "whyChooseUs": {
+    "subtitle": "Proč si vybrat nás",
+    "title": "Váš spolehlivý",
+    "titleHighlight": "Cestovní partner",
+    "description": "Děláme maximum pro to, aby bylo vaše dobrodružství v Egyptě opravdu výjimečné.",
+    "professionalGuides": "Profesionální průvodci",
+    "professionalGuidesDesc": "Zkušení certifikovaní místní průvodci, kteří oživují Egypt.",
+    "bestPrices": "Nejlepší ceny",
+    "bestPricesDesc": "Konkurenční ceny bez skrytých poplatků. Zaručená hodnota.",
+    "safeTrips": "Bezpečné výlety",
+    "safeTripsDesc": "Vaše bezpečnost je naší nejvyšší prioritou, všechny výlety jsou plně pojištěné.",
+    "highQuality": "Vysoce kvalitní služby",
+    "highQualityDesc": "Prémiové vybavení, pohodlná doprava a důraz na detail.",
+    "support247": "Podpora 24/7",
+    "support247Desc": "Nepřetržitá asistence kdykoliv ji potřebujete."
   },
-  "sections": {
-    "excursions": {
-      "subtitle": "Our Tours & Excursions",
-      "title": "Unforgettable",
-      "titleHighlight": "Adventures",
-      "titleEnd": "Await",
-      "description": "From the depths of the Red Sea to the golden sands of the Sahara — all tours depart from Hurghada.",
-      "seaTrips": "Sea Trips",
-      "safariTrips": "Safari Trips",
-      "cityLeisure": "City & Leisure Tours – Hurghada",
-      "luxorCairo": "Luxor & Cairo Trips (From Hurghada)",
-      "transferServices": "Transfer Services"
-    },
-    "whyChooseUs": {
-      "subtitle": "Why Choose Us",
-      "title": "Your Trusted",
-      "titleHighlight": "Travel Partner",
-      "description": "We go above and beyond to make your Egyptian adventure extraordinary.",
-      "professionalGuides": "Professional Guides",
-      "professionalGuidesDesc": "Experienced, certified local guides who bring Egypt to life.",
-      "bestPrices": "Best Prices",
-      "bestPricesDesc": "Competitive pricing with no hidden fees. Value guaranteed.",
-      "safeTrips": "Safe Trips",
-      "safeTripsDesc": "Your safety is our top priority with fully insured adventures.",
-      "highQuality": "High-Quality Service",
-      "highQualityDesc": "Premium equipment, comfortable transport, and attention to detail.",
-      "support247": "24/7 Support",
-      "support247Desc": "Round-the-clock assistance whenever you need us."
-    },
-    "gallery": {
-      "subtitle": "Gallery",
-      "title": "Moments from",
-      "titleHighlight": "Our Adventures"
-    },
-    "testimonials": {
-      "subtitle": "Testimonials",
-      "title": "What Our",
-      "titleHighlight": "Guests Say",
-      "reviews": [
-        {
-          "name": "Sarah M.",
-          "country": "United Kingdom",
-          "text": "The snorkeling trip was absolutely magical! The crew was professional and the coral reefs were breathtaking. Best experience in Hurghada!"
-        },
-        {
-          "name": "Hans W.",
-          "country": "Germany",
-          "text": "We booked the desert safari with Fayed Travel — the quad biking and sunset camel ride were unforgettable. Highly recommend!"
-        },
-        {
-          "name": "Maria L.",
-          "country": "Italy",
-          "text": "Our Luxor day trip was perfectly organized. The guide was incredibly knowledgeable and the temples were awe-inspiring. A must-do!"
-        },
-        {
-          "name": "James R.",
-          "country": "Australia",
-          "text": "From booking to the actual trip, everything was seamless. Great prices, friendly team, and amazing experiences. 10/10!"
-        }
-      ]
-    },
+  "gallery": {
+    "subtitle": "Galerie",
+    "title": "Okamžiky z našich",
+    "titleHighlight": "Dobrodružství"
+  },
+  "testimonials": {
+    "subtitle": "Reference",
+    "title": "Co říkají naši",
+    "titleHighlight": "Hosté",
+    "reviews": [
+      {
+        "name": "Sarah M.",
+        "country": "Velká Británie",
+        "text": "Výlet na šnorchlování byl naprosto kouzelný! Profesionální posádka a úchvatné korálové útesy. Nejlepší zážitek v Hurghadě!"
+      },
+      {
+        "name": "Hans W.",
+        "country": "Německo",
+        "text": "Rezervovali jsme si pouštní safari s Fayed Travel — jízda na čtyřkolkách a projížďka na velbloudech při západu slunce byly nezapomenutelné. Vřele doporučuji!"
+      },
+      {
+        "name": "Maria L.",
+        "country": "Itálie",
+        "text": "Jednodenní výlet do Luxoru byl perfektně zorganizovaný. Průvodce byl neuvěřitelně znalý a chrámy byly ohromující. Určitě stojí za to!"
+      },
+      {
+        "name": "James R.",
+        "country": "Austrálie",
+        "text": "Od rezervace až po samotný výlet proběhlo vše bez problémů. Skvělé ceny, přátelský tým a úžasné zážitky. 10/10!"
+      }
+    ]
+  },
     "contact": {
       "subtitle": "Get In Touch",
       "title": "Book Your",
