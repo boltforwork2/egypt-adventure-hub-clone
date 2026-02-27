@@ -12,7 +12,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { i18n } = useTranslation();
   const [language, setLanguage] = useState<string>('en');
-  const availableLanguages = ['en', 'de', 'fr','it','pl','ro'];
+  const availableLanguages = ['en', 'de', 'fr','it','pl','ro','hu'];
 
   useEffect(() => {
     const savedLanguage = localStorage.getItem('language') || 'en';
