@@ -85,6 +85,11 @@ const Header = () => {
           </span>
         </Link>
 
+        {/* Mobile & Tablet Language Switcher */}
+        <div className="lg:hidden flex-shrink-0 mr-2">
+          <LanguageSwitcher scrolled={scrolled} isNonHomePage={isNonHomePage} />
+        </div>
+
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-4 xl:gap-6 flex-shrink-0 ml-auto">
           {navLinks.map((link) => {
@@ -201,9 +206,6 @@ const Header = () => {
                 </a>
               );
             })}
-            <div className="border-t border-border/50 my-3 pt-3">
-              <LanguageSwitcher scrolled={true} isNonHomePage={true} />
-            </div>
             <a href="/#contact" className="btn-gold text-center mt-1 py-3" onClick={() => setMenuOpen(false)}>
               {t('nav.bookNow')}
             </a>
