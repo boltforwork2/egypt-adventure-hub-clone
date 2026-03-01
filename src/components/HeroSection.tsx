@@ -1,4 +1,5 @@
 import { useTranslations } from "@/hooks/useTranslations";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const HeroSection = () => {
   const { t } = useTranslations();
@@ -8,6 +9,10 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img src="/hero-bg.jpg" alt="Hurghada Red Sea coast aerial view" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-dark/60 via-dark/40 to-dark/70" />
+      </div>
+
+      <div className="absolute top-5 right-4 z-20">
+        <LanguageSwitcher scrolled={false} isNonHomePage={false} />
       </div>
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
