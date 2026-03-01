@@ -144,11 +144,8 @@ const Header = () => {
           </a>
         </nav>
 
-        {/* Mobile language switcher and menu toggle */}
+        {/* Mobile menu toggle */}
         <div className="lg:hidden flex items-center gap-2">
-          <div className="flex-shrink-0">
-            <LanguageSwitcher scrolled={scrolled} isNonHomePage={isNonHomePage} />
-          </div>
           <button
             className="p-2 rounded-lg transition-colors duration-200 hover:bg-background/10"
             onClick={() => setMenuOpen(!menuOpen)}
