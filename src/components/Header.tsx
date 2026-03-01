@@ -144,23 +144,18 @@ const Header = () => {
           </a>
         </nav>
 
-        {/* Mobile language switcher and menu toggle */}
-        <div className="lg:hidden flex items-center gap-2">
-          <div className="flex-shrink-0">
-            <LanguageSwitcher scrolled={scrolled} isNonHomePage={isNonHomePage} />
-          </div>
-          <button
-            className="p-2 rounded-lg transition-colors duration-200 hover:bg-background/10"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-          >
-            {menuOpen ? (
-              <X className={scrolled || isNonHomePage ? "text-foreground" : "text-background"} size={22} />
-            ) : (
-              <Menu className={scrolled || isNonHomePage ? "text-foreground" : "text-background"} size={22} />
-            )}
-          </button>
-        </div>
+        {/* Mobile toggle */}
+        <button
+          className="lg:hidden p-2 rounded-lg transition-colors duration-200 hover:bg-background/10"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? (
+            <X className={scrolled || isNonHomePage ? "text-foreground" : "text-background"} size={22} />
+          ) : (
+            <Menu className={scrolled || isNonHomePage ? "text-foreground" : "text-background"} size={22} />
+          )}
+        </button>
       </div>
 
       {/* Mobile menu */}
@@ -206,7 +201,10 @@ const Header = () => {
                 </a>
               );
             })}
-            <a href="/#contact" className="btn-gold text-center mt-3 py-3" onClick={() => setMenuOpen(false)}>
+            <div className="border-t border-border/50 my-3 pt-3">
+              <LanguageSwitcher scrolled={true} isNonHomePage={true} />
+            </div>
+            <a href="/#contact" className="btn-gold text-center mt-1 py-3" onClick={() => setMenuOpen(false)}>
               {t('nav.bookNow')}
             </a>
           </nav>
