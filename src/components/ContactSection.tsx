@@ -61,7 +61,7 @@ const ContactSection = () => {
           <div className="flex flex-col justify-center space-y-7">
             {[
               { icon: Phone, label: t('sections.contact.phoneLabel'), value: t('sections.contact.phoneValue'), href: "tel:+201122424531" },
-              { icon: Mail, label: t('sections.contact.emailLabel'), value: t('sections.contact.emailValue'), href: "mailto:info@fayedtravel.com" },
+              { icon: Mail, label: t('sections.contact.emailLabel'), value: t('sections.contact.emailValue'), href: "mailto:info@fayed-agency.com" },
               { icon: MapPin, label: t('sections.contact.locationLabel'), value: t('sections.contact.locationValue'), href: "#" },
             ].map(({ icon: Icon, label, value, href }) => (
               <a key={label} href={href} className="flex items-center gap-4 group">
